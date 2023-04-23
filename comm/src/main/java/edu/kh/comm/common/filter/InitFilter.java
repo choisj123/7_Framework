@@ -35,13 +35,13 @@ public class InitFilter extends HttpFilter implements Filter {
 		// info : 메소드 실행 파악
 		
 		// 이 필터가 생성이 되었다 라는 정보를 출력하고 싶다! info가 제일 적절함
-		logger.info("초기화 핉터 생성");
+		logger.info("초기화 필터 생성");
 		
 	}
 	
 	// 필터가 파괴될 때 실행 (서버는 켜져 있는데 백엔드 코드가 수정되었을 때)
 	public void destroy() {
-		logger.info("초기화 핉터 파괴");
+		logger.info("초기화 필터 파괴");
 	}
 
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
