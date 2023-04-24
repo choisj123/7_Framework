@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +13,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import edu.kh.comm.member.model.service.MemberService;
+import edu.kh.comm.member.model.service.MemberServiceImpl;
 import edu.kh.comm.member.model.vo.Member;
 
 // POJO 기반 프레임워크 : 외부 라이브러리 상속 X == extends 하는 건 POJO 원칙 위배
@@ -33,8 +36,16 @@ import edu.kh.comm.member.model.vo.Member;
 
 public class MemberController {
 	
-	
 	private Logger logger = LoggerFactory.getLogger(MemberController.class);
+	
+	// private MemberService service = new MemberServiceImpl();
+	//			부모						자식   => 다형성
+	// new 연산자를 통해 개발자가 직접 객체 생성 X, 스프링이 해준다!
+	// -> 특징 : IOC (제어의 역전) -> MemberServiceImpl 가서 bean 지정!
+	
+	@Autowired // bean으로 등록된 객체 중 타입이 같거나, 상속관계인 bean을 주입해주는 역할
+  	private MemberService service; // DI (의존성 주입)
+	
 	
 	// Controller : 요청/응답을 제어하는 역할을 하는 클래스 
 	
@@ -120,10 +131,14 @@ public class MemberController {
 	// - VO 필드에 대한 Setter
 	
 	@PostMapping("/login")
-	public String login(@ModelAttribute Member memberEmail ) {
+	public String login(@ModelAttribute Member inputMember ) {
 		// break point 지정
 		// debug as > debug on sever
 		logger.info("로그인 기능 수행됨");
+		
+		// 아이디, 비밀번호가 일치하는 회원 정보를 조회하는 Service 호출 후 결과 반환 받기
+		Member loginMember = service.login(inputMember);
+		
 		
 		return "redirect:/";
 	}
