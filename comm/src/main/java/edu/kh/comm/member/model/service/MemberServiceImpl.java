@@ -34,8 +34,6 @@ public class MemberServiceImpl implements MemberService {
 		// 트랜잭션 처리를 하는 구문을 작성하지 않아도
 		// Spring에서 제어를 하기 때문에 Service 구문이 간단해진다.
 		
-		
-		
 	}
 	
 	

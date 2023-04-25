@@ -1,20 +1,18 @@
 package edu.kh.comm.member.controller;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.support.SessionStatus;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import edu.kh.comm.member.model.service.MemberService;
-import edu.kh.comm.member.model.service.MemberServiceImpl;
 import edu.kh.comm.member.model.vo.Member;
 
 // POJO 기반 프레임워크 : 외부 라이브러리 상속 X == extends 하는 건 POJO 원칙 위배
@@ -29,11 +27,12 @@ import edu.kh.comm.member.model.vo.Member;
 
 @Controller // 생성된 bean이 Controller임을 명시 + bean 등록
 @RequestMapping("/member") // localhost:8080/comm/member 이하의 요청을 처리하는 컨트롤러
-
 //localhost:8080/comm/member
 //localhost:8080/comm/member/login
 //localhost:8080/comm/member/signUp
 
+@SessionAttributes( {"loginMember", "message"} ) // model에 추가된 값의 key와 어노테이션에 작성된 값이 같으면
+												// 해당 값을 session scope로 이동시키는 역할
 public class MemberController {
 	
 	private Logger logger = LoggerFactory.getLogger(MemberController.class);
@@ -131,7 +130,13 @@ public class MemberController {
 	// - VO 필드에 대한 Setter
 	
 	@PostMapping("/login")
-	public String login(@ModelAttribute Member inputMember ) {
+	public String login(/*@ModelAttribute*/ Member inputMember,
+						Model model,
+						RedirectAttributes ra) {
+		// @ModelAttribute 생략 가능
+		// 커맨드 객체
+		// @ModelAttribute 생략된 상태에서 파라미터가 필드에 세팅된 객
+		
 		// break point 지정
 		// debug as > debug on sever
 		logger.info("로그인 기능 수행됨");
@@ -139,9 +144,63 @@ public class MemberController {
 		// 아이디, 비밀번호가 일치하는 회원 정보를 조회하는 Service 호출 후 결과 반환 받기
 		Member loginMember = service.login(inputMember);
 		
+		/* Model : 데이터를 맵 형식(K:V)형태로 담아 전달하는 용도의 객체
+		 * -> request, session을 대체하는 객체
+		 * 
+		 * - 기본 scope : request
+		 * - session scope로 변환하고 싶은 경우
+		 * 클래스 레벨로 @SessionAttributes를 작성하면 된다. 
+		 * == session.setAttribute("loginMember", loginMember);
+		 *
+		 * 즉, @SessionAttributes 미작성 -> request scope
+		 */
+		if(loginMember != null) { //로그인 성공 시
+			
+			model.addAttribute("loginMember", loginMember); // == request scope
+			// == req.setAttribute("loginMember", loginMember);
+			
+		}else {
+			//model.addAttribute("message", "아이디 또는 비밀번호가 일치하지 않습니다.");
+			// 이렇게만 쓰면 request scope 
+			// session scope로 쓰려면 꼭 @SessionAttributes에 써주기!
+			
+			
+			// redirect 시에도 request scope로 세팅된 데이터가 유지될 수 있도록 하는 방법을
+			// Spring에서 제공해줌
+			// -> RedirectAttributes 객체(컨트롤러 매개변수에 작성하면 사용 가능)
+			ra.addFlashAttribute("message", "아이디 또는 비밀번호가 일치하지 않습니다.");
+			
+		}
 		
-		return "redirect:/";
+		
+		return "redirect:/"; // 메인페이지 재요청
 	}
+	
+	
+	
+	// 로그아웃
+	@GetMapping("/logout")
+	public String logout(/*HttpSession session*/ 
+						SessionStatus status) {
+		// 로그아웃 == 세션을 없애는 것
+		
+		// * @SessionAttributes을 이용해서 session scope에 배치된 데이터는
+		// 	 SessionStatus라는 별도 객체를 이용해야만 없앨 수 있다.
+		
+		logger.info("로그아웃 수행됨");
+	
+		//session.invalidate(); //기존 세션 무효화 방식으로는 X
+		
+		status.setComplete(); // 세션이 할일이 완료됨 -> 없앰
+		
+		return "redirect:/"; // 메인페이지 재요청
+	}
+	
+	
+	
+	
+	
+	
 	
 	// 회원 가입 화면 전환
 	@GetMapping("/signUp") // Get 방식 : /comm/member/signUp 요청
