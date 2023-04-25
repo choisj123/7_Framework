@@ -144,7 +144,7 @@ public class MemberController {
 						) {
 		// @ModelAttribute 생략 가능
 		// 커맨드 객체
-		// @ModelAttribute 생략된 상태에서 파라미터가 필드에 세팅된 객
+		// @ModelAttribute 생략된 상태에서 파라미터가 필드에 세팅된 객체
 		
 		// break point 지정
 		// debug as > debug on sever
@@ -226,9 +226,6 @@ public class MemberController {
 		
 		return "redirect:/"; // 메인페이지 재요청
 	}
-	
-	
-	
 	
 	
 	
