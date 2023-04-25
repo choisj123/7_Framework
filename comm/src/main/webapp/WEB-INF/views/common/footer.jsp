@@ -19,7 +19,7 @@
 </footer>
 
 <%-- request에 message 속성이 존재하는 경우 alert창으로 해당 내용을 출력 --%>
-<c:if test="${ !empty sessionScope.message }">
+<c:if test="${ !empty message }">
     <script>
         alert("${message}");
         // EL 작성 시 scope를 지정하지 않으면

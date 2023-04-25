@@ -31,7 +31,7 @@ import edu.kh.comm.member.model.vo.Member;
 //localhost:8080/comm/member/login
 //localhost:8080/comm/member/signUp
 
-@SessionAttributes( {"loginMember", "message"} ) // model에 추가된 값의 key와 어노테이션에 작성된 값이 같으면
+@SessionAttributes( {"loginMember"} ) // model에 추가된 값의 key와 어노테이션에 작성된 값이 같으면
 												// 해당 값을 session scope로 이동시키는 역할
 public class MemberController {
 	
