@@ -53,14 +53,29 @@ public class MemberServiceImpl implements MemberService {
 		
 		// ** Bcrypt 암호화를 사용하기 위해 이를 지원하는 Spring-security 모듈 추가 **
 		logger.debug("암호화 전 : " + inputMember.getMemberPw() + " / 암호화 후 : " + bcrypt.encode(inputMember.getMemberPw()));
-		logger.debug("암호화 전 : " + inputMember.getMemberPw() + " / 암호화 후 : " + bcrypt.encode(inputMember.getMemberPw()));
-		logger.debug("암호화 전 : " + inputMember.getMemberPw() + " / 암호화 후 : " + bcrypt.encode(inputMember.getMemberPw()));
-		logger.debug("암호화 전 : " + inputMember.getMemberPw() + " / 암호화 후 : " + bcrypt.encode(inputMember.getMemberPw()));
-		logger.debug("암호화 전 : " + inputMember.getMemberPw() + " / 암호화 후 : " + bcrypt.encode(inputMember.getMemberPw()));
-		
-		
+//		logger.debug("암호화 전 : " + inputMember.getMemberPw() + " / 암호화 후 : " + bcrypt.encode(inputMember.getMemberPw()));
+//		logger.debug("암호화 전 : " + inputMember.getMemberPw() + " / 암호화 후 : " + bcrypt.encode(inputMember.getMemberPw()));
+//		logger.debug("암호화 전 : " + inputMember.getMemberPw() + " / 암호화 후 : " + bcrypt.encode(inputMember.getMemberPw()));
+//		logger.debug("암호화 전 : " + inputMember.getMemberPw() + " / 암호화 후 : " + bcrypt.encode(inputMember.getMemberPw()));
 		
 		Member loginMember = dao.login(inputMember);
+		
+		// loginMember == null : 일치하는 이메일이 없다
+		
+		if(loginMember != null) { //일치하는 이메일을 가진 회원 정보가 있을 경우
+			
+			//					입려된 비밀번호(평문)  , 조회된 비밀번호(암호화) 비교 => 같으면 true
+			if(bcrypt.matches(inputMember.getMemberPw(), loginMember.getMemberPw())) { // 비밀번호가 일치할 경우
+				loginMember.setMemberPw(null); // 비교 끝났으면 비밀번호 지우기
+				// 비밀번호 세션에 넘어가지 않도록 무효처리
+				
+				
+			}else { // 비밀번호가 일치하지 않을 경우
+				loginMember = null; 
+				
+			}
+			
+		}
 		
 		return loginMember;
 		

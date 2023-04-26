@@ -129,11 +129,11 @@
 	<select id="login" parameterType="member" resultMap="member_rm">
 		SELECT MEMBER_NO,MEMBER_EMAIL,MEMBER_NICK ,MEMBER_TEL, 
 	    MEMBER_ADDR, PROFILE_IMG, 
-	    TO_CHAR( ENROLL_DT, 'YYYY-MM-DD HH24:MI:SS') AS ENROLL_DT, MEMBER_PW
+	    TO_CHAR( ENROLL_DT, 'YYYY-MM-DD HH24:MI:SS') AS ENROLL_DT 
 		FROM MEMBER_S 
 		WHERE SECESSION_FL = 'N' 
 		AND MEMBER_EMAIL = #{memberEmail} 
-		<!--  AND MEMBER_PW = #{memberPw} -->
+		AND MEMBER_PW = #{memberPw} 
 	</select>
 
 
