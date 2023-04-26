@@ -1,5 +1,8 @@
 package edu.kh.comm.member.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,12 +16,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import edu.kh.comm.member.model.service.MemberService;
 import edu.kh.comm.member.model.vo.Member;
+
+import com.google.gson.Gson;
 
 // POJO 기반 프레임워크 : 외부 라이브러리 상속 X == extends 하는 건 POJO 원칙 위배
 
@@ -239,5 +245,86 @@ public class MemberController {
 	}
 	
 
+	// 이메일 중복검사
+	@ResponseBody
+	@GetMapping("/emailDupCheck")
+	public int emailDupCheck(/*@RequestParam("memberEmail")*/ String memberEmail) {
+								// 파라미터 key값(받아오는 변수)와 저장하려는 변수 이름이 같으면 생략 가능
+		// int result = service.emailDupCheck(memberEmail);
+		
+		// 컨트롤러에서 반환된는 값은 forward 또는 redirect를 위한 경로인 경우가 일반적
+		// -> 반환되는 값은 경로로 인식됨
+		// -> 이를 해결하기 위한 어노테이션 @ResponseBody가 존재함
+		
+		// @ResponseBody : 반환되는 값을 응답의 몸통(body)에 추가하여
+		//					이전 요청 주소로 돌아감
+		// -> 컨트롤러에서 반환되는 값이 경로가 아닌 "값 자체"로 인식됨
+		// Ajax로 알아서 돌아감 !!
+		
+		return service.emailDupCheck(memberEmail);
+	}
+	
+	// 닉네임 중복검사
+	@ResponseBody
+	@GetMapping("/nicknameDupCheck")
+	public int nicknameDupCheck(@RequestParam("memberNickname") String memberNickname) {
+		
+		
+		return service.nicknameDupCheck(memberNickname);
+	}
+	
+	// 회원가입
+	
+	
+	@PostMapping("/signUp")
+	public String signUp(Member inputMember,
+						RedirectAttributes ra) {
+		
+		logger.info("회원가입 기능 수행됨");
+		
+		int result = service.signUp(inputMember);
+		
+		if(result == 1) { // 회원가입 성공
+			
+			ra.addFlashAttribute("message", "환영합니다!");
+			
+		}else {
+			
+			ra.addFlashAttribute("message", "회원가입에 실패하였습니다.");
+		}
+		
+		return "redirect:/";
+		
+	}
+	
+	
+	// 회원 1명 정보 조회(ajax)
+	@ResponseBody
+	@PostMapping("/selectOne")
+	public String selectOne(String memberEmail) {
+		
+		Member member = service.selectOne(memberEmail);
+		System.out.println(member);
+	
+		
+		return new Gson().toJson(member);
+		
+		
+	}
+	
+	// 회원 목록 조회(ajax)
+	@ResponseBody
+	@GetMapping("/selectAll")
+	public String selectAll() {
+		List<Member> memberList = new ArrayList<>();
+		
+		memberList = service.selectAll();
+		
+		return new Gson().toJson(memberList);
+		
+	}
+
+	
+	
 	
 }

@@ -1,6 +1,9 @@
 package edu.kh.comm.member.model.service;
 
 import org.slf4j.LoggerFactory;
+
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -10,6 +13,7 @@ import edu.kh.comm.member.model.dao.MemberDAO;
 import edu.kh.comm.member.model.vo.Member;
 
 // POJO 위반 X : POJO는 외부 라이브러리! 내가 만든 건 얼마든지 상속 가능
+
 @Service // 비즈니스 로직(데이터 가공, DB 연결)을 처리하는 클래스임을 명시 + bean 등록
 public class MemberServiceImpl implements MemberService {
 	
@@ -72,9 +76,7 @@ public class MemberServiceImpl implements MemberService {
 				
 			}else { // 비밀번호가 일치하지 않을 경우
 				loginMember = null; 
-				
 			}
-			
 		}
 		
 		return loginMember;
@@ -84,6 +86,55 @@ public class MemberServiceImpl implements MemberService {
 		// Spring에서 제어를 하기 때문에 Service 구문이 간단해진다.
 		
 	}
+
+
+	// 이메일 중복 검사 서비스 구현
+	@Override
+	public int emailDupCheck(String memberEmail) {
+		
+		
+		return dao.emailDupCheck(memberEmail);
+	}
+
+	// 닉네임 중복 검사 서비스 구현
+	@Override
+	public int nicknameDupCheck(String memberNickname) {
+		
+		return dao.nicknameDupCheck(memberNickname);
+	}
+
+
+	// 회원가입 서비스 구현
+	@Override
+	public int signUp(Member inputMember) {
+		logger.debug("암호화 전 : " + inputMember.getMemberPw() + " / 암호화 후 : " + bcrypt.encode(inputMember.getMemberPw()));
+		
+		inputMember.setMemberPw(bcrypt.encode(inputMember.getMemberPw())); 
+		
+		int result = dao.signUp(inputMember);
+		
+		return result;
+	}
+
+	// 회원 1명 조회 서비스 구현
+	@Override
+	public Member selectOne(String memberEmail) {
+		Member member = dao.selectOne(memberEmail);
+		
+		return member;
+	}
+
+
+	// 회원 목록 조회 서비스 구현
+	@Override
+	public List<Member> selectAll() {
+		List<Member> memberList = dao.selectAll();
+		
+		return memberList;
+	}
+	
+	
+	
 	
 	
 

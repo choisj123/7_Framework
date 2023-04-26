@@ -49,6 +49,7 @@
 	 
 	 
 	 
+	 
 	 <!-- 1. select 태그 속성
 	 	1) resultType : 조회 결과가 1행 1열인 경우에만 작성
 	 					조회된 데이터의 Java 자료형을 Mybatis 별칭 형태로 작성
@@ -136,6 +137,46 @@
 		<!--  AND MEMBER_PW = #{memberPw} -->
 	</select>
 
+	<select id="emailDupCheck" parameterType="string" resultType="_int">
+		SELECT count(*) FROM MEMBER_S 
+		WHERE MEMBER_EMAIL = #{memberEmail}
+		AND SECESSION_FL = 'N'
+	</select>
+	
+	<select id="nicknameDupCheck" parameterType="string" resultType="_int">
+		SELECT count(*) FROM MEMBER_S 
+		WHERE MEMBER_NICK = #{memberNickname}
+		AND SECESSION_FL = 'N'
+	</select>
+
+	<insert id="signUp" parameterType="member">
+		INSERT INTO MEMBER_S VALUES(
+			SEQ_MEMBER_NO_S.NEXTVAL,
+			#{memberEmail},
+			#{memberPw},
+			#{memberNickname},
+			#{memberTel},
+			#{memberAddress}, 
+			DEFAULT, DEFAULT, DEFAULT
+	)
+	</insert>
+	
+	<select id="selectOne" parameterType="string" resultMap="member_rm">
+		SELECT MEMBER_NO,MEMBER_EMAIL,MEMBER_NICK ,MEMBER_TEL, 
+	    MEMBER_ADDR, PROFILE_IMG, 
+	    TO_CHAR( ENROLL_DT, 'YYYY-MM-DD HH24:MI:SS') AS ENROLL_DT
+		FROM MEMBER_S 
+		WHERE SECESSION_FL = 'N' 
+		AND MEMBER_EMAIL = #{memberEmail} 
+	</select>
+
+	<select id = "selectAll" resultMap="member_rm">
+		SELECT MEMBER_NO,MEMBER_EMAIL,MEMBER_NICK ,MEMBER_TEL, 
+	    MEMBER_ADDR, PROFILE_IMG, 
+	    TO_CHAR( ENROLL_DT, 'YYYY-MM-DD HH24:MI:SS') AS ENROLL_DT
+		FROM MEMBER_S 
+		WHERE SECESSION_FL = 'N' 
+	</select>
 
 
 </mapper>
