@@ -272,10 +272,10 @@ public class MemberController {
 		
 		return service.nicknameDupCheck(memberNickname);
 	}
+
+	
 	
 	// 회원가입
-	
-	
 	@PostMapping("/signUp")
 	public String signUp(Member inputMember,
 						RedirectAttributes ra) {

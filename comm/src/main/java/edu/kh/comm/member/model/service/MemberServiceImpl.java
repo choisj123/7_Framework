@@ -41,7 +41,7 @@ public class MemberServiceImpl implements MemberService {
 	public Member login(Member inputMember) {
 		
 		// 전달 받은 비밀번호를 암호화하여
-		// DB에서 조회환 비밀번호와 비교 (DB에서 비교 X)
+		// DB에서 조회한 비밀번호와 비교 (DB에서 비교 X)
 		
 		// sha 방식 암호화
 		// A회원 / 비밀번호 1234 -> 암호화 : abcd
