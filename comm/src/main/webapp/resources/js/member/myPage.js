@@ -18,7 +18,10 @@ function infoValidate(){
         alert("닉네임은 영어/숫자/한글 2~10 글자 사이로 작성해주세요.");
         memberNickname.focus();
         return false;
-    } else{
+
+    } 
+    
+    if(regExp1.test(memberNickname.value)){
 
         // ****** 닉네임 중복 검사(ajax) 진행 예정 ******
 
@@ -33,9 +36,15 @@ function infoValidate(){
                 // 매개변수 res : Servlet에서 응답으로 출력된 데이터가 저장
 
                 if(res == 1){ // 닉네임 중복 O
+                    console.log(res);
                     alert("중복된 닉네임입니다. 다시 입력해주세요.");
                     memberNickname.focus();
                     return false;
+
+                }else{
+                    console.log(res);
+                    alert("사용가능한 닉네임입니다.");
+                    return;
 
                 } 
             },

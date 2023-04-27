@@ -6,7 +6,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -41,7 +40,7 @@ public class MypageController {
 	// 닉네임 중복검사
 	@ResponseBody
 	@GetMapping("/myPageNicknameDupCheck")
-	public int myPageNicknameDupCheck(@RequestParam("memberNickname") String memberNickname) {
+	public int myPageNicknameDupCheck(@RequestParam("newNickname") String memberNickname) {
 		
 		int result = service.myPageNicknameDupCheck(memberNickname);
 		System.out.println(result);
@@ -89,28 +88,38 @@ public class MypageController {
 		// 즉, 필드명이 겹쳐서 생긴 문제이니 겹치지 않게 하자
 		// 그래서 jsp name-> 다 new~로 바꿈!!
 		
-		loginMember.setMemberNickname((String)paramMap.get("newNickname"));
-		loginMember.setMemberTel((String)paramMap.get("newTel"));
+		// 닉네임 중복검사
+		int count = service.myPageNicknameDupCheck((String)paramMap.get("newNickname"));
 		
-		String memberAddress = null;
-		
-		if(!newAddress[0].equals("")) { // 우편번호가 빈칸이 아니라면 == 주소 작성
-			memberAddress = String.join(",,", newAddress);
-		}
-		loginMember.setMemberAddress(memberAddress);
-		
-		System.out.println("controller" + loginMember);
-		
-		
-		int result = service.updateMyinfo(loginMember);
-		
-		if(result > 0) { // 회원정보 수정 성공
-			ra.addFlashAttribute("message", "성공적으로 변경되었습니다.");
+		if(count == 1) { // 중복된 경우
+			ra.addFlashAttribute("message", "중복된 닉네임입니다.");
 			
-		}else {
-			ra.addFlashAttribute("message", "변경에 실패하였습니다.");
+		}else { // 중복 안 된 경우
+			
+			loginMember.setMemberNickname((String)paramMap.get("newNickname"));
+			loginMember.setMemberTel((String)paramMap.get("newTel"));
+			
+			String memberAddress = null;
+			
+			if(!newAddress[0].equals("")) { // 우편번호가 빈칸이 아니라면 == 주소 작성
+				memberAddress = String.join(",,", newAddress);
+			}
+			loginMember.setMemberAddress(memberAddress);
+			
+			System.out.println("controller" + loginMember);
+			
+			int result = service.updateMyinfo(loginMember);
+			
+			if(result > 0) { // 회원정보 수정 성공
+				ra.addFlashAttribute("message", "성공적으로 변경되었습니다.");
+				
+			}else {
+				ra.addFlashAttribute("message", "변경에 실패하였습니다.");
+				
+			}
 			
 		}
+		
 		
 		return "redirect:info";
 		
