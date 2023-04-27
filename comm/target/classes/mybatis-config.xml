@@ -26,11 +26,11 @@
 		<!-- 
 			<mapper resource="mapper 파일 경로"/>
 				경로를 작성하는 기준(시작 지점)은 src/main/resources 폴더 기준
-		
-		
 		 -->
 		 
 		 <mapper resource="/mappers/member-mapper.xml"/>
+		 <mapper resource="/mappers/myPage-mapper.xml"/>
+		 
 	</mappers>
 		
 
