@@ -1,5 +1,7 @@
 package edu.kh.comm.member.model.service;
 
+import java.util.Map;
+
 import edu.kh.comm.member.model.vo.Member;
 
 public interface MyPageService {
@@ -25,16 +27,18 @@ public interface MyPageService {
 	 */
 	int myPageNicknameDupCheck(String memberNickname);
 
-	/** 마이페이지 내 정보 수정
-	 * @param loginMember
-	 * @return result
-	 */
-	int updateMyinfo(Member loginMember);
 
 	/** 마이페이지 내 정보 수정 - 닉네임 제외
-	 * @param loginMember
-	 * @return
+	 * @param paramMap
+	 * @return result
 	 */
-	int updateMyinfoExceptNick(Member loginMember);
+	int updateMyinfoExceptNick(Map<String, Object> paramMap);
+
+	
+	/** 마이페이지 내 정보 수정
+	 * @param paramMap
+	 * @return result
+	 */
+	int updateMyinfo(Map<String, Object> paramMap);
 
 }

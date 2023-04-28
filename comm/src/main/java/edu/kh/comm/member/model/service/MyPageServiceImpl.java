@@ -1,5 +1,7 @@
 package edu.kh.comm.member.model.service;
 
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -69,21 +71,25 @@ public class MyPageServiceImpl implements MyPageService{
 		return dao.myPageNicknameDupCheck(memberNickname);
 	}
 	
-	// 내 정보 수정
+
+	// 내 정보 수정 - 닉네임 제외
 	@Override
-	public int updateMyinfo(Member loginMember) {
+	public int updateMyinfoExceptNick(Map<String, Object> paramMap) {
 		
-		int result = dao.updateMyinfo(loginMember);
+		int result = dao.updateMyinfoExceptNick(paramMap);
 		
 		return result;
 	}
 	
-	// 내 정보 수정 - 닉네임 제외
+	// 내 정보 수정
+
 	@Override
-	public int updateMyinfoExceptNick(Member loginMember) {
+	public int updateMyinfo(Map<String, Object> paramMap) {
 		
-		int result = dao.updateMyinfoExceptNick(loginMember);
+		int result = dao.updateMyinfo(paramMap);
 		
 		return result;
 	}
+
+
 }

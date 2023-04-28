@@ -1,6 +1,9 @@
 package edu.kh.comm.member.model.dao;
 
 import org.slf4j.LoggerFactory;
+
+import java.util.Map;
+
 import org.mybatis.spring.SqlSessionTemplate;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,25 +59,25 @@ public class MyPageDAO {
 		return sqlSession.selectOne("myPageMapper.myPageNicknameDupCheck", memberNickname);
 	}
 
-	/** 내정보 수정
-	 * @param loginMember
+
+
+	/** 내 정보 수정 - 닉네임 제외
+	 * @param paramMap
 	 * @return result
 	 */
-	public int updateMyinfo(Member loginMember) {
-		
-		int result = sqlSession.update("myPageMapper.updateMyinfo", loginMember);
+	public int updateMyinfoExceptNick(Map<String, Object> paramMap) {
+		int result = sqlSession.update("myPageMapper.updateMyinfoExceptNick", paramMap);
 		
 		return result;
 	}
 
-	/** 내 정보 수정 - 닉네임 제외
-	 * @param loginMember
-	 * @return
+	
+	/** 내정보 수정
+	 * @param paramMap
+	 * @return result
 	 */
-	public int updateMyinfoExceptNick(Member loginMember) {
-		int result = sqlSession.update("myPageMapper.updateMyinfoExceptNick", loginMember);
-		
-		return result;
+	public int updateMyinfo(Map<String, Object> paramMap) {
+		return sqlSession.update("myPageMapper.updateMyinfoNew", paramMap);
 	}
 
 

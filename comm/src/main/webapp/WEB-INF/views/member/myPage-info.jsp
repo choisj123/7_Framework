@@ -120,8 +120,6 @@ uri="http://java.sun.com/jsp/jstl/functions"%>
                 value="${addr[2]}"
               />
             </div>
-            <div id="layer"></div>
-
             <button id="info-update-btn">수정하기</button>
           </form>
         </section>
@@ -129,6 +127,11 @@ uri="http://java.sun.com/jsp/jstl/functions"%>
     </main>
 
     <jsp:include page="/WEB-INF/views/common/footer.jsp" />
+    
+    <%-- 다음 주소 API --%>
+    <div id="layer" style="display:none;position:fixed;overflow:hidden;z-index:11;-webkit-overflow-scrolling:touch;">
+        <img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnCloseLayer" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" onclick="closeDaumPostcode()" alt="닫기 버튼">
+    </div>
 
     <!-- myPage.js 추가 -->
     <script src="${contextPath}/resources/js/member/myPage.js"></script>
