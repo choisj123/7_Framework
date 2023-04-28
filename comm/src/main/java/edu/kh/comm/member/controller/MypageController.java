@@ -2,6 +2,10 @@ package edu.kh.comm.member.controller;
 
 import java.util.Map;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -117,7 +121,6 @@ public class MypageController {
 			
 				// 회원 정보 수정 서비스 호출
 				result = service.updateMyinfo(paramMap);
-				
 			}
 		}
 			
@@ -158,25 +161,30 @@ public class MypageController {
 	
 	// 비밀번호 변경 
 	@PostMapping("/changePw")
-	public String changePw(@RequestParam("currentPw") String currentPw,
-						@RequestParam("newPw") String newPw,
-						@ModelAttribute("loginMember") Member loginMember,
-						RedirectAttributes ra ){
+	public String changePw(@RequestParam Map<String,Object> paramMap,
+						   @ModelAttribute("loginMember") Member loginMember,
+						   RedirectAttributes ra ){
 		
-		int result = service.changePw(currentPw, newPw, loginMember);
-		String path = "";
+		// 로그인된 회원의 번호를 paramMap 추가
+		paramMap.put("memberNo", loginMember.getMemberNo());
+		
+		// 비밀번호 변경 서비스 호출
+		int result = service.changePw(paramMap);
+		
+		String path = null;
+		String message = null;
 		
 		if(result > 0) { // 비밀번호 변경 성공
-			ra.addFlashAttribute("message", "비밀번호 변경에 성공하였습니다.");
-			
+			message = "비밀번호 변경에 성공하였습니다.";
 			
 			path = "redirect:info";
 			
 		}else {
-			ra.addFlashAttribute("message", "비밀번호 변경에 실패하였습니다.");
+			message = "현재 비밀번호가 일치하지 않습니다.";
 			path = "redirect:changePw";
 		}
 		
+		ra.addFlashAttribute("message", message);
 		return path;
 		
 	}
@@ -192,27 +200,39 @@ public class MypageController {
 	
 	
 	// 회원탈퇴 기능
-	@PostMapping("/secession") 
-	public String secession(@RequestParam("currentPw") String currentPw,
-							@ModelAttribute("loginMember") Member loginMember,
+	@PostMapping("/secession")  // session의 회원 정보 + 입력받은 파라미터(비밀번호)
+	public String secession(@ModelAttribute("loginMember") Member loginMember,
 							RedirectAttributes ra,
-							SessionStatus status) {
-		System.out.println(currentPw);
+							SessionStatus status,
+							HttpServletRequest req,
+							HttpServletResponse resp ) {
 		
-		int result = service.secession(currentPw, loginMember);
+		// 회원탈퇴 서비스 호출
+		int result = service.secession(loginMember);
 		
-		String path = "";
+		String message = null;
+		String path = null;
 		
 		if(result > 0) { // 회원탈퇴 성공
-			ra.addFlashAttribute("message", "탈퇴되었습니다.");
-			status.setComplete(); //세션 만료
-			
+			message = "탈퇴되었습니다.";
 			path = "redirect:/";
 			
+			// 세션 없애기
+			status.setComplete(); //세션 만료 (로그아웃)
+			
+			// 쿠키 없애기
+			Cookie cookie = new Cookie("saveId", "");
+			cookie.setMaxAge(0);
+			cookie.setPath(req.getContextPath());
+			resp.addCookie(cookie);
+			
+			
 		}else {
-			ra.addFlashAttribute("message", "탈퇴에 실패하였습니다.");
+			message = "탈퇴에 실패하였습니다.";
 			path = "redirect:/member/myPage/secession";
 		}
+		
+		ra.addFlashAttribute("message", message);
 		
 		return path;
 		

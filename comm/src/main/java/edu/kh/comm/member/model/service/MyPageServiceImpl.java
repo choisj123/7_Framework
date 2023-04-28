@@ -20,49 +20,53 @@ public class MyPageServiceImpl implements MyPageService{
 	@Autowired
 	private BCryptPasswordEncoder bcrypt;
 
-	// 비밀번호 변경 서비스 구현
+
+	
+	// 비밀번호 변경 서비스 구현 
 	@Override
-	public int changePw(String currentPw, String newPw, Member loginMember) {
+	public int changePw(Map<String, Object> paramMap) {
 		
-		int result = 0;
-		String memberPw = dao.getPw(loginMember);
-		System.out.println("로그인멤버 비번 가져오기 :" + memberPw);
+		// 1) DB에서 현재 회원의 비밀번호를 조회
+		String encPw = dao.selectEncPw( (int)paramMap.get("memberNo") );
 		
-		if(bcrypt.matches(currentPw, memberPw)) {
+		// 2) 입력된 현재 비밀번호(평문)와 조회된 비밀번호 (암호화)를 비교 
+		// bcrypt.matches() 이용
+		
+		// 3) 비교 결과가 일치하면
+		// 새 비밀번호를 암호화해서 update 구문 수행
+		if(bcrypt.matches((String)paramMap.get("currenPw"), encPw)) {
 			
-			loginMember.setMemberPw(bcrypt.encode(newPw));
-			System.out.println("새로운 비번: " + loginMember.getMemberPw());
+			paramMap.put("newPw", bcrypt.encode( (String)paramMap.get("newPw")) );
+			// Map에 이미 같은 key가 존재하면
+			// value만 덮어씌움
 			
-			result = dao.changePw(loginMember);
-			
-		}else {
-			
-			result = 0;
+			return dao.changePw(paramMap);
 		}
 		
-		return result;
+		// 비교 결과가 일치하지 않으면 0 반환
+		// -> "현재 비밀번호가 일치하지 않습니다"
+		return 0;
 	}
 
 	// 회원탈퇴 서비스 구현
 	@Override
-	public int secession(String currentPw, Member loginMember) {
+	public int secession(Member loginMember) {
 		
-
-		int result = 0;
-		String memberPw = dao.getPw(loginMember);
+		// 1) DB에서 암호화된 비밀번호를 조회하여 입력받은 비밀번호와 비교
+		String encPw = dao.selectEncPw( loginMember.getMemberNo() );
 		
-		if(bcrypt.matches(currentPw, memberPw)) {
+		// jsp에서 넘겨받은 비밀번호 name이 memberPw로 같아서 덮어씌워짐
+		if(bcrypt.matches(loginMember.getMemberPw(), encPw)) {
+			// 2) 비밀번호가 일치하면 회원 번호를 이용해서 탈퇴 진행
+			return dao.secession(loginMember.getMemberNo());
 			
-			result = dao.secession(loginMember);
-			
-		}else {
-			
-			result = 0;
 		}
 		
-		return result;
-		
+		// 3) 비밀번호가 일치하지 않으면 0 반환
+		return 0;
 	}
+	
+	
 	
 	// 내 정보 수정 - 닉네임 중복 검사
 	@Override
@@ -90,6 +94,7 @@ public class MyPageServiceImpl implements MyPageService{
 		
 		return result;
 	}
+
 
 
 }

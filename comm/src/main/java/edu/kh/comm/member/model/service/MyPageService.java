@@ -6,20 +6,20 @@ import edu.kh.comm.member.model.vo.Member;
 
 public interface MyPageService {
 
+
 	/** 비밀번호 변경 서비스
-	 * @param newPw 
-	 * @param currentPw 
-	 * @param loginMember
+	 * @param paramMap
 	 * @return result
 	 */
-	int changePw(String currentPw, String newPw, Member loginMember);
+	int changePw(Map<String, Object> paramMap);
+
 
 	/** 회원탈퇴 서비스
-	 * @param currentPw
 	 * @param loginMember
 	 * @return result
 	 */
-	int secession(String currentPw, Member loginMember);
+	int secession(Member loginMember);
+
 
 	/** 마이페이지 내 정보 수정 - 닉네임 중복검사
 	 * @param memberNickname
@@ -40,5 +40,10 @@ public interface MyPageService {
 	 * @return result
 	 */
 	int updateMyinfo(Map<String, Object> paramMap);
+
+
+
+
+
 
 }

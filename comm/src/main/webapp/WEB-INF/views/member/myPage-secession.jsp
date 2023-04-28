@@ -56,7 +56,7 @@ uri="http://java.sun.com/jsp/jstl/functions"%>
               <label>비밀번호</label>
               <input
                 type="password"
-                name="currentPw"
+                name="memberPw"
                 id="memberPw"
                 maxlength="30"
               />

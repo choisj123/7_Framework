@@ -19,36 +19,36 @@ public class MyPageDAO {
 
 	private Logger logger = LoggerFactory.getLogger(MyPageDAO.class);
 	
+
 	/** 현재 비밀번호 얻어오기 DAO
-	 * @param loginMember
+	 * @param memberNo
 	 * @return
 	 */
-	public String getPw(Member loginMember) {
+	public String selectEncPw(int memberNo) {
 		
-		String memberPw = sqlSession.selectOne("myPageMapper.getPw", loginMember);
-		return memberPw;
-	}
-	
-	/** 비밀번호 변경 DAO
-	 * @param loginMember
-	 * @return result
-	 */
-	public int changePw(Member loginMember) {
-		
-		int result = sqlSession.update("myPageMapper.changePw", loginMember);
-		
-		return result;
+		return sqlSession.selectOne("myPageMapper.selectEncPw", memberNo);
 	}
 
-	/** 회원탈되 DAO
-	 * @param loginMember
+	
+	
+	/** 비밀번호 변경 DAO
+	 * @param paramMap
 	 * @return result
 	 */
-	public int secession(Member loginMember) {
-		int result = sqlSession.update("myPageMapper.secession", loginMember);
+	public int changePw(Map<String, Object> paramMap) {
 		
-		return result;
+		return sqlSession.update("myPageMapper.changePw", paramMap);
 	}
+
+	
+	/** 회원탈되 DAO
+	 * @param memberNo
+	 * @return result 
+	 */
+	public int secession(int memberNo) {
+		return sqlSession.update("myPageMapper.secession", memberNo);
+	}
+	
 
 	/** 내정보 수정 - 닉네임 중복검사 DAO
 	 * @param memberNickname
@@ -79,6 +79,11 @@ public class MyPageDAO {
 	public int updateMyinfo(Map<String, Object> paramMap) {
 		return sqlSession.update("myPageMapper.updateMyinfoNew", paramMap);
 	}
+
+
+
+
+
 
 
 

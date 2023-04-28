@@ -3,22 +3,32 @@
 <mapper namespace="myPageMapper">
 
 
-	<select id="getPw" parameterType="member" resultType ="string">
+	
+	<select id="selectEncPw" resultType ="string">
 		SELECT MEMBER_PW 
 		FROM MEMBER_S 
 		WHERE MEMBER_NO = ${memberNo} 
 		AND SECESSION_FL = 'N' 
 	</select>
+	
 
 
-	<update id="changePw" parameterType="member">
+<!-- 	<update id="changePw" parameterType="member">
 		UPDATE MEMBER_S SET 
 		MEMBER_PW = #{memberPw} 
 		WHERE MEMBER_NO = ${memberNo} 
 		AND SECESSION_FL = 'N' 
-	</update>
+	</update> -->
 	
-	<update id="secession" parameterType="member">
+	<update id="changePw" >
+		UPDATE MEMBER_S SET 
+		MEMBER_PW = #{newPw} 
+		WHERE MEMBER_NO = ${memberNo} 
+		AND SECESSION_FL = 'N' 
+	</update> 
+	
+	
+	<update id="secession" parameterType="_int">
 		UPDATE MEMBER_S SET 
 		SECESSION_FL = 'Y'  
 		WHERE MEMBER_NO = ${memberNo} 
