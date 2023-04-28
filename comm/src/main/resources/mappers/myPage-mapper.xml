@@ -78,6 +78,13 @@
 		AND SECESSION_FL = 'N' 
 	</update>
 	
+	<update id="updateProfile">
+		UPDATE MEMBER_S SET   
+		PROFILE_IMG = #{profileImage} 
+		WHERE MEMBER_NO = ${memberNo}  
+		AND SECESSION_FL = 'N' 
+	</update>
+	
 	
 	
 </mapper>

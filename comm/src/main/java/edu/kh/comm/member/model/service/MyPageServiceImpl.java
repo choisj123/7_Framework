@@ -1,18 +1,26 @@
 package edu.kh.comm.member.model.service;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
-import edu.kh.comm.member.model.dao.MemberDAO;
+import edu.kh.comm.common.Util;
+import edu.kh.comm.member.controller.MemberController;
 import edu.kh.comm.member.model.dao.MyPageDAO;
 import edu.kh.comm.member.model.vo.Member;
 
 
 @Service
 public class MyPageServiceImpl implements MyPageService{
+	
+	private Logger logger = LoggerFactory.getLogger(MemberController.class);
 	
 	@Autowired
 	private MyPageDAO dao;
@@ -34,7 +42,7 @@ public class MyPageServiceImpl implements MyPageService{
 		
 		// 3) 비교 결과가 일치하면
 		// 새 비밀번호를 암호화해서 update 구문 수행
-		if(bcrypt.matches((String)paramMap.get("currenPw"), encPw)) {
+		if(bcrypt.matches((String)paramMap.get("currentPw"), encPw)) {
 			
 			paramMap.put("newPw", bcrypt.encode( (String)paramMap.get("newPw")) );
 			// Map에 이미 같은 key가 존재하면
@@ -76,7 +84,7 @@ public class MyPageServiceImpl implements MyPageService{
 	}
 	
 
-	// 내 정보 수정 - 닉네임 제외
+	// 내 정보 수정 - 닉네임 제외 서비스 구현
 	@Override
 	public int updateMyinfoExceptNick(Map<String, Object> paramMap) {
 		
@@ -85,8 +93,7 @@ public class MyPageServiceImpl implements MyPageService{
 		return result;
 	}
 	
-	// 내 정보 수정
-
+	// 내 정보 수정 서비스 구현
 	@Override
 	public int updateMyinfo(Map<String, Object> paramMap) {
 		
@@ -96,5 +103,52 @@ public class MyPageServiceImpl implements MyPageService{
 	}
 
 
+	//프로필 이미지 수정 서비스 구현
+	@Override
+	public int updateProfile(Map<String, Object> map) throws IOException{
+						// webPath, folderPath, uploadImage, delete, memberNo
+		
+		// 자주쓰는 값 변수에 저장
+		MultipartFile uploadImage = (MultipartFile)map.get("uploadImage");
+		String delete = (String)map.get("delete");
+		// 0 : 안눌러짐(변경) / 1: 눌러짐(삭제)
+		
+		// 프로필 이미지 삭제 여부를 확인해서 
+		// 삭제가 아닌 경우 (== 새 이미지로 변경) => 업로드된 파일명을 변경
+		// 삭제가 된 경우 -> NULL 값을 준비 (DB update)
+		
+		String renameImage = null; // 변경된 파일명 저장
+		
+		if( delete.equals("0") ) { // 이미지가 변경된 경우
+			
+			// 파일명 변경
+			// uploadImage.getOriginalFilename() : 원본 파일명
+			renameImage = Util.fileRename(uploadImage.getOriginalFilename());
+			// 202304228154532.png
+			
+			
+			map.put("profileImage", map.get("webPath") + renameImage);
+			// resources/images/memberProfile/202304228154532.png
+			
+		}else { //이미지가 삭제된 경우
+			
+			map.put("profileImage", null);
+			
+		}
+		
+		// DAO를 호출해서 프로필 이미지 수정
+		int result =  dao.updateProfile(map);
+		
+		// DB 수정 성공 시 메모리에 임시 저장되어있는 파일을 서버에 저장
+		if(result > 0 && map.get("profileImage") != null) {
+			
+			uploadImage.transferTo(new File(map.get("folderPath") + renameImage));
+			
+		}
+		
+		
+		return result;
+		
+	}
 
 }

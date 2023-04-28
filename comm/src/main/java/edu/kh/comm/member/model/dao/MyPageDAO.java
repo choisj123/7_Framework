@@ -72,12 +72,23 @@ public class MyPageDAO {
 	}
 
 	
-	/** 내정보 수정
+	/** 내정보 수정 DAO
 	 * @param paramMap
 	 * @return result
 	 */
 	public int updateMyinfo(Map<String, Object> paramMap) {
 		return sqlSession.update("myPageMapper.updateMyinfoNew", paramMap);
+	}
+
+
+
+	/** 프로필 이미지 수정 DAO
+	 * @param map
+	 * @return
+	 */
+	public int updateProfile(Map<String, Object> map) {
+		
+		return sqlSession.update("myPageMapper.updateProfile", map);
 	}
 
 

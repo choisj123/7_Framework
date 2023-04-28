@@ -1,5 +1,6 @@
 package edu.kh.comm.member.controller;
 
+import java.io.IOException;
 import java.util.Map;
 
 import javax.servlet.http.Cookie;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import edu.kh.comm.member.model.service.MyPageService;
@@ -57,7 +59,7 @@ public class MypageController {
 	public String updatMyinfo(@ModelAttribute("loginMember") Member loginMember,
 							  @RequestParam Map<String, Object> paramMap, // 요청시 전달된 파라미터를 구분하지 않고 모두 Map에 담아서 얻어옴
 							  String[] newAddress,
-							  RedirectAttributes ra) {
+							  RedirectAttributes ra){
 		
 		// 필요한 값
 		// - 닉네임
@@ -148,8 +150,53 @@ public class MypageController {
 	public String profile() {
 		
 		return "member/myPage-profile";
-		
 	}
+	
+	// 프로필 변경 
+	@PostMapping("/profile") 
+	public String updateProfile( @ModelAttribute("loginMember") Member loginMember,
+								 @RequestParam("uploadImage") MultipartFile uploadImage, /*업로드 파일*/
+								 @RequestParam Map<String, Object> map,
+								 HttpServletRequest req, /*파일 저장 경로 탐색용*/
+								 RedirectAttributes ra )  throws IOException{
+		
+		// 경로작성하기
+		// 1) 웹 접근 경로 ( /comm/resources/images/memberProfile/ )
+		String webPath = "/resources/images/memberProfile/";
+		
+		// 2) 서버 저장 폴더 경로
+		// /Users/sujinchoi/workspace/7_Framework/comm/src/main/webapp/resources/images/memberProfile
+		String folderPath = req.getSession().getServletContext().getRealPath(webPath);
+		
+		// 경로 2개, 이미지, delete, 회원번호 map에 담기
+		map.put("webPath", webPath);
+		map.put("folderPath", folderPath);
+		map.put("uploadImage", uploadImage);
+		map.put("memberNo", loginMember.getMemberNo());
+		
+		int result = service.updateProfile(map);
+		
+		String message = null;
+		
+		if(result > 0) {
+			message = "프로필 이미지가 변경되었습니다.";
+			
+			// DB - 세션 동기화
+			loginMember.setProfileImage((String)map.get("profileImage"));
+			
+		}else {
+			message = "프로필 이미지가 변경에 실패하였습니다.";
+		}
+		
+		ra.addFlashAttribute("message", message);
+		
+		return "redirect:profile";
+	}
+	
+	
+	
+	
+	
 	
 	// 비밀번호 변경 페이지 이동
 	@GetMapping("/changePw") 
@@ -228,7 +275,7 @@ public class MypageController {
 			
 			
 		}else {
-			message = "탈퇴에 실패하였습니다.";
+			message = "현재 비밀번호가 일치하지 않습니다.";
 			path = "redirect:/member/myPage/secession";
 		}
 		
