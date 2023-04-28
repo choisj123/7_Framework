@@ -77,4 +77,13 @@ public class MyPageServiceImpl implements MyPageService{
 		
 		return result;
 	}
+	
+	// 내 정보 수정 - 닉네임 제외
+	@Override
+	public int updateMyinfoExceptNick(Member loginMember) {
+		
+		int result = dao.updateMyinfoExceptNick(loginMember);
+		
+		return result;
+	}
 }

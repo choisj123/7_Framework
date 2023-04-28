@@ -31,4 +31,10 @@ public interface MyPageService {
 	 */
 	int updateMyinfo(Member loginMember);
 
+	/** 마이페이지 내 정보 수정 - 닉네임 제외
+	 * @param loginMember
+	 * @return
+	 */
+	int updateMyinfoExceptNick(Member loginMember);
+
 }

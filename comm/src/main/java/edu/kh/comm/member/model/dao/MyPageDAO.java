@@ -67,6 +67,16 @@ public class MyPageDAO {
 		return result;
 	}
 
+	/** 내 정보 수정 - 닉네임 제외
+	 * @param loginMember
+	 * @return
+	 */
+	public int updateMyinfoExceptNick(Member loginMember) {
+		int result = sqlSession.update("myPageMapper.updateMyinfoExceptNick", loginMember);
+		
+		return result;
+	}
+
 
 
 }

@@ -14,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -279,34 +280,57 @@ public class MemberController {
 	// 회원가입
 	@PostMapping("/signUp")
 	public String signUp(Member inputMember,
+						String[] memberAddress,
 						HttpServletRequest req,
 						RedirectAttributes ra) {
 		
 		logger.info("회원가입 기능 수행됨");
 		
-		String[] address = req.getParameterValues("memberAddress");
+		// inpuMember만 받아올 때
+//		String[] address = req.getParameterValues("memberAddress");
+//		String memberAddress = null;
+//		if(!address[0].equals("")) { // 우편번호가 빈칸이 아니라면 == 주소 작성
+//			memberAddress = String.join(",,", address);
+//		}
+//		System.out.println(memberAddress);
+//		inputMember.setMemberAddress(memberAddress);
 		
-		String memberAddress = null;
 		
-		if(!address[0].equals("")) { // 우편번호가 빈칸이 아니라면 == 주소 작성
-			memberAddress = String.join(",,", address);
+		// 커맨드 객체를 이용해서 입력된 회원 정보를 잘 받아옴
+		// 단, 같은 name을 가진 주소가 하나의 문자열로 합쳐서 세팅되어 들어옴
+		// -> 도로명 주소에 "," 기호가 포함되는 경우가 있어 이를 구분자로 사용할 수 없다
+		//
+		inputMember.setMemberAddress(String.join(",,", memberAddress));
+		// String.join("구분자", 배열)
+		// 배열을 하나의 문자열로 합치는 메서드
+		// 값 중간중간에 들어가서 하나의 문자열로 합쳐줌
+		// [a,b,c] -> join 진행 -> "a,,b,,c"
+		
+		if(inputMember.getMemberAddress().equals(",,,,")) { // 주소가 입력되지 않은 경우
+			
+			inputMember.setMemberAddress(null); // null로 변환
 		}
-		System.out.println(memberAddress);
 		
-		inputMember.setMemberAddress(memberAddress);
-		
+		// 회원가입 서비스 호출
 		int result = service.signUp(inputMember);
 		
-		if(result == 1) { // 회원가입 성공
+		String message = null;
+		String path = null;
+		
+		if(result > 0) { // 회원가입 성공
 			
-			ra.addFlashAttribute("message", "환영합니다!");
+			message = inputMember.getMemberNickname() + "님, 환영합니다!";
+			path = "redirect:/"; // 메인페이지
 			
 		}else {
 			
-			ra.addFlashAttribute("message", "회원가입에 실패하였습니다.");
+			message = "회원가입에 실패하였습니다.";
+			path =  "redirect:/member/signUp"; //회원 가입 페이지
 		}
 		
-		return "redirect:/";
+		ra.addFlashAttribute("message", message);
+		
+		return path;
 		
 	}
 	

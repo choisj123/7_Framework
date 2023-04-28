@@ -41,6 +41,14 @@
 		AND SECESSION_FL = 'N' 
 	</update>
 	
+	<update id="updateMyinfoExceptNick" parameterType="member">
+		UPDATE MEMBER_S SET  
+		MEMBER_TEL = #{memberTel}, 
+		MEMBER_ADDR = #{memberAddress} 
+		WHERE MEMBER_NO = #{memberNo} 
+		AND SECESSION_FL = 'N' 
+	</update>
+	
 	
 	
 </mapper>
