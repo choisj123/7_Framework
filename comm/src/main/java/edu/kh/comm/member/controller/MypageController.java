@@ -167,6 +167,7 @@ public class MypageController {
 		// 2) 서버 저장 폴더 경로
 		// /Users/sujinchoi/workspace/7_Framework/comm/src/main/webapp/resources/images/memberProfile
 		String folderPath = req.getSession().getServletContext().getRealPath(webPath);
+		logger.debug(folderPath);
 		
 		// 경로 2개, 이미지, delete, 회원번호 map에 담기
 		map.put("webPath", webPath);

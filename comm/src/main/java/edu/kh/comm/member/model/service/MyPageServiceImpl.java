@@ -126,7 +126,6 @@ public class MyPageServiceImpl implements MyPageService{
 			renameImage = Util.fileRename(uploadImage.getOriginalFilename());
 			// 202304228154532.png
 			
-			
 			map.put("profileImage", map.get("webPath") + renameImage);
 			// resources/images/memberProfile/202304228154532.png
 			
