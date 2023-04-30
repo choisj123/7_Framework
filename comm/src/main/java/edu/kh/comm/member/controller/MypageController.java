@@ -35,13 +35,38 @@ public class MypageController {
 	@Autowired
 	private MyPageService service;
 	
+	
 	// 내정보 페이지 이동
 	@GetMapping("/info") 
 	public String myinfo() {
 		
 		return "member/myPage-info";
-		
 	}
+	
+	// 프로필 변경 페이지 이동
+	@GetMapping("/profile") 
+	public String profile() {
+		
+		return "member/myPage-profile";
+	}
+	
+	
+	// 비밀번호 변경 페이지 이동
+	@GetMapping("/changePw") 
+	public String changePw() {
+		
+		return "member/myPage-changePw";
+	}
+	
+	
+	// 회원탈퇴 페이지 이동
+	@GetMapping("/secession") 
+	public String secession() {
+		
+		return "member/myPage-secession";
+	}
+	
+	
 	
 	// 닉네임 중복검사
 	@ResponseBody
@@ -145,13 +170,7 @@ public class MypageController {
 	}
 	
 	
-	// 프로필 변경 페이지 이동
-	@GetMapping("/profile") 
-	public String profile() {
-		
-		return "member/myPage-profile";
-	}
-	
+
 	// 프로필 변경 
 	@PostMapping("/profile") 
 	public String updateProfile( @ModelAttribute("loginMember") Member loginMember,
@@ -196,16 +215,7 @@ public class MypageController {
 	
 	
 	
-	
-	
-	
-	// 비밀번호 변경 페이지 이동
-	@GetMapping("/changePw") 
-	public String changePw() {
-		
-		return "member/myPage-changePw";
-		
-	}
+
 	
 	// 비밀번호 변경 
 	@PostMapping("/changePw")
@@ -237,14 +247,7 @@ public class MypageController {
 		
 	}
 	
-	
-	// 회원탈퇴 페이지 이동
-	@GetMapping("/secession") 
-	public String secession() {
-		
-		return "member/myPage-secession";
-		
-	}
+
 	
 	
 	// 회원탈퇴 기능
