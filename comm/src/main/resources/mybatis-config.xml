@@ -2,7 +2,6 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
 <configuration>
 
-	
 	<!-- SqlSessionTemplate 관련 설정 -->
 	<settings>
 		<!-- insert / update 진행 시 null이 포함되어있는 경우
