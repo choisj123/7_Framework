@@ -44,7 +44,6 @@
             </c:if>
 
 
-
             <div class="list-wrapper">
                 <table class="list-table">
                     
