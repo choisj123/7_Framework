@@ -41,6 +41,7 @@ public class BoardTypeInterceptor implements HandlerInterceptor {
 			throws Exception {
 		
 		logger.info("전처리 수행");
+		
 		// application scope에 "boardTypeList"가 없을 경우
 		// 이를 조회하는 Service 호출 후 결과를 세팅
 		

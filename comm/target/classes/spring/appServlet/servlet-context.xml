@@ -46,7 +46,6 @@
 			<!-- 인터셉터 역할을 수행할 클래스를 찾아서 bean 등록 -->
 			<beans:bean id="boardTypeInterceptor" class="edu.kh.comm.common.interceptor.BoardTypeInterceptor"/>
 		
-		
 		</interceptor>
 	</interceptors>
 	
