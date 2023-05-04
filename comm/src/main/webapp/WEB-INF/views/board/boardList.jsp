@@ -101,7 +101,9 @@
 
                 <c:if test="${!empty loginMember}">
                     <!-- /community/board/write -->
-                    <button id="insertBtn" onclick="location.href='write?mode=insert&type=${param.type}&cp=${param.cp}'">글쓰기</button>                     
+                	<!-- /comm/board/write/3?mode=insert&cp=1 -->
+                	<!-- /comm/board/list/3 -->
+                    <button id="insertBtn" onclick="location.href='../write/${boardCode}?mode=insert&cp=${pagination.currentPage}'">글쓰기</button>                     
                 </c:if>
 
             </div>
@@ -148,7 +150,7 @@
 
             <!-- /board/list?type=1&cp=10 &key=t&query=안녕 -->
 
-            <form action="list" method="get" id="boardSearch" onsubmit="return searchValidate()">
+            <form action="${boardCode}" method="get" id="boardSearch" onsubmit="return searchValidate()">
                 <input type="hidden" name="type" value="${param.type}">
 
                 <select name="key" id="search-key">

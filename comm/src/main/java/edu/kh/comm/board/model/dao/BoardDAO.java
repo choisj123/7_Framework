@@ -1,6 +1,7 @@
 package edu.kh.comm.board.model.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.RowBounds;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -66,6 +67,39 @@ public class BoardDAO {
 	public BoardDetail selectBoardDetail(int boardNo) {
 		
 		return sqlSession.selectOne("boardMapper.selectBoardDetail", boardNo);
+	}
+
+	/** 조회 수 증가 DAO
+	 * @param boardNo
+	 * @return result
+	 */
+	public int updateReadCount(int boardNo) {
+		
+		return sqlSession.update("boardMapper.updateReadCount", boardNo);
+	}
+
+	/** 검색 조건에 맞는 게시글 목록의 전체 개수 조회 DAO
+	 * @param paramMap
+	 * @return listCount
+	 */
+	public int searchListCount(Map<String, Object> paramMap) {
+		return sqlSession.selectOne("boardMapper.searchListCount", paramMap);
+	}
+
+	
+	/** 검색 조건에 맞는 게시글 목록 조회 (페이징 처리 적용)
+	 * @param paramMap
+	 * @param pagination
+	 * @return boardList
+	 */
+	public List<Board> searchBoardList(Map<String, Object> paramMap, Pagination pagination) {
+		
+		int offset = (pagination.getCurrentPage() - 1) * pagination.getLimit();
+		
+		RowBounds rowBounds = new RowBounds(offset, pagination.getLimit());
+		
+		return sqlSession.selectList("boardMapper.searchBoardList", paramMap, rowBounds);
+	
 	}
 
 }

@@ -27,4 +27,16 @@ public interface BoardService {
 	 */
 	BoardDetail selectBoardDetail(int boardNo);
 
+	/** 게시글 조회수 증가 서비스
+	 * @param boardNo
+	 * @return result
+	 */
+	int updateReadCount(int boardNo);
+
+	/** 검색 게시글 목록 조회 서비스
+	 * @param paramMap
+	 * @return map
+	 */
+	Map<String, Object> searchBoardList(Map<String, Object> paramMap);
+
 }
