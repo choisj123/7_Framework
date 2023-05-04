@@ -8,7 +8,7 @@ const checkObj = {
     "memberPwConfirm" : false,
     "memberNickname"  : false,
     "memberTel"       : false,
-    // "sendEmail"       : false   // 인증번호 발송 체크
+    "sendEmail"       : false   // 인증번호 발송 체크
 };
 
 

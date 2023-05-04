@@ -79,8 +79,10 @@
                                             <c:if test="${!empty board.thumbnail}">
                                                 <img class="list-thumbnail" src="${contextPath}${board.thumbnail}">
                                             </c:if>  
-
-                                            <a href="detail?no=${board.boardNo}&cp=${pagination.currentPage}&type=${param.type}${sURL}">${board.boardTitle}</a>                           
+											
+<%--                                        <a href="detail?no=${board.boardNo}&cp=${pagination.currentPage}&type=${param.type}${sURL}">${board.boardTitle}</a>                            --%>
+                                            <a href="../detail/${boardCode}/${board.boardNo}?cp=${pagination.currentPage}${sURL}">${board.boardTitle}</a>                           
+                                       		<!-- /board/detatil//{boardCode}/{boardNo} -->
                                         </td>
                                         <td>${board.memberNickname}</td>
                                         <td>${board.createDate}</td>
@@ -108,7 +110,7 @@
             <div class="pagination-area">
 
                 <!-- 페이지네이션 a태그에 사용될 공통 주소를 저장한 변수 선언 -->
-                <c:set var="url" value="list?type=${param.type}&cp="/>
+                <c:set var="url" value="${boardCode}?cp="/>
 
 
                 <ul class="pagination">

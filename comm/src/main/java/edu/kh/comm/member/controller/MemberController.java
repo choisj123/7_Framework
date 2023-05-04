@@ -2,6 +2,7 @@ package edu.kh.comm.member.controller;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -57,6 +58,10 @@ public class MemberController {
 	
 	@Autowired // bean으로 등록된 객체 중 타입이 같거나, 상속관계인 bean을 주입해주는 역할
   	private MemberService service; // DI (의존성 주입)
+	
+	// 이메일 인증
+//	@Autowired
+//	private JavaMailSender mailSender;
 	
 	
 	// Controller : 요청/응답을 제어하는 역할을 하는 클래스 
@@ -386,6 +391,7 @@ public class MemberController {
 //		return "common/error";
 //		
 //	}
+
 	
 	
 	
