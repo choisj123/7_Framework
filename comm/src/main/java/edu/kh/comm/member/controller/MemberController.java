@@ -1,7 +1,9 @@
 package edu.kh.comm.member.controller;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 import javax.mail.internet.MimeMessage;
@@ -441,12 +443,15 @@ public class MemberController {
         String toMail = inputEmail; //받는 사람 이메일
         String title = "회원가입 인증 이메일 입니다.";
         String content = 
-                "<p>kh정보교육원 홈페이지를 방문해주셔서 감사합니다.</p>" +
-                "<br><br>" + 
+        		"<p>안녕하세요! <br>" +
+                "kh정보교육원 홈페이지를 방문해주셔서 감사합니다.<br>" +
+                "아래 번호를 입력하여 인증 절차를 완료해 주세요.</p>" +
+                "<br>" + 
                 "<h3>인증 번호는  <span style='color:red'>" + cNumber + "</span> 입니다.</h3>" + 
                 "<br>" + 
                 "<p>해당 인증번호를 인증번호 확인란에 기입하여 주세요.</p>";
         
+        int result = 0;
         try {
             
             MimeMessage message = mailSender.createMimeMessage();
@@ -457,19 +462,40 @@ public class MemberController {
             helper.setText(content,true);
             mailSender.send(message);
             
+            Map<String, Object> map = new HashMap<>();
+            map.put("inputEmail", inputEmail);
+            map.put("cNumber", cNumber);
+            
+            // 인증번호를 받은 이메일, 인증번호, 인증번호 발급 시간  -> DB 삽입
+            result = service.insertCertification(map);
+
+            
         }catch(Exception e) {
             e.printStackTrace();
         }
         
 //        String rnum = Integer.toString(cNumber);  //view로 다시 반환할 때 String만 가능
         
-        return cNumber;
- 
+        return new Gson().toJson(result);
 		
 	}
 
 
+	// 이메일 인증번호 일치 확인 코드
+	@GetMapping("/checkNumber")
+	@ResponseBody
+	public String checkNumber(String inputEmail , String cNumber) {
+		
 	
+        Map<String, Object> map = new HashMap<>();
+        map.put("inputEmail", inputEmail);
+        map.put("cNumber", cNumber);
+		
+		int result = service.checkNumber(map);
+		
+		return new Gson().toJson(result);
+		
+	}
 	
 	
 	

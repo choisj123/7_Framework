@@ -177,6 +177,33 @@
 		WHERE SECESSION_FL = 'N' 
 		ORDER BY MEMBER_NO
 	</select>
+	
+	<insert id="insertCertification">
+	      INSERT INTO CERTIFICATION VALUES(#{inputEmail}, #{cNumber}, SYSDATE)
+	</insert>
+	
+   <update id="updateCertification">
+      UPDATE CERTIFICATION SET
+      C_NUMBER =  #{cNumber},
+      ISSUE_DT = SYSDATE
+      WHERE EMAIL = #{inputEmail}
+   </update>
+	
+	<select id="checkNumber" resultType="_int">
+		SELECT 
+         CASE WHEN (SELECT '1' FROM CERTIFICATION
+                  WHERE EMAIL = #{inputEmail}
+                  AND C_NUMBER = #{cNumber})  = 1
+         
+            THEN NVL( (SELECT '1' FROM CERTIFICATION
+                  WHERE EMAIL = #{inputEmail}
+                  AND ISSUE_DT + (INTERVAL '5' MINUTE) >= SYSDATE) , '2') 
+      
+            ELSE '3'   
+         END         
+      FROM DUAL
+	</select>
+	
 
 
 </mapper>

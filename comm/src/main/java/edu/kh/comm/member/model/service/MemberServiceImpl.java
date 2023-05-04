@@ -3,6 +3,7 @@ package edu.kh.comm.member.model.service;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -133,7 +134,28 @@ public class MemberServiceImpl implements MemberService {
 		return memberList;
 	}
 	
+	// 이메일 인증번호 전송 서비스 구현
+	@Override
+	public int insertCertification(Map<String, Object> map) {
+		
+		  // 1) 입력한 이메일과 일치하는 값이 있으면 수정(UPDATE)
+	     int result = dao.updateCertification(map);
+	     
+	     // 2) 일치하는 이메일이 없는경우 -> 처음으로 인증번호를 발급 받음 -> 삽입(INSERT)
+	     if( result == 0 ) {
+	        result = dao.insertCertification(map);
+	     }
+		
+		
+		return result;
+	}
 	
+	
+	// 이메일 인증번호 일치 확인 서비스 구현
+	@Override
+	public int checkNumber(Map<String, Object> map) {
+		return dao.checkNumber(map);
+	}
 	
 	
 	

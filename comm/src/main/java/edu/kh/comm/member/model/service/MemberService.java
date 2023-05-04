@@ -1,6 +1,7 @@
 package edu.kh.comm.member.model.service;
 
 import java.util.List;
+import java.util.Map;
 
 import edu.kh.comm.member.model.vo.Member;
 
@@ -49,6 +50,18 @@ public interface MemberService {
 	 * @return
 	 */
 	public abstract List<Member> selectAll();
+
+	/** 이메일 인증 번호 전송 서비스
+	 * @param map
+	 * @return
+	 */
+	public abstract int insertCertification(Map<String, Object> map);
+
+	/** 이메일 인증번호 일치 확인 서비스
+	 * @param map
+	 * @return
+	 */
+	public abstract int checkNumber(Map<String, Object> map);
 
 	
 
