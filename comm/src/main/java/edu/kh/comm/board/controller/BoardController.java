@@ -39,6 +39,7 @@ public class BoardController {
 	// PathVariable : 요청 자원을 식별하는 경우
 	// QueryString : 정렬, 검색 등의 필터링 옵셥
 	
+	// 수정
 	
 	@GetMapping("/list/{boardCode}") 
 	public String boardList(@PathVariable("boardCode") int boardCode,
