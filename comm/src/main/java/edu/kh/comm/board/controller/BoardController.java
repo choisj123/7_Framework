@@ -194,5 +194,5 @@ public class BoardController {
 		return "board/boardWriteForm";
 	}
 	
-
+	// 게시글 등록 페이지 이동
 }
