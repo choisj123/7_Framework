@@ -207,16 +207,34 @@ public class BoardController {
 							@RequestParam(value="images", required = false) List<MultipartFile> imageList, // 업로드 파일(이미지) 리스
 							@ModelAttribute("loginMember") Member loginMember, // @SessionAttributes 먼저 하기!
 							@RequestParam(value="deleteList", required=false) String deleteList,
-							@RequestParam(value="cp", required=false, defaultValue="1") int cp
+							@RequestParam(value="cp", required=false, defaultValue="1") int cp,
+							HttpServletRequest req
 			
 			) {
 		
 		// 1) 로그인한 회원 번호 얻어와서 detail에 세팅
 		detail.setBoardNo(loginMember.getMemberNo());
 		
-		// 2) 
+		// 2) 이미지 저장 경로 얻어오기 (webPath, folderPath)
+		// webPath는 folderPath의 gerRealPath에 보낼 변수 ! 사실 없어도 됨
+		String webPath = "/resources/images/board/"; // 우리가 지정한 경로
+		String folderPath = req.getSession().getServletContext().getRealPath(webPath);
 		
-		
+		if(mode.equals("insert")) { // 삽입
+			
+			// 게시글 부분 삽입(제목, 내용, 회원번호, 게시판 코드)
+			// -> 삽입된 게시글 번호(boardNo) 반환 (삽입 끝나면 상세조회로 리다이렉트)
+			
+			
+			// 게시글에 포함된 이미지 정보 삽입(0~5개, 게시글 번호 필요)
+			// -> 실제 파일로 변환해서 서버에 저장(transferTo())
+			
+			// 두 번의 insert 중 한번이라도 실패하면 전체 rollback(트랜잭션 처리)
+			
+			int boardNo = service.insertBoard(detail, imageList, webPath, folderPath);
+		}else { // 수정
+			
+		}
 		
 		return "";
 	}

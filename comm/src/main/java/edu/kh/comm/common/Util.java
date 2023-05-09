@@ -17,7 +17,7 @@ public class Util {
 	      return date + str + ext;
 	   }
 	   
-	   // 크로스 사이트 스트립트 공격을 방지 하기 위한 메소드
+	   // 크로스 사이트 스트립트(XSS) 공격을 방지 하기 위한 메소드
 	   public static String XSSHandling(String content) {
 	      if(content != null) {
 	         content = content.replaceAll("&", "&amp;");

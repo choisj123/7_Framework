@@ -102,4 +102,19 @@ public class BoardDAO {
 	
 	}
 
+	/** 게시글 삽입 DAO
+	 * @param detail
+	 * @return boardNo
+	 */
+	public int insertBoard(BoardDetail detail) {
+		
+		int result = sqlSession.insert("boardMapper.insertBoard", detail);
+		
+		if(result > 0) result = detail.getBoardNo();
+		
+		// 게시글 삽입 성공 시 <selectKey> 태그 이용해 세팅된 boardNo 값을 반환함
+		
+		return result;
+	}
+
 }

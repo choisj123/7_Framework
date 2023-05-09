@@ -205,4 +205,28 @@
 		ORDER BY BOARD_NO DESC
 	</select>
 	
+	<!-- 게시글 삽입 -->
+	<!-- 
+		useGeneratedKeys 속성 : DB 내부적으로 생성한 key(ex. 시퀀스)를 받는 
+								JDBC getGeneratedKeys() 메서드를 사용하도록 설정한다
+								(기본값 false)
+		동적 SQL 중 <selectKey>
+		- <selectKey> : INSERT/UPDATE에 사용된 키(ex.시퀀스)를 원하는 변수/필드에 담아 반환하는 태그
+		- keyProperty : key를 담을 변수/필드를 지정하는 속성
+		- order: INSERT/UPDATE에 작성된 메인 SQL이 수행되기 전(BEFORE) 또는 후(AFTER)에
+			<selectKey> 내부에 SQL이 수행되도록 순서를 지정하는 속성	
+	 -->
+	
+	<insert id="insertBoard" parameterType="detail" useGeneratedKeys="true">
+		
+		<selectKey keyProperty="boardNo" resultType="_int" order="BEFORE">
+			SELECT SEQ_BOARD_NO.NEXTVAL FROM DUAL
+		</selectKey>
+		
+		INSERT INTO BOARD VALUES( 
+			#{boardNo}, #{boardTitle}, #{boardContent}, 
+			DEFAULT, DEFAULT, DEFAULT, DEFAULT, #{memberNo}, #{boardCode}
+		)
+	</insert>
+	
 </mapper>
