@@ -15,9 +15,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.multipart.MultipartFile;
+
 import edu.kh.comm.board.model.service.BoardService;
 import edu.kh.comm.board.model.vo.BoardDetail;
 import edu.kh.comm.common.Util;
@@ -25,6 +30,7 @@ import edu.kh.comm.member.model.vo.Member;
 
 @Controller
 @RequestMapping("/board")
+@SessionAttributes({"loginMember"})
 public class BoardController {
 	
 	private Logger logger = LoggerFactory.getLogger(BoardController.class);
@@ -39,7 +45,6 @@ public class BoardController {
 	// PathVariable : 요청 자원을 식별하는 경우
 	// QueryString : 정렬, 검색 등의 필터링 옵셥
 	
-	// 수정
 	
 	@GetMapping("/list/{boardCode}") 
 	public String boardList(@PathVariable("boardCode") int boardCode,
@@ -194,5 +199,26 @@ public class BoardController {
 		return "board/boardWriteForm";
 	}
 	
-	// 게시글 등록 페이지 이동
+	// 게시글 작성 (삽입/수정)
+	@PostMapping("/write/{boardCode}")
+	public String boardWrite(@PathVariable("boardCode") int boardCode,
+							BoardDetail detail, // boardTitle, boardContent, boardNo(수정)
+							String mode, // insert인지 update인지
+							@RequestParam(value="images", required = false) List<MultipartFile> imageList, // 업로드 파일(이미지) 리스
+							@ModelAttribute("loginMember") Member loginMember, // @SessionAttributes 먼저 하기!
+							@RequestParam(value="deleteList", required=false) String deleteList,
+							@RequestParam(value="cp", required=false, defaultValue="1") int cp
+			
+			) {
+		
+		// 1) 로그인한 회원 번호 얻어와서 detail에 세팅
+		detail.setBoardNo(loginMember.getMemberNo());
+		
+		// 2) 
+		
+		
+		
+		return "";
+	}
+	
 }
