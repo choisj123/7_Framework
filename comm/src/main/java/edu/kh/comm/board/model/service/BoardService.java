@@ -60,6 +60,6 @@ public interface BoardService {
 	 * @return result
 	 */
 	int updateBoard(BoardDetail detail, List<MultipartFile> imageList, String webPath, String folderPath,
-			String deleteList);
+			String deleteList) throws IOException;
 
 }

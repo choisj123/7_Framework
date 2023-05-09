@@ -260,10 +260,27 @@ public class BoardController {
 			// 게시글 수정 서비스 호출
 			int result = service.updateBoard(detail, imageList, webPath, folderPath, deleteList);
 			
+			String path = null;
+			String message = null;
+			
+			if(result > 0) {
+				// /board/write/1
+				// /board/detail/1/1500
+				
+				path = "../detail/" + boardCode + "/" + detail.getBoardNo() + "?cp=" + cp;
+				message="게시글이 수정되었습니다.";
+			}else {
+				path = req.getHeader("referer");
+				// 이전 페이지로 이동
+				message="게시글 수정을 실패하였습니다.";
+			}
+			
+			ra.addFlashAttribute("message", message);
+			
+			return "redirect:" + path;
 			
 		}
 		
-		return "";
 	}
 	
 }
