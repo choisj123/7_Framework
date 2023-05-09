@@ -229,4 +229,37 @@
 		)
 	</insert>
 	
+	<!-- 게시글 이미지 삽입(리스트) -->
+	<!-- 
+		동적 SQL 중 <foreach>
+		- 특정 SQL 구문을 반복할 때 사용
+		- 반복되는 사이에 구분자(separator)를 추가할 수 있음
+		
+		collection : 반복할 객체의 타입 작성(list, set, map)
+		item : collection에서 순차적으로 꺼낸 하나의 요소를 저장하는 변수
+		index : 현재 반복 접근 중인 인덱스(0,1,2,3,4...)
+		
+		open : 반복 전에 출력할 sql
+		close : 반복 종료 후에 출력할 sql
+		
+		separator : 반복 사이사이 구분자
+		
+	
+	
+	 -->
+	<insert id="insertBoardImageList">
+		INSERT INTO BOARD_IMG 
+			SELECT SEQ_IMG_NO.NEXTVAL IMG_NO,  A.* FROM(
+			
+				<foreach collection="list"  item="img" separator="UNION ALL" >
+				    SELECT  #{img.imageReName}     IMG_RENAME, 
+				    		#{img.imageOriginal}   IMG_ORIGINAL,
+				        	#{img.imageLevel}      IMG_LEVEL, 
+				        	#{img.boardNo}         BOARD_NO
+				    FROM DUAL
+				</foreach>
+			) A
+	
+	</insert>
+	
 </mapper>

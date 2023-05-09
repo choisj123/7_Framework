@@ -1,5 +1,6 @@
 package edu.kh.comm.board.controller;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -22,6 +23,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import edu.kh.comm.board.model.service.BoardService;
 import edu.kh.comm.board.model.vo.BoardDetail;
@@ -208,9 +210,10 @@ public class BoardController {
 							@ModelAttribute("loginMember") Member loginMember, // @SessionAttributes 먼저 하기!
 							@RequestParam(value="deleteList", required=false) String deleteList,
 							@RequestParam(value="cp", required=false, defaultValue="1") int cp,
-							HttpServletRequest req
+							HttpServletRequest req,
+							RedirectAttributes ra
 			
-			) {
+			) throws IOException {
 		
 		// 1) 로그인한 회원 번호 얻어와서 detail에 세팅
 		detail.setBoardNo(loginMember.getMemberNo());
@@ -232,7 +235,31 @@ public class BoardController {
 			// 두 번의 insert 중 한번이라도 실패하면 전체 rollback(트랜잭션 처리)
 			
 			int boardNo = service.insertBoard(detail, imageList, webPath, folderPath);
+			
+			String path = null;
+			String message = null;
+			
+			if(boardNo > 0) {
+				// /board/write/1
+				// /board/detail/1/1500
+				
+				path = "../detail/" + boardCode + "/" + boardNo;
+				message="게시글이 등록되었습니다.";
+			}else {
+				path = req.getHeader("referer");
+				// 이전 페이지로 이동
+				message="게시글이 등록을 실패하였습니다.";
+			}
+			
+			ra.addFlashAttribute("message", message);
+			
+			return "redirect:" + path;
+			
 		}else { // 수정
+			
+			// 게시글 수정 서비스 호출
+			int result = service.updateBoard(detail, imageList, webPath, folderPath, deleteList);
+			
 			
 		}
 		

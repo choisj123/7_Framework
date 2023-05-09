@@ -1,5 +1,6 @@
 package edu.kh.comm.board.model.service;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
@@ -41,13 +42,24 @@ public interface BoardService {
 	 */
 	Map<String, Object> searchBoardList(Map<String, Object> paramMap);
 
-	/** 게시글 삽입 + 이미지 삽입
+	/** 게시글 삽입 + 이미지 삽입 서비스
 	 * @param detail
 	 * @param imageList
 	 * @param webPath
 	 * @param folderPath
 	 * @return boardNo
 	 */
-	int insertBoard(BoardDetail detail, List<MultipartFile> imageList, String webPath, String folderPath);
+	int insertBoard(BoardDetail detail, List<MultipartFile> imageList, String webPath, String folderPath) throws IOException;
+
+	/** 게시글 수정 서비스
+	 * @param detail
+	 * @param imageList
+	 * @param webPath
+	 * @param folderPath
+	 * @param deleteList
+	 * @return result
+	 */
+	int updateBoard(BoardDetail detail, List<MultipartFile> imageList, String webPath, String folderPath,
+			String deleteList);
 
 }

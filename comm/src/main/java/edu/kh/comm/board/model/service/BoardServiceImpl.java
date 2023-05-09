@@ -1,5 +1,7 @@
 package edu.kh.comm.board.model.service;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -9,9 +11,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import edu.kh.comm.board.model.dao.BoardDAO;
+import edu.kh.comm.board.model.exception.InsertFailException;
 import edu.kh.comm.board.model.vo.Board;
 import edu.kh.comm.board.model.vo.BoardDetail;
 import edu.kh.comm.board.model.vo.BoardImage;
@@ -97,8 +101,23 @@ public class BoardServiceImpl implements BoardService{
 	}
 	
 	// 게시글 삽입 + 이미지 삽입 서비스 구현
+	
+	// Spring에서 트랜잭션 처리하는 방법
+	// * AOP(관점 지향 프로그래밍)을 이용해서 DAO -> Service 또는 service 코드 수행 시점에
+	// 예외가 발생하면 rollback을 수행
+	
+	// 방법 1) <tx:advice> XML을 이용한 방법 -> 패턴을 지정하여 일치하는 메서드 호출 시 자동으로 트랜잭션 제어
+	// 방법 2) @Tracsactional 선언적 트랜잭션 처리 방법
+	// 			--> RuntimeException(Unchecked Exception) 처리를 기본값으로 가짐
+	
+	// checked Exception : 예외처리 필수 -> SQL 관련 예외, 파일 업로드 관련 예외
+	// Unchecked Exception : 예외처리 선택
+	
+	// rollbackFor : rollback을 수행하기 위한 예외의 종류를 작성
+	
+	@Transactional(rollbackFor = {Exception.class})
 	@Override
-	public int insertBoard(BoardDetail detail, List<MultipartFile> imageList, String webPath, String folderPath) {
+	public int insertBoard(BoardDetail detail, List<MultipartFile> imageList, String webPath, String folderPath) throws IOException{
 		
 		// 1. 게시글 삽입
 		
@@ -145,16 +164,42 @@ public class BoardServiceImpl implements BoardService{
 				}
 			}
 			
-			// 분류 작업 종료 후 boardImageList가 비어있지 않은 경우 
+			// 분류 작업 종료 후 boardImageList가 비어있지 않은 경우 == 파일이 업로드가 된 경우
+			if(!boardImageList.isEmpty()) {
+				int result = dao.insertBoardImageList(boardImageList);
 			
-			
-			
+				// result = 삽입 성공한 행의 개수
+				if(result == boardImageList.size()) { // 삽입된 행의 개수와 업로드 이미지 수가 같을 경우
+					
+					// 서버에 이미지 저장
+					for(int i = 0; i < boardImageList.size(); i++) {
+						int index = boardImageList.get(i).getImageLevel();
+						
+						imageList.get(index).transferTo(new File(folderPath + reNameList.get(i)));
+						// IO Exception -> throws
+					}
+					
+				}else { // 이미지 삽입 하나라도 실패했을 때
+					// 강제로 예외 발생시켜 rollback을 수행하게 함
+					// -> 사용자 정의 예외
+					throw new InsertFailException();
+
+				}
+				
+			}
+
 		}
 		
-		
-		return 0;
+		return boardNo;
 	}
 	
 	
+	// 게시글 수정 서비스 구현
+	@Override
+	public int updateBoard(BoardDetail detail, List<MultipartFile> imageList, String webPath, String folderPath,
+			String deleteList) {
+		
+		return 0;
+	}
 	
 }
