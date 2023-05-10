@@ -23,6 +23,10 @@
                         </c:if>
 
                         <span>${reply.memberNickname}</span>
+                        
+                        <c:if test="${reply.memberNo == loginMember.memberNo}">
+                        	<span class="owner"> 작성자</span>
+                        </c:if>
                         <span class="reply-date">(${reply.createDate})</span>
                     </p>
                     

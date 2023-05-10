@@ -51,9 +51,18 @@
 
 	<!-- 댓글 목록 조회 (계층형 구조)  -->
 	<select id="selectReplyList" resultMap="reply_rm">
+		<![CDATA[
 		SELECT LEVEL,  R.* FROM
 		    (SELECT REPLY_NO, REPLY_CONTENT,
-		        TO_CHAR(CREATE_DT, 'YYYY"년" MM"월" DD"일" HH24"시" MI"분" SS"초"') CREATE_DT,
+		    	CASE 
+	       		WHEN SYSDATE - CREATE_DT < 1/24/60
+	            THEN FLOOR((SYSDATE - CREATE_DT) * 24 * 60 * 60) || '초 전'
+	        	WHEN SYSDATE - CREATE_DT < 1/24
+	            THEN FLOOR((SYSDATE-CREATE_DT) * 24 * 60) || '분 전'
+	        	WHEN SYSDATE - CREATE_DT < 1
+	            THEN FLOOR((SYSDATE-CREATE_DT) * 24) || '시간 전'
+	        	ELSE TO_CHAR(CREATE_DT, 'YYYY-MM-DD')
+	    		END CREATE_DT,
 		        BOARD_NO, MEMBER_NO, MEMBER_NICK, PROFILE_IMG, PARENT_REPLY_NO, REPLY_ST
 		    FROM REPLY_S
 		    JOIN MEMBER_S USING(MEMBER_NO)
@@ -63,6 +72,7 @@
 		START WITH PARENT_REPLY_NO IS NULL
 		CONNECT BY PRIOR REPLY_NO = PARENT_REPLY_NO
 		ORDER SIBLINGS BY REPLY_NO
+		]]>
 	</select>
 	
 	<!-- 댓글 등록 -->

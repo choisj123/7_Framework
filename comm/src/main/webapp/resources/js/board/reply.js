@@ -45,14 +45,24 @@ function selectReplyList(){
                 // 작성자 닉네임
                 const memberNickname = document.createElement("span");
                 memberNickname.innerText = reply.memberNickname;
+
+                const owner = document.createElement("span");
+                owner.innerText = "작성자";
                 
+                // 본인 댓글은 작성자 뜨게
+                if(loginMemberNo == reply.memberNo){
+                   
+                    owner.classList.add("owner");
+
+                }
+
                 // 작성일
                 const replyDate = document.createElement("span");
                 replyDate.classList.add("reply-date");
                 replyDate.innerText =  "(" + reply.createDate + ")";
 
                 // 작성자 영역(p)에 프로필,닉네임,작성일 마지막 자식으로(append) 추가
-                replyWriter.append(profileImage , memberNickname , replyDate);
+                replyWriter.append(profileImage , memberNickname , owner, replyDate);
 
                 
 
