@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import edu.kh.comm.board.model.dao.ReplyDAO;
 import edu.kh.comm.board.model.vo.Reply;
+import edu.kh.comm.common.Util;
 
 @Service
 public class ReplyServiceImpl implements ReplyService{
@@ -15,7 +16,7 @@ public class ReplyServiceImpl implements ReplyService{
 	private ReplyDAO dao;
 	
 	
-	// 댓글 목록 서비스 구현
+	// 댓글 목록 조회 서비스 구현
 	@Override
 	public List<Reply> selectReplyList(int boardNo) {
 		
@@ -24,9 +25,16 @@ public class ReplyServiceImpl implements ReplyService{
 	
 	// 댓글 등록 서비스 구현
 	@Override
-	public int insertReply(String replyContent, int memberNo, int boardNo) {
+	public int insertReply(Reply reply) {
+		reply.setReplyContent( Util.XSSHandling(reply.getReplyContent()));
+		reply.setReplyContent( Util.newLineHandling(reply.getReplyContent()));
 		
-		return dao.insertReply(replyContent, memberNo, boardNo);
+		return dao.insertReply(reply);
+	}
+	
+	@Override
+	public int updateReply(Reply reply) {
+		return dao.updateReply(reply);
 	}
 	
 	// 댓글 삭제 서비스 구현

@@ -58,8 +58,6 @@
                     </thead>
 
                     <tbody>
-                    	
-
                         <c:choose>
                             <c:when test="${empty boardList}">
                                 <!-- 게시글 목록 조회 결과가 비어있다면 -->

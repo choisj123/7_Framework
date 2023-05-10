@@ -26,7 +26,9 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import edu.kh.comm.board.model.service.BoardService;
+import edu.kh.comm.board.model.service.ReplyService;
 import edu.kh.comm.board.model.vo.BoardDetail;
+import edu.kh.comm.board.model.vo.Reply;
 import edu.kh.comm.common.Util;
 import edu.kh.comm.member.model.vo.Member;
 
@@ -39,6 +41,9 @@ public class BoardController {
 	
 	@Autowired
 	private BoardService service; 
+	
+	@Autowired
+	private ReplyService rService;
 
 	// 게시글 목록 조회
 	// PathVariable("value") : URL 경로에 포함되어 있는 값을 변수로 사용할 수 있게하는 역할
@@ -57,7 +62,7 @@ public class BoardController {
 							// key, query, cp
 		
 		// 게시글 목록 조회 서비스 호출
-		// 1) 게시판 이름 조회 -> 인터셉처로 application에 올려둔 boardTypeList 쓸 수 있을듯
+		// 1) 게시판 이름 조회 -> 인터셉터로 application에 올려둔 boardTypeList 쓸 수 있을듯
 		// 2) 페이지네이션 객체 생성(listCount)
 		// 3) 게시글 목록 조회
 		
@@ -110,6 +115,9 @@ public class BoardController {
 		if(detail != null) {
 			
 			// 댓글 목록 조회
+			List<Reply> rList = rService.selectReplyList(boardNo);
+			model.addAttribute("rList", rList);
+			
 			
 			// 로그인(세션)이 있는지 없는지
 			//세션이 있으면 memberNo 세팅

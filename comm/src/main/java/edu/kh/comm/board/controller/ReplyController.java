@@ -36,34 +36,32 @@ public class ReplyController {
 	@GetMapping("/selectReplyList")
 	public String selectReplyList(int boardNo) {
 		
-		List<Reply> replyList = new ArrayList<>();
+		List<Reply> rList = service.selectReplyList(boardNo);
 		
-		replyList = service.selectReplyList(boardNo);
-		
-		return new Gson().toJson(replyList);
+		return new Gson().toJson(rList);
 	}
 	
 	// 댓글 등록
 	@PostMapping("/insert")
-	public String insertReply(String replyContent,
-								int memberNo, 
-								int boardNo) {
+	public int insertReply(Reply reply) {
 		
-		int result = service.insertReply(replyContent, memberNo, boardNo);
-		
-		return new Gson().toJson(result);
+		return service.insertReply(reply);
 		
 	}
 	
 	// 댓글 수정
+	@PostMapping("/update")
+	public int updateReply(Reply reply) {
+		
+		return service.updateReply(reply);
+		
+	}
 	
 	// 댓글 삭제
 	@GetMapping("/delete")
-	public String deleteReply(int replyNo) {
+	public int deleteReply(int replyNo) {
 		
-		int result = service.deleteReply(replyNo);
-		
-		return new Gson().toJson(result);
+		return service.deleteReply(replyNo);
 		
 	}
 
