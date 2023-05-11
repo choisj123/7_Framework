@@ -301,4 +301,9 @@
 		)
 	</insert>
 	
+	<!-- BOARD_IMG 목록 조 회-->
+	<select id="selectDBList" resultType="string">
+		SELECT IMG_RENAME FROM BOARD_IMG
+	</select>
+	
 </mapper>

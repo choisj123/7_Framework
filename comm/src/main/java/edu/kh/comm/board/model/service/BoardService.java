@@ -62,4 +62,9 @@ public interface BoardService {
 	int updateBoard(BoardDetail detail, List<MultipartFile> imageList, String webPath, String folderPath,
 			String deleteList) throws IOException;
 
+	/**  BOARD_IMG 이미지 목록 조회 서비스
+	 * @return
+	 */
+	List<String> selectDBList();
+
 }

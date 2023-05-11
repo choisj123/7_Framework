@@ -85,6 +85,10 @@
 		AND SECESSION_FL = 'N' 
 	</update>
 	
+	<select id="selectProfile" resultType="string">
+		SELECT PROFILE_IMG FROM MEMBER_S
+	</select>
+	
 	
 	
 </mapper>

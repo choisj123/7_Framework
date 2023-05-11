@@ -456,7 +456,7 @@ public class MemberController {
             
             MimeMessage message = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message, true, "utf-8");
-            helper.setFrom(setFrom); // 보내는 사람 지정
+            helper.setFrom(setFrom, "관리자"); // 보내는 사람 지정
             helper.setTo(toMail);
             helper.setSubject(title);
             helper.setText(content,true);

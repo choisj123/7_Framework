@@ -1,6 +1,7 @@
 package edu.kh.comm.member.model.service;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 
 import edu.kh.comm.member.model.vo.Member;
@@ -49,6 +50,12 @@ public interface MyPageService {
 	 * @throws IOException 
 	 */
 	int updateProfile(Map<String, Object> map) throws IOException;
+
+
+	/** 프로필 이미지 경로 가져오기
+	 * @return
+	 */
+	List<String> selectProfileImg();
 
 
 

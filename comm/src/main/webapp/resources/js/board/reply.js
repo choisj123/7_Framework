@@ -46,14 +46,14 @@ function selectReplyList(){
                 const memberNickname = document.createElement("span");
                 memberNickname.innerText = reply.memberNickname;
 
+
                 const owner = document.createElement("span");
                 owner.innerText = "작성자";
-                
+
                 // 본인 댓글은 작성자 뜨게
                 if(loginMemberNo == reply.memberNo){
                    
                     owner.classList.add("owner");
-
                 }
 
                 // 작성일

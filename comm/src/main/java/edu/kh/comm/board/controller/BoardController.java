@@ -195,7 +195,7 @@ public class BoardController {
 			@RequestParam(value="no", required=false, defaultValue="0") int boardNo,
 			Model model) {
 		
-		if(model.equals("update")) {
+		if(mode.equals("update")) {
 			// 게시글 상세 조회 서비스 호출(boardNo)
 			BoardDetail detail = service.selectBoardDetail(boardNo);
 			
@@ -224,7 +224,7 @@ public class BoardController {
 			) throws IOException {
 		
 		// 1) 로그인한 회원 번호 얻어와서 detail에 세팅
-		detail.setBoardNo(loginMember.getMemberNo());
+		detail.setMemberNo(loginMember.getMemberNo());
 		
 		// 2) 이미지 저장 경로 얻어오기 (webPath, folderPath)
 		// webPath는 folderPath의 gerRealPath에 보낼 변수 ! 사실 없어도 됨

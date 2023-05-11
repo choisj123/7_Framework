@@ -2,6 +2,7 @@ package edu.kh.comm.member.model.service;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 
 import org.slf4j.Logger;
@@ -150,4 +151,9 @@ public class MyPageServiceImpl implements MyPageService{
 		
 	}
 
+	// 프로필 이미지 경로 가져오기
+	@Override
+	public List<String> selectProfileImg() {
+		return dao.selectProfileImg();
+	}
 }

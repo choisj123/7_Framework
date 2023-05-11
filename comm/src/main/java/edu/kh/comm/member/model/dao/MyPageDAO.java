@@ -2,6 +2,7 @@ package edu.kh.comm.member.model.dao;
 
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
 import java.util.Map;
 
 import org.mybatis.spring.SqlSessionTemplate;
@@ -89,6 +90,15 @@ public class MyPageDAO {
 	public int updateProfile(Map<String, Object> map) {
 		
 		return sqlSession.update("myPageMapper.updateProfile", map);
+	}
+
+
+
+	/** 프로필 이미지 경로 가져오기
+	 * @return
+	 */
+	public List<String> selectProfileImg() {
+		return sqlSession.selectList("myPageMapper.selectProfile");
 	}
 
 
