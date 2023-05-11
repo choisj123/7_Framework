@@ -61,24 +61,7 @@ public class BoardDAO {
 		return sqlSession.selectList("boardMapper.selectBoardList", boardCode, rowBounds);
 	}
 
-	/** 게시글 상세조회 DAO
-	 * @param boardNo
-	 * @return detail
-	 */
-	public BoardDetail selectBoardDetail(int boardNo) {
-		
-		return sqlSession.selectOne("boardMapper.selectBoardDetail", boardNo);
-	}
-
-	/** 조회 수 증가 DAO
-	 * @param boardNo
-	 * @return result
-	 */
-	public int updateReadCount(int boardNo) {
-		
-		return sqlSession.update("boardMapper.updateReadCount", boardNo);
-	}
-
+	
 	/** 검색 조건에 맞는 게시글 목록의 전체 개수 조회 DAO
 	 * @param paramMap
 	 * @return listCount
@@ -102,6 +85,26 @@ public class BoardDAO {
 		return sqlSession.selectList("boardMapper.searchBoardList", paramMap, rowBounds);
 	
 	}
+	
+	/** 게시글 상세조회 DAO
+	 * @param boardNo
+	 * @return detail
+	 */
+	public BoardDetail selectBoardDetail(int boardNo) {
+		
+		return sqlSession.selectOne("boardMapper.selectBoardDetail", boardNo);
+	}
+
+	/** 조회 수 증가 DAO
+	 * @param boardNo
+	 * @return result
+	 */
+	public int updateReadCount(int boardNo) {
+		
+		return sqlSession.update("boardMapper.updateReadCount", boardNo);
+	}
+
+
 
 	/** 게시글 삽입 DAO
 	 * @param detail

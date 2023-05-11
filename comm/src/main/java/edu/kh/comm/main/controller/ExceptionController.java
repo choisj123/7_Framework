@@ -1,6 +1,5 @@
 package edu.kh.comm.main.controller;
 
-import java.io.IOException;
 import java.sql.SQLException;
 
 import org.springframework.ui.Model;

@@ -92,7 +92,7 @@ public class BoardController {
 	public String boardDetail(@PathVariable("boardCode") int boardCode,
 							@PathVariable("boardNo") int boardNo,
 							@RequestParam(value="cp", required=false, defaultValue="1") int cp,
-							Model model ,
+							Model model,
 							HttpSession session,
 							HttpServletRequest req,
 							HttpServletResponse resp ) {

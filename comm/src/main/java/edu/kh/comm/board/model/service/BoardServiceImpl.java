@@ -52,7 +52,6 @@ public class BoardServiceImpl implements BoardService{
 		
 		Pagination pagination = new Pagination(cp, listCount);
 		
-		
 		// 3) 게시글 목록 조회
 		List<Board> boardList = dao.selectBoardList( pagination, boardCode );
 		
@@ -62,20 +61,6 @@ public class BoardServiceImpl implements BoardService{
 		map.put("boardList", boardList);
 		
 		return map;
-	}
-	
-	// 게시글 상세조회 서비스 구현
-	@Override
-	public BoardDetail selectBoardDetail(int boardNo) {
-		
-		return dao.selectBoardDetail(boardNo);
-	}
-	
-	// 조회수 증가 서비스 구현
-	@Override
-	public int updateReadCount(int boardNo) {
-		
-		return dao.updateReadCount(boardNo);
 	}
 	
 	// 검색 게시글 목록 조회 서비스 구현
@@ -99,6 +84,22 @@ public class BoardServiceImpl implements BoardService{
 		
 		return map;
 	}
+	
+	// 게시글 상세조회 서비스 구현
+	@Override
+	public BoardDetail selectBoardDetail(int boardNo) {
+		
+		return dao.selectBoardDetail(boardNo);
+	}
+	
+	// 조회수 증가 서비스 구현
+	@Override
+	public int updateReadCount(int boardNo) {
+		
+		return dao.updateReadCount(boardNo);
+	}
+	
+
 	
 	// 게시글 삽입 + 이미지 삽입 서비스 구현
 	
