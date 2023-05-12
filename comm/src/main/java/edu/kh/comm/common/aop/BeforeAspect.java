@@ -31,7 +31,7 @@ public class BeforeAspect {
 		
 		String str = "--------------------START---------------------\n";
 		
-		// jp.getTarger() : aop가 적용된 객체(각종 ServiceImpl)
+		// jp.getTarget() : aop가 적용된 객체(각종 ServiceImpl)
 		String className = jp.getTarget().getClass().getSimpleName(); // 간단한 클래스명 (패키지명 제외)
 		
 		// jp.getSignature() : 수행되는 메서드 정보
@@ -40,7 +40,7 @@ public class BeforeAspect {
 		// jp.getArgs() : 메서드 호출 시 전달되는 매개변수
 		String param = Arrays.toString(jp.getArgs());
 		
-		str += "Start : " + className + " - " + methodName + "\n";
+		str += "Start : " + className + " - " + methodName + "( " + param + " )\n";
 		// Strart : MemberServiceImpl - login
 		
 		str += "Parameter : " + param + "\n";

@@ -21,8 +21,8 @@ public class SchedulingTest {
 	 * 
 	 *
 	 * @Scheduled 속성
-	 *  - fixedDelay : 이전 작업이 끝난 시점으로 부터 고정된 시간(ms)을 설정. -> 일정한 거에서 사용
-	 *  - fixedRate : 이전 작업이 수행되기 시작한 시점으로 부터 고정된 시간(ms)을 설정.
+	 *  - fixedDelay : 이전 작업이 끝난 시점으로부터 고정된 시간(ms)을 설정. -> 일정한 거에서 사용
+	 *  - fixedRate : 이전 작업이 수행되기 시작한 시점으로부터 고정된 시간(ms)을 설정.
 	 *  	-> 보통 fixedRate 사용!
 	 * 
 	 * * cron 속성 : UNIX계열 잡 스케쥴러 표현식으로 작성 - cron="초 분 시 일 월 요일 [년도]" - 요일 : 1(SUN) ~ 7(SAT) 

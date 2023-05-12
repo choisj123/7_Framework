@@ -19,7 +19,7 @@ public class AfterAspect {
 	public void serviceEnd(JoinPoint jp) {
 		
 		
-		// jp.getTarger() : aop가 적용된 객체(각종 ServiceImpl)
+		// jp.getTarget() : aop가 적용된 객체(각종 ServiceImpl)
 		String className = jp.getTarget().getClass().getSimpleName(); // 간단한 클래스명 (패키지명 제외)
 		
 		// jp.getSignature() : 수행되는 메서드 정보

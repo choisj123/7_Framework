@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 @Component // 런타임시 필요한 위치에 코드를 알아서 참여시킬 수 있도록 bean 등록
 @Aspect // 공통 관심사(특정 흐름 사이에 끼여서 수행할 코드)가 작성된 클래스임을 명시
-		// -> 해당 어노테이션이 작선된 클래스에는
+		// -> 해당 어노테이션이 작성된 클래스에는
 		// advice(끼어들어서 수행할 메서드)
 		// pointcut(advice가 끼어들어서 수행될 부분)이 작성되어 있어야 한다.
 public class TestAspect {

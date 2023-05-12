@@ -16,7 +16,7 @@ public class AfterThrowingAspect {
 	// @AfterThrowing : 기존 @After  + 던저지는 예외 얻어오기 기능
 	
 	@AfterThrowing(pointcut = "CommonPointcut.implPointcut()", throwing = "exceptionObj")
-	public void serviceReturnValue(JoinPoint jp, Exception exceptionObj) {
+	public void serviceThrowing(JoinPoint jp, Exception exceptionObj) {
 		
 		String str = "<<exception>> : " + exceptionObj.getStackTrace()[0];
 		
