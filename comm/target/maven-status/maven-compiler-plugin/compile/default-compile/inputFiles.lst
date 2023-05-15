@@ -1,7 +1,45 @@
-/Users/sujinchoi/workspace/7_Framework/comm/src/main/java/edu/kh/comm/main/controller/MainController.java
-/Users/sujinchoi/workspace/7_Framework/comm/src/main/java/edu/kh/comm/member/model/service/MemberService.java
-/Users/sujinchoi/workspace/7_Framework/comm/src/main/java/edu/kh/comm/member/model/service/MemberServiceImpl.java
-/Users/sujinchoi/workspace/7_Framework/comm/src/main/java/edu/kh/comm/member/model/vo/Member.java
-/Users/sujinchoi/workspace/7_Framework/comm/src/main/java/edu/kh/comm/common/filter/InitFilter.java
-/Users/sujinchoi/workspace/7_Framework/comm/src/main/java/edu/kh/comm/member/model/dao/MemberDAO.java
-/Users/sujinchoi/workspace/7_Framework/comm/src/main/java/edu/kh/comm/member/controller/MemberController.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/board/model/service/ReplyServiceImpl.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/common/aop/AfterReturningAspect.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/chat/model/vo/ChatRoomJoin.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/chat/model/service/ChatServiceImpl.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/board/model/service/ReplyService.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/common/aop/TestAspect.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/board/model/vo/Reply.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/member/model/dao/MyPageDAO.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/board/model/vo/BoardImage.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/member/controller/MemberController.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/chat/model/service/ChatService.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/board/model/exception/InsertFailException.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/board/model/service/BoardServiceImpl.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/common/aop/AfterAspect.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/member/controller/MypageController.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/chat/model/vo/ChatMessage.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/board/model/dao/BoardDAO.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/common/aop/CommonPointcut.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/chat/model/dao/ChatDAO.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/member/model/dao/MemberDAO.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/board/model/vo/Board.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/main/controller/MainController.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/member/model/service/MyPageServiceImpl.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/common/aop/AfterThrowingAspect.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/chat/model/vo/ChatRoom.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/member/model/vo/Member.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/member/model/service/MyPageService.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/common/aop/BeforeAspect.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/board/model/vo/BoardType.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/chat/controller/ChattingController.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/common/interceptor/BoardTypeInterceptor.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/board/model/dao/ReplyDAO.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/member/model/service/MemberServiceImpl.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/board/controller/ReplyController.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/common/aop/AroundAspect.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/member/model/service/MemberService.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/main/controller/ExceptionController.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/common/scheduling/ImageDeleteScheduling.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/board/model/service/BoardService.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/board/controller/BoardController.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/common/scheduling/SchedulingTest.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/board/model/vo/Pagination.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/common/Util.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/board/model/vo/BoardDetail.java
+/Users/sujinchoi/Library/Mobile Documents/com~apple~CloudDocs/workspace/7_Framework/comm/src/main/java/edu/kh/comm/common/filter/InitFilter.java
