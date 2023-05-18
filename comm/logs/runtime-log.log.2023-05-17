@@ -1,0 +1,141 @@
+2023-05-17 09:05:06 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectDBList( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-17 09:05:06 [INFO] Return Value : [/resources/images/board/20230512145444_25252.jpeg, /resources/images/board/20230512145444_71819.jpeg, /resources/images/board/20230512145537_69047.png, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/20230511104829_61373.jpg, /resources/images/board/20230511104829_22162.jpeg, /resources/images/board/20230511141214_36207.jpeg, /resources/images/board/20230511141214_40708.jpeg]
+2023-05-17 09:05:06 [INFO] Running Time : 188ms
+2023-05-17 09:05:06 [INFO] End : BoardServiceImpl - selectDBList
+----------------------END-------------------------
+
+2023-05-17 09:05:06 [INFO] --------------------START---------------------
+Start : MyPageServiceImpl - selectProfileImg( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-17 09:05:06 [INFO] Return Value : [/resources/images/memberProfile/20230511115205_41668.jpeg, /resources/images/memberProfile/20230511115152_65861.jpeg, /resources/images/memberProfile/20230511115024_83290.jpeg, /resources/images/memberProfile/20230430211723_85843.png, /resources/images/memberProfile/20230511141129_46244.jpeg]
+2023-05-17 09:05:06 [INFO] Running Time : 41ms
+2023-05-17 09:05:06 [INFO] End : MyPageServiceImpl - selectProfileImg
+----------------------END-------------------------
+
+2023-05-17 09:05:06 [INFO] ----------------board 서버 이미지 삭제 완료----------------
+2023-05-17 09:05:06 [INFO] -----------------profile 서버 이미지 삭제 완료----------------
+2023-05-17 09:59:59 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectDBList( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-17 10:00:00 [INFO] Return Value : [/resources/images/board/20230512145444_25252.jpeg, /resources/images/board/20230512145444_71819.jpeg, /resources/images/board/20230512145537_69047.png, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/20230511104829_61373.jpg, /resources/images/board/20230511104829_22162.jpeg, /resources/images/board/20230511141214_36207.jpeg, /resources/images/board/20230511141214_40708.jpeg]
+2023-05-17 10:00:00 [INFO] Running Time : 162ms
+2023-05-17 10:00:00 [INFO] End : BoardServiceImpl - selectDBList
+----------------------END-------------------------
+
+2023-05-17 10:00:00 [INFO] --------------------START---------------------
+Start : MyPageServiceImpl - selectProfileImg( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-17 10:00:00 [INFO] Return Value : [/resources/images/memberProfile/20230511115205_41668.jpeg, /resources/images/memberProfile/20230511115152_65861.jpeg, /resources/images/memberProfile/20230511115024_83290.jpeg, /resources/images/memberProfile/20230430211723_85843.png, /resources/images/memberProfile/20230511141129_46244.jpeg]
+2023-05-17 10:00:00 [INFO] Running Time : 59ms
+2023-05-17 10:00:00 [INFO] End : MyPageServiceImpl - selectProfileImg
+----------------------END-------------------------
+
+2023-05-17 10:00:00 [INFO] ----------------board 서버 이미지 삭제 완료----------------
+2023-05-17 10:00:00 [INFO] -----------------profile 서버 이미지 삭제 완료----------------
+2023-05-17 11:00:00 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectDBList( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-17 11:00:00 [INFO] Return Value : [/resources/images/board/20230512145444_25252.jpeg, /resources/images/board/20230512145444_71819.jpeg, /resources/images/board/20230512145537_69047.png, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/20230511104829_61373.jpg, /resources/images/board/20230511104829_22162.jpeg, /resources/images/board/20230511141214_36207.jpeg, /resources/images/board/20230511141214_40708.jpeg]
+2023-05-17 11:00:00 [INFO] Running Time : 168ms
+2023-05-17 11:00:00 [INFO] End : BoardServiceImpl - selectDBList
+----------------------END-------------------------
+
+2023-05-17 11:00:00 [INFO] --------------------START---------------------
+Start : MyPageServiceImpl - selectProfileImg( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-17 11:00:00 [INFO] Return Value : [/resources/images/memberProfile/20230511115205_41668.jpeg, /resources/images/memberProfile/20230511115152_65861.jpeg, /resources/images/memberProfile/20230511115024_83290.jpeg, /resources/images/memberProfile/20230430211723_85843.png, /resources/images/memberProfile/20230511141129_46244.jpeg]
+2023-05-17 11:00:00 [INFO] Running Time : 40ms
+2023-05-17 11:00:00 [INFO] End : MyPageServiceImpl - selectProfileImg
+----------------------END-------------------------
+
+2023-05-17 11:00:00 [INFO] ----------------board 서버 이미지 삭제 완료----------------
+2023-05-17 11:00:00 [INFO] -----------------profile 서버 이미지 삭제 완료----------------
+2023-05-17 11:59:59 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectDBList( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-17 12:00:00 [INFO] Return Value : [/resources/images/board/20230512145444_25252.jpeg, /resources/images/board/20230512145444_71819.jpeg, /resources/images/board/20230512145537_69047.png, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/20230511104829_61373.jpg, /resources/images/board/20230511104829_22162.jpeg, /resources/images/board/20230511141214_36207.jpeg, /resources/images/board/20230511141214_40708.jpeg]
+2023-05-17 12:00:00 [INFO] Running Time : 173ms
+2023-05-17 12:00:00 [INFO] End : BoardServiceImpl - selectDBList
+----------------------END-------------------------
+
+2023-05-17 12:00:00 [INFO] --------------------START---------------------
+Start : MyPageServiceImpl - selectProfileImg( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-17 12:00:00 [INFO] Return Value : [/resources/images/memberProfile/20230511115205_41668.jpeg, /resources/images/memberProfile/20230511115152_65861.jpeg, /resources/images/memberProfile/20230511115024_83290.jpeg, /resources/images/memberProfile/20230430211723_85843.png, /resources/images/memberProfile/20230511141129_46244.jpeg]
+2023-05-17 12:00:00 [INFO] Running Time : 63ms
+2023-05-17 12:00:00 [INFO] End : MyPageServiceImpl - selectProfileImg
+----------------------END-------------------------
+
+2023-05-17 12:00:00 [INFO] ----------------board 서버 이미지 삭제 완료----------------
+2023-05-17 12:00:00 [INFO] -----------------profile 서버 이미지 삭제 완료----------------
+2023-05-17 13:00:00 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectDBList( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-17 13:00:00 [INFO] Return Value : [/resources/images/board/20230512145444_25252.jpeg, /resources/images/board/20230512145444_71819.jpeg, /resources/images/board/20230512145537_69047.png, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/20230511104829_61373.jpg, /resources/images/board/20230511104829_22162.jpeg, /resources/images/board/20230511141214_36207.jpeg, /resources/images/board/20230511141214_40708.jpeg]
+2023-05-17 13:00:00 [INFO] Running Time : 148ms
+2023-05-17 13:00:00 [INFO] End : BoardServiceImpl - selectDBList
+----------------------END-------------------------
+
+2023-05-17 13:00:00 [INFO] --------------------START---------------------
+Start : MyPageServiceImpl - selectProfileImg( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-17 13:00:00 [INFO] Return Value : [/resources/images/memberProfile/20230511115205_41668.jpeg, /resources/images/memberProfile/20230511115152_65861.jpeg, /resources/images/memberProfile/20230511115024_83290.jpeg, /resources/images/memberProfile/20230430211723_85843.png, /resources/images/memberProfile/20230511141129_46244.jpeg]
+2023-05-17 13:00:00 [INFO] Running Time : 32ms
+2023-05-17 13:00:00 [INFO] End : MyPageServiceImpl - selectProfileImg
+----------------------END-------------------------
+
+2023-05-17 13:00:00 [INFO] ----------------board 서버 이미지 삭제 완료----------------
+2023-05-17 13:00:00 [INFO] -----------------profile 서버 이미지 삭제 완료----------------
+2023-05-17 14:00:00 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectDBList( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-17 14:00:00 [INFO] Return Value : [/resources/images/board/20230512145444_25252.jpeg, /resources/images/board/20230512145444_71819.jpeg, /resources/images/board/20230512145537_69047.png, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/20230511104829_61373.jpg, /resources/images/board/20230511104829_22162.jpeg, /resources/images/board/20230511141214_36207.jpeg, /resources/images/board/20230511141214_40708.jpeg]
+2023-05-17 14:00:00 [INFO] Running Time : 190ms
+2023-05-17 14:00:00 [INFO] End : BoardServiceImpl - selectDBList
+----------------------END-------------------------
+
+2023-05-17 14:00:00 [INFO] --------------------START---------------------
+Start : MyPageServiceImpl - selectProfileImg( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-17 14:00:00 [INFO] Return Value : [/resources/images/memberProfile/20230511115205_41668.jpeg, /resources/images/memberProfile/20230511115152_65861.jpeg, /resources/images/memberProfile/20230511115024_83290.jpeg, /resources/images/memberProfile/20230430211723_85843.png, /resources/images/memberProfile/20230511141129_46244.jpeg]
+2023-05-17 14:00:00 [INFO] Running Time : 53ms
+2023-05-17 14:00:00 [INFO] End : MyPageServiceImpl - selectProfileImg
+----------------------END-------------------------
+
+2023-05-17 14:00:00 [INFO] ----------------board 서버 이미지 삭제 완료----------------
+2023-05-17 14:00:00 [INFO] -----------------profile 서버 이미지 삭제 완료----------------
+2023-05-17 15:00:00 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectDBList( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-17 15:00:00 [INFO] Return Value : [/resources/images/board/20230512145444_25252.jpeg, /resources/images/board/20230512145444_71819.jpeg, /resources/images/board/20230512145537_69047.png, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/20230511104829_61373.jpg, /resources/images/board/20230511104829_22162.jpeg, /resources/images/board/20230511141214_36207.jpeg, /resources/images/board/20230511141214_40708.jpeg]
+2023-05-17 15:00:00 [INFO] Running Time : 199ms
+2023-05-17 15:00:00 [INFO] End : BoardServiceImpl - selectDBList
+----------------------END-------------------------
+
+2023-05-17 15:00:00 [INFO] --------------------START---------------------
+Start : MyPageServiceImpl - selectProfileImg( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-17 15:00:00 [INFO] Return Value : [/resources/images/memberProfile/20230511115205_41668.jpeg, /resources/images/memberProfile/20230511115152_65861.jpeg, /resources/images/memberProfile/20230511115024_83290.jpeg, /resources/images/memberProfile/20230430211723_85843.png, /resources/images/memberProfile/20230511141129_46244.jpeg]
+2023-05-17 15:00:00 [INFO] Running Time : 39ms
+2023-05-17 15:00:00 [INFO] End : MyPageServiceImpl - selectProfileImg
+----------------------END-------------------------
+
+2023-05-17 15:00:00 [INFO] ----------------board 서버 이미지 삭제 완료----------------
+2023-05-17 15:00:00 [INFO] -----------------profile 서버 이미지 삭제 완료----------------
+2023-05-17 16:41:36 [INFO] 초기화 필터 파괴

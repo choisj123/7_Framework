@@ -23,6 +23,25 @@
 	}
 })();
 
+
+// document.getElementById("exit-btn").addEventListener("click", function(){
+	
+// 	$.ajax({
+// 		url : "chat/exit"  ,
+// 		type : "GET",
+// 		success : function(result){
+// 			if(result == 1){
+// 				alert("채팅방 나가기 성공.");
+// 			}
+
+// 		},
+// 		error : function(){
+// 			console.log("채팅방 나가기 실패")
+// 		}
+// 	});
+// } )
+
+
 // -------------------------------------------------------------------------
 
 // 페이지 로딩 완료 시 채팅창을 제일 밑으로 내리기

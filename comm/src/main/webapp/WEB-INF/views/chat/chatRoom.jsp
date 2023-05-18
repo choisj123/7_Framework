@@ -28,7 +28,8 @@
 	
 		<div class="chatting-area">
 			<div id="exit-area">
-				<button class="btn btn-outline-danger" id="exit-btn">나가기</button>
+				<button type="button" class="btn btn-outline-danger" onclick="location.href='${header.referer}'">목록으로</button>
+				<button class="btn btn-outline-danger" id="exit-btn" >채팅방 나가기</button>
 			</div>
 			<ul class="display-chatting">
 		

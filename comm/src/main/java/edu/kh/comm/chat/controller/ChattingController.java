@@ -40,8 +40,10 @@ public class ChattingController {
 	
 	// 채팅방 만들기
 	@PostMapping("/chat/openChatRoom")
-	public String openChatRoom(@ModelAttribute("loginMember") Member loginMember, Model model, 
-								ChatRoom room, RedirectAttributes ra) {
+	public String openChatRoom(@ModelAttribute("loginMember") Member loginMember, 
+								Model model, 
+								ChatRoom room, 
+								RedirectAttributes ra) {
 		
 		room.setMemberNo(loginMember.getMemberNo());
 		
@@ -62,7 +64,8 @@ public class ChattingController {
 	
 	// 채팅방 입장
 	@GetMapping("/chat/room/{chatRoomNo}")
-	public String joinChatRoom(@ModelAttribute("loginMember") Member loginMember, Model model,
+	public String joinChatRoom(@ModelAttribute("loginMember") Member loginMember, 
+								Model model,
 								@PathVariable("chatRoomNo") int chatRoomNo, 
 								ChatRoomJoin join,
 								RedirectAttributes ra) {

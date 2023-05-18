@@ -25,13 +25,12 @@
 		<section class="board-list">
 			<h1 class="board-name">채팅방 목록</h1>
 
-
 			<div class="list-wrapper">
 				<table class="list-table">
 					<thead>
 						<tr>
 							<th>방번호</th>
-							<th>채팅방 제목(주제)</th>
+							<th>채팅방 제목</th>
 							<th>개설자</th>
 							<th>참여인원수</th>
 						</tr>

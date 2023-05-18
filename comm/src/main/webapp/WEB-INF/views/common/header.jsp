@@ -39,7 +39,6 @@
 	
 	            <!-- fieldset: form 내부에서 input을 종류별로 묶는 용도로 많이 사용 -->
 	            <fieldset>
-	
 	                <!-- autocomplete="off" : HTML 기본 자동완성 사용 X -->
 	                <input type="search" id="query" name="query" 
 	                    autocomplete="off" placeholder="검색어를 입력해주세요.">
