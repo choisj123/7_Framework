@@ -84,8 +84,10 @@ public class BoardController {
 		model.addAttribute("map", map);
 		
 		return "board/boardList";
+	
 		
 	}
+	
 	
 	// 게시글 상세조회
 	@GetMapping("/detail/{boardCode}/{boardNo}")
