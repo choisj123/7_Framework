@@ -1,0 +1,1403 @@
+2023-05-18 09:14:12 [INFO] 초기화 필터 생성
+2023-05-18 09:14:18 [INFO] 전처리 수행
+2023-05-18 09:14:18 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectBoardType( {} )
+Parameter : {}
+ip : 127.0.0.1
+2023-05-18 09:14:23 [INFO] Return Value : [BoardType(boardCode=1, boardName=공지사항), BoardType(boardCode=2, boardName=자유 게시판), BoardType(boardCode=3, boardName=질문 게시판)]
+2023-05-18 09:14:23 [INFO] Running Time : 5340ms
+2023-05-18 09:14:23 [INFO] End : BoardServiceImpl - selectBoardType
+----------------------END-------------------------
+
+2023-05-18 09:14:23 [INFO] 후처리 수행
+2023-05-18 09:14:25 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:14:25 [INFO] 전처리 수행
+2023-05-18 09:14:25 [INFO] 후처리 수행
+2023-05-18 09:14:25 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:14:25 [INFO] 전처리 수행
+2023-05-18 09:14:25 [INFO] 후처리 수행
+2023-05-18 09:14:25 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:14:25 [INFO] 전처리 수행
+2023-05-18 09:14:25 [INFO] 후처리 수행
+2023-05-18 09:14:25 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:14:25 [INFO] 전처리 수행
+2023-05-18 09:14:25 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - selectAll( {} )
+Parameter : {}
+ip : 127.0.0.1
+2023-05-18 09:14:26 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=hohosuu@naver.com, memberPw=null, memberNickname=호호수, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=98chltnwls@gmail.com, memberPw=null, memberNickname=몽실이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-18 09:14:26 [INFO] Running Time : 248ms
+2023-05-18 09:14:26 [INFO] End : MemberServiceImpl - selectAll
+----------------------END-------------------------
+
+2023-05-18 09:14:26 [INFO] 후처리 수행
+2023-05-18 09:14:26 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:14:36 [INFO] 전처리 수행
+2023-05-18 09:14:36 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - selectAll( {} )
+Parameter : {}
+ip : 127.0.0.1
+2023-05-18 09:14:37 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=hohosuu@naver.com, memberPw=null, memberNickname=호호수, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=98chltnwls@gmail.com, memberPw=null, memberNickname=몽실이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-18 09:14:37 [INFO] Running Time : 111ms
+2023-05-18 09:14:37 [INFO] End : MemberServiceImpl - selectAll
+----------------------END-------------------------
+
+2023-05-18 09:14:37 [INFO] 후처리 수행
+2023-05-18 09:14:37 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:14:47 [INFO] 전처리 수행
+2023-05-18 09:14:47 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - selectAll( {} )
+Parameter : {}
+ip : 127.0.0.1
+2023-05-18 09:14:47 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=hohosuu@naver.com, memberPw=null, memberNickname=호호수, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=98chltnwls@gmail.com, memberPw=null, memberNickname=몽실이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-18 09:14:47 [INFO] Running Time : 98ms
+2023-05-18 09:14:47 [INFO] End : MemberServiceImpl - selectAll
+----------------------END-------------------------
+
+2023-05-18 09:14:47 [INFO] 후처리 수행
+2023-05-18 09:14:47 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:14:53 [INFO] 전처리 수행
+2023-05-18 09:14:53 [INFO] 로그인 기능 수행됨
+2023-05-18 09:14:53 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - login( {Member(memberNo=0, memberEmail=98chltnwls@gmail.com, memberPw=wlduddl33!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)} )
+Parameter : {Member(memberNo=0, memberEmail=98chltnwls@gmail.com, memberPw=wlduddl33!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)}
+ip : 127.0.0.1
+2023-05-18 09:14:53 [DEBUG] 암호화 전 : wlduddl33! / 암호화 후 : $2a$10$ef0sBDODqJse024/kIem6.CuXAxZLHBSpZD7IVs1eLxlOA3DMJazC
+2023-05-18 09:14:53 [INFO] Return Value : Member(memberNo=5, memberEmail=98chltnwls@gmail.com, memberPw=null, memberNickname=몽실이, memberTel=01099164658, memberAddress=10208,,경기 고양시 일산서구 가좌로 4,,1402호, profileImage=/resources/images/memberProfile/20230511141129_46244.jpeg, enrollDate=2023-05-11 00:20:15, secessionFlag=null)
+2023-05-18 09:14:53 [INFO] Running Time : 554ms
+2023-05-18 09:14:53 [INFO] End : MemberServiceImpl - login
+----------------------END-------------------------
+
+2023-05-18 09:14:53 [INFO] 후처리 수행
+2023-05-18 09:14:54 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:14:54 [INFO] 전처리 수행
+2023-05-18 09:14:54 [INFO] 후처리 수행
+2023-05-18 09:14:54 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:14:54 [INFO] 전처리 수행
+2023-05-18 09:14:54 [INFO] 후처리 수행
+2023-05-18 09:14:54 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:14:55 [INFO] 전처리 수행
+2023-05-18 09:14:55 [INFO] 로그인 기능 수행됨
+2023-05-18 09:14:55 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - login( {Member(memberNo=0, memberEmail=98chltnwls@gmail.com, memberPw=wlduddl33!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)} )
+Parameter : {Member(memberNo=0, memberEmail=98chltnwls@gmail.com, memberPw=wlduddl33!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)}
+ip : 127.0.0.1(email : 98chltnwls@gmail.com)
+2023-05-18 09:14:55 [INFO] 전처리 수행
+2023-05-18 09:14:55 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - selectAll( {} )
+Parameter : {}
+ip : 127.0.0.1(email : 98chltnwls@gmail.com)
+2023-05-18 09:14:55 [DEBUG] 암호화 전 : wlduddl33! / 암호화 후 : $2a$10$L9WS7uvyWROBJjbjrMW5POuPw1L0J0SIgMjGr1cdO.fifY4dJLmNq
+2023-05-18 09:14:56 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=hohosuu@naver.com, memberPw=null, memberNickname=호호수, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=98chltnwls@gmail.com, memberPw=null, memberNickname=몽실이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-18 09:14:56 [INFO] Running Time : 85ms
+2023-05-18 09:14:56 [INFO] End : MemberServiceImpl - selectAll
+----------------------END-------------------------
+
+2023-05-18 09:14:56 [INFO] 후처리 수행
+2023-05-18 09:14:56 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:14:56 [INFO] Return Value : Member(memberNo=5, memberEmail=98chltnwls@gmail.com, memberPw=null, memberNickname=몽실이, memberTel=01099164658, memberAddress=10208,,경기 고양시 일산서구 가좌로 4,,1402호, profileImage=/resources/images/memberProfile/20230511141129_46244.jpeg, enrollDate=2023-05-11 00:20:15, secessionFlag=null)
+2023-05-18 09:14:56 [INFO] Running Time : 254ms
+2023-05-18 09:14:56 [INFO] End : MemberServiceImpl - login
+----------------------END-------------------------
+
+2023-05-18 09:14:56 [INFO] 후처리 수행
+2023-05-18 09:14:56 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:14:56 [INFO] 전처리 수행
+2023-05-18 09:14:56 [INFO] 후처리 수행
+2023-05-18 09:14:56 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:14:56 [INFO] 전처리 수행
+2023-05-18 09:14:56 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - selectChatRoomList( {} )
+Parameter : {}
+ip : 127.0.0.1(email : 98chltnwls@gmail.com)
+2023-05-18 09:14:56 [INFO] Return Value : [ChatRoom(chatRoomNo=1, title=테스트입니당, status=null, memberNo=0, memberNickname=호호수, cnt=2)]
+2023-05-18 09:14:56 [INFO] Running Time : 177ms
+2023-05-18 09:14:56 [INFO] End : ChatServiceImpl - selectChatRoomList
+----------------------END-------------------------
+
+2023-05-18 09:14:56 [INFO] 후처리 수행
+2023-05-18 09:14:57 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:14:57 [INFO] 전처리 수행
+2023-05-18 09:14:57 [INFO] 전처리 수행
+2023-05-18 09:14:57 [INFO] 후처리 수행
+2023-05-18 09:14:57 [INFO] 후처리 수행
+2023-05-18 09:14:57 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:14:57 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:14:57 [INFO] 전처리 수행
+2023-05-18 09:14:57 [INFO] 후처리 수행
+2023-05-18 09:14:57 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:15:02 [INFO] 전처리 수행
+2023-05-18 09:15:02 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=5, chatRoomNo=1)} )
+Parameter : {ChatRoomJoin(memberNo=5, chatRoomNo=1)}
+ip : 127.0.0.1(email : 98chltnwls@gmail.com)
+2023-05-18 09:15:03 [INFO] Return Value : [ChatMessage(cmNo=0, message=안녕하세요!, createDate=2023-05-16, chatRoomNo=0, memberNo=4, memberEmail=null, memberNickname=호호수), ChatMessage(cmNo=0, message=ㅎㅎ, createDate=2023-05-16, chatRoomNo=0, memberNo=4, memberEmail=null, memberNickname=호호수), ChatMessage(cmNo=0, message=키키, createDate=2023-05-16, chatRoomNo=0, memberNo=4, memberEmail=null, memberNickname=호호수), ChatMessage(cmNo=0, message=안녕안녕, createDate=2023-05-16, chatRoomNo=0, memberNo=5, memberEmail=null, memberNickname=몽실이)]
+2023-05-18 09:15:03 [INFO] Running Time : 217ms
+2023-05-18 09:15:03 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 09:15:03 [INFO] 후처리 수행
+2023-05-18 09:15:03 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:15:03 [INFO] 전처리 수행
+2023-05-18 09:15:03 [INFO] 후처리 수행
+2023-05-18 09:15:03 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:15:03 [INFO] 전처리 수행
+2023-05-18 09:15:03 [INFO] 후처리 수행
+2023-05-18 09:15:03 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:15:03 [INFO] 전처리 수행
+2023-05-18 09:15:03 [INFO] 후처리 수행
+2023-05-18 09:15:03 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:15:07 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - insertMessage( {ChatMessage(cmNo=0, message=zzz, createDate=2023-05-18, chatRoomNo=1, memberNo=5, memberEmail=98chltnwls@gmail.com, memberNickname=몽실이)} )
+Parameter : {ChatMessage(cmNo=0, message=zzz, createDate=2023-05-18, chatRoomNo=1, memberNo=5, memberEmail=98chltnwls@gmail.com, memberNickname=몽실이)}
+[스케쥴러 동작]
+2023-05-18 09:15:07 [INFO] Return Value : 1
+2023-05-18 09:15:07 [INFO] Running Time : 179ms
+2023-05-18 09:15:07 [INFO] End : ChatServiceImpl - insertMessage
+----------------------END-------------------------
+
+2023-05-18 09:16:27 [INFO] 전처리 수행
+2023-05-18 09:16:27 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - selectChatRoomList( {} )
+Parameter : {}
+ip : 127.0.0.1(email : 98chltnwls@gmail.com)
+2023-05-18 09:16:28 [INFO] Return Value : [ChatRoom(chatRoomNo=1, title=테스트입니당, status=null, memberNo=0, memberNickname=호호수, cnt=2)]
+2023-05-18 09:16:28 [INFO] Running Time : 101ms
+2023-05-18 09:16:28 [INFO] End : ChatServiceImpl - selectChatRoomList
+----------------------END-------------------------
+
+2023-05-18 09:16:28 [INFO] 후처리 수행
+2023-05-18 09:16:28 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:16:48 [INFO] 전처리 수행
+2023-05-18 09:16:48 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - selectChatRoomList( {} )
+Parameter : {}
+ip : 127.0.0.1(email : 98chltnwls@gmail.com)
+2023-05-18 09:16:48 [INFO] Return Value : [ChatRoom(chatRoomNo=1, title=테스트입니당, status=null, memberNo=0, memberNickname=호호수, cnt=2)]
+2023-05-18 09:16:48 [INFO] Running Time : 65ms
+2023-05-18 09:16:48 [INFO] End : ChatServiceImpl - selectChatRoomList
+----------------------END-------------------------
+
+2023-05-18 09:16:48 [INFO] 후처리 수행
+2023-05-18 09:16:49 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:16:49 [INFO] 전처리 수행
+2023-05-18 09:16:49 [INFO] 전처리 수행
+2023-05-18 09:16:49 [INFO] 전처리 수행
+2023-05-18 09:16:49 [INFO] 후처리 수행
+2023-05-18 09:16:49 [INFO] 후처리 수행
+2023-05-18 09:16:49 [INFO] 후처리 수행
+2023-05-18 09:16:49 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:16:49 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:16:49 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:16:49 [INFO] 전처리 수행
+2023-05-18 09:16:49 [INFO] 후처리 수행
+2023-05-18 09:16:49 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:16:49 [INFO] 전처리 수행
+2023-05-18 09:16:49 [INFO] 후처리 수행
+2023-05-18 09:16:49 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:16:57 [INFO] 전처리 수행
+2023-05-18 09:16:57 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - selectChatRoomList( {} )
+Parameter : {}
+ip : 127.0.0.1(email : 98chltnwls@gmail.com)
+2023-05-18 09:16:57 [INFO] Return Value : [ChatRoom(chatRoomNo=1, title=테스트입니당, status=null, memberNo=0, memberNickname=호호수, cnt=2)]
+2023-05-18 09:16:57 [INFO] Running Time : 63ms
+2023-05-18 09:16:57 [INFO] End : ChatServiceImpl - selectChatRoomList
+----------------------END-------------------------
+
+2023-05-18 09:16:57 [INFO] 후처리 수행
+2023-05-18 09:16:57 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:16:58 [INFO] 전처리 수행
+2023-05-18 09:16:58 [INFO] 전처리 수행
+2023-05-18 09:16:58 [INFO] 전처리 수행
+2023-05-18 09:16:58 [INFO] 후처리 수행
+2023-05-18 09:16:58 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:16:58 [INFO] 후처리 수행
+2023-05-18 09:16:58 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:16:58 [INFO] 후처리 수행
+2023-05-18 09:16:58 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:16:58 [INFO] 전처리 수행
+2023-05-18 09:16:58 [INFO] 후처리 수행
+2023-05-18 09:16:58 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:16:58 [INFO] 전처리 수행
+2023-05-18 09:16:58 [INFO] 후처리 수행
+2023-05-18 09:16:58 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:17:26 [INFO] 전처리 수행
+2023-05-18 09:17:26 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - openChatRoom( {ChatRoom(chatRoomNo=0, title=하기싫당, status=null, memberNo=5, memberNickname=null, cnt=0)} )
+Parameter : {ChatRoom(chatRoomNo=0, title=하기싫당, status=null, memberNo=5, memberNickname=null, cnt=0)}
+ip : 127.0.0.1(email : 98chltnwls@gmail.com)
+2023-05-18 09:17:26 [INFO] Return Value : 21
+2023-05-18 09:17:26 [INFO] Running Time : 154ms
+2023-05-18 09:17:26 [INFO] End : ChatServiceImpl - openChatRoom
+----------------------END-------------------------
+
+2023-05-18 09:17:26 [INFO] 후처리 수행
+2023-05-18 09:17:26 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:17:26 [INFO] 전처리 수행
+2023-05-18 09:17:26 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=5, chatRoomNo=21)} )
+Parameter : {ChatRoomJoin(memberNo=5, chatRoomNo=21)}
+ip : 127.0.0.1(email : 98chltnwls@gmail.com)
+2023-05-18 09:17:26 [INFO] Return Value : []
+2023-05-18 09:17:26 [INFO] Running Time : 117ms
+2023-05-18 09:17:26 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 09:17:26 [INFO] 후처리 수행
+2023-05-18 09:17:26 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:17:26 [INFO] 전처리 수행
+2023-05-18 09:17:26 [INFO] 후처리 수행
+2023-05-18 09:17:26 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:17:26 [INFO] 전처리 수행
+2023-05-18 09:17:26 [INFO] 후처리 수행
+2023-05-18 09:17:26 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:17:29 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - insertMessage( {ChatMessage(cmNo=0, message=ㅋㅋ, createDate=2023-05-18, chatRoomNo=21, memberNo=5, memberEmail=98chltnwls@gmail.com, memberNickname=몽실이)} )
+Parameter : {ChatMessage(cmNo=0, message=ㅋㅋ, createDate=2023-05-18, chatRoomNo=21, memberNo=5, memberEmail=98chltnwls@gmail.com, memberNickname=몽실이)}
+[스케쥴러 동작]
+2023-05-18 09:17:29 [INFO] Return Value : 1
+2023-05-18 09:17:29 [INFO] Running Time : 89ms
+2023-05-18 09:17:29 [INFO] End : ChatServiceImpl - insertMessage
+----------------------END-------------------------
+
+2023-05-18 09:19:38 [INFO] 전처리 수행
+2023-05-18 09:19:38 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=5, chatRoomNo=21)} )
+Parameter : {ChatRoomJoin(memberNo=5, chatRoomNo=21)}
+ip : 127.0.0.1(email : 98chltnwls@gmail.com)
+2023-05-18 09:19:38 [INFO] Return Value : [ChatMessage(cmNo=0, message=ㅋㅋ, createDate=2023-05-18, chatRoomNo=0, memberNo=5, memberEmail=null, memberNickname=몽실이)]
+2023-05-18 09:19:38 [INFO] Running Time : 147ms
+2023-05-18 09:19:38 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 09:19:38 [INFO] 후처리 수행
+2023-05-18 09:19:39 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:19:39 [INFO] 전처리 수행
+2023-05-18 09:19:39 [INFO] 전처리 수행
+2023-05-18 09:19:39 [INFO] 전처리 수행
+2023-05-18 09:19:39 [INFO] 후처리 수행
+2023-05-18 09:19:39 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:19:39 [INFO] 후처리 수행
+2023-05-18 09:19:39 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:19:39 [INFO] 후처리 수행
+2023-05-18 09:19:39 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:19:39 [INFO] 전처리 수행
+2023-05-18 09:19:39 [INFO] 전처리 수행
+2023-05-18 09:19:39 [INFO] 후처리 수행
+2023-05-18 09:19:39 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:19:39 [INFO] 후처리 수행
+2023-05-18 09:19:39 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:19:40 [INFO] 전처리 수행
+2023-05-18 09:19:40 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - selectChatRoomList( {} )
+Parameter : {}
+ip : 127.0.0.1(email : 98chltnwls@gmail.com)
+2023-05-18 09:19:40 [INFO] Return Value : [ChatRoom(chatRoomNo=21, title=하기싫당, status=null, memberNo=0, memberNickname=몽실이, cnt=1), ChatRoom(chatRoomNo=1, title=테스트입니당, status=null, memberNo=0, memberNickname=호호수, cnt=2)]
+2023-05-18 09:19:40 [INFO] Running Time : 100ms
+2023-05-18 09:19:40 [INFO] End : ChatServiceImpl - selectChatRoomList
+----------------------END-------------------------
+
+2023-05-18 09:19:40 [INFO] 후처리 수행
+2023-05-18 09:19:40 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:19:43 [INFO] 전처리 수행
+2023-05-18 09:19:43 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=5, chatRoomNo=21)} )
+Parameter : {ChatRoomJoin(memberNo=5, chatRoomNo=21)}
+ip : 127.0.0.1(email : 98chltnwls@gmail.com)
+2023-05-18 09:19:43 [INFO] Return Value : [ChatMessage(cmNo=0, message=ㅋㅋ, createDate=2023-05-18, chatRoomNo=0, memberNo=5, memberEmail=null, memberNickname=몽실이)]
+2023-05-18 09:19:43 [INFO] Running Time : 122ms
+2023-05-18 09:19:43 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 09:19:43 [INFO] 후처리 수행
+2023-05-18 09:19:44 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:19:44 [INFO] 전처리 수행
+2023-05-18 09:19:44 [INFO] 후처리 수행
+2023-05-18 09:19:44 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:19:44 [INFO] 전처리 수행
+2023-05-18 09:19:44 [INFO] 후처리 수행
+2023-05-18 09:19:44 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:19:45 [INFO] 전처리 수행
+2023-05-18 09:19:45 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - selectChatRoomList( {} )
+Parameter : {}
+ip : 127.0.0.1(email : 98chltnwls@gmail.com)
+2023-05-18 09:19:45 [INFO] Return Value : [ChatRoom(chatRoomNo=21, title=하기싫당, status=null, memberNo=0, memberNickname=몽실이, cnt=1), ChatRoom(chatRoomNo=1, title=테스트입니당, status=null, memberNo=0, memberNickname=호호수, cnt=2)]
+2023-05-18 09:19:45 [INFO] Running Time : 60ms
+2023-05-18 09:19:45 [INFO] End : ChatServiceImpl - selectChatRoomList
+----------------------END-------------------------
+
+2023-05-18 09:19:45 [INFO] 후처리 수행
+2023-05-18 09:19:45 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:19:47 [INFO] 전처리 수행
+2023-05-18 09:19:47 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=5, chatRoomNo=1)} )
+Parameter : {ChatRoomJoin(memberNo=5, chatRoomNo=1)}
+ip : 127.0.0.1(email : 98chltnwls@gmail.com)
+2023-05-18 09:19:47 [INFO] Return Value : [ChatMessage(cmNo=0, message=안녕하세요!, createDate=2023-05-16, chatRoomNo=0, memberNo=4, memberEmail=null, memberNickname=호호수), ChatMessage(cmNo=0, message=ㅎㅎ, createDate=2023-05-16, chatRoomNo=0, memberNo=4, memberEmail=null, memberNickname=호호수), ChatMessage(cmNo=0, message=키키, createDate=2023-05-16, chatRoomNo=0, memberNo=4, memberEmail=null, memberNickname=호호수), ChatMessage(cmNo=0, message=안녕안녕, createDate=2023-05-16, chatRoomNo=0, memberNo=5, memberEmail=null, memberNickname=몽실이), ChatMessage(cmNo=0, message=zzz, createDate=2023-05-18, chatRoomNo=0, memberNo=5, memberEmail=null, memberNickname=몽실이)]
+2023-05-18 09:19:47 [INFO] Running Time : 90ms
+2023-05-18 09:19:47 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 09:19:47 [INFO] 후처리 수행
+2023-05-18 09:19:47 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:19:47 [INFO] 전처리 수행
+2023-05-18 09:19:47 [INFO] 후처리 수행
+2023-05-18 09:19:47 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:19:47 [INFO] 전처리 수행
+2023-05-18 09:19:47 [INFO] 후처리 수행
+2023-05-18 09:19:47 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:19:48 [INFO] 전처리 수행
+2023-05-18 09:19:48 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - selectChatRoomList( {} )
+Parameter : {}
+ip : 127.0.0.1(email : 98chltnwls@gmail.com)
+2023-05-18 09:19:48 [INFO] Return Value : [ChatRoom(chatRoomNo=21, title=하기싫당, status=null, memberNo=0, memberNickname=몽실이, cnt=1), ChatRoom(chatRoomNo=1, title=테스트입니당, status=null, memberNo=0, memberNickname=호호수, cnt=2)]
+2023-05-18 09:19:48 [INFO] Running Time : 88ms
+2023-05-18 09:19:48 [INFO] End : ChatServiceImpl - selectChatRoomList
+----------------------END-------------------------
+
+2023-05-18 09:19:48 [INFO] 후처리 수행
+2023-05-18 09:19:48 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:20:33 [INFO] 전처리 수행
+2023-05-18 09:20:33 [INFO] 후처리 수행
+2023-05-18 09:20:33 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:20:35 [INFO] 전처리 수행
+2023-05-18 09:20:35 [INFO] 로그아웃 수행됨
+2023-05-18 09:20:35 [INFO] 후처리 수행
+2023-05-18 09:20:35 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:20:35 [INFO] 전처리 수행
+2023-05-18 09:20:35 [INFO] 후처리 수행
+2023-05-18 09:20:35 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:20:35 [INFO] 전처리 수행
+2023-05-18 09:20:35 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - selectAll( {} )
+Parameter : {}
+ip : 127.0.0.1
+2023-05-18 09:20:35 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=hohosuu@naver.com, memberPw=null, memberNickname=호호수, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=98chltnwls@gmail.com, memberPw=null, memberNickname=몽실이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-18 09:20:35 [INFO] Running Time : 93ms
+2023-05-18 09:20:35 [INFO] End : MemberServiceImpl - selectAll
+----------------------END-------------------------
+
+2023-05-18 09:20:35 [INFO] 후처리 수행
+2023-05-18 09:20:35 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:20:35 [INFO] 전처리 수행
+2023-05-18 09:20:35 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - selectChatRoomList( {} )
+Parameter : {}
+ip : 127.0.0.1
+2023-05-18 09:20:36 [INFO] Return Value : [ChatRoom(chatRoomNo=21, title=하기싫당, status=null, memberNo=0, memberNickname=몽실이, cnt=1), ChatRoom(chatRoomNo=1, title=테스트입니당, status=null, memberNo=0, memberNickname=호호수, cnt=2)]
+2023-05-18 09:20:36 [INFO] Running Time : 61ms
+2023-05-18 09:20:36 [INFO] End : ChatServiceImpl - selectChatRoomList
+----------------------END-------------------------
+
+2023-05-18 09:20:36 [INFO] 후처리 수행
+2023-05-18 09:20:36 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:20:43 [INFO] 전처리 수행
+2023-05-18 09:20:43 [INFO] 후처리 수행
+2023-05-18 09:20:43 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:20:43 [INFO] 전처리 수행
+2023-05-18 09:20:43 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - selectAll( {} )
+Parameter : {}
+ip : 127.0.0.1
+2023-05-18 09:20:43 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=hohosuu@naver.com, memberPw=null, memberNickname=호호수, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=98chltnwls@gmail.com, memberPw=null, memberNickname=몽실이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-18 09:20:43 [INFO] Running Time : 91ms
+2023-05-18 09:20:43 [INFO] End : MemberServiceImpl - selectAll
+----------------------END-------------------------
+
+2023-05-18 09:20:43 [INFO] 후처리 수행
+2023-05-18 09:20:43 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:20:51 [INFO] 전처리 수행
+2023-05-18 09:20:51 [INFO] 로그인 기능 수행됨
+2023-05-18 09:20:51 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - login( {Member(memberNo=0, memberEmail=test01@gmail.com, memberPw=passs01!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)} )
+Parameter : {Member(memberNo=0, memberEmail=test01@gmail.com, memberPw=passs01!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)}
+ip : 127.0.0.1
+2023-05-18 09:20:51 [DEBUG] 암호화 전 : passs01! / 암호화 후 : $2a$10$NV/aqL0bkhiB9PHDqwxFduGnXmXL6imr1DhAhRcWb6E/u5D7Qftgi
+2023-05-18 09:20:51 [INFO] Return Value : null
+2023-05-18 09:20:51 [INFO] Running Time : 178ms
+2023-05-18 09:20:51 [INFO] End : MemberServiceImpl - login
+----------------------END-------------------------
+
+2023-05-18 09:20:51 [INFO] 후처리 수행
+2023-05-18 09:20:51 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:20:51 [INFO] 전처리 수행
+2023-05-18 09:20:51 [INFO] 후처리 수행
+2023-05-18 09:20:51 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:20:52 [INFO] 전처리 수행
+2023-05-18 09:20:52 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - selectAll( {} )
+Parameter : {}
+ip : 127.0.0.1
+2023-05-18 09:20:52 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=hohosuu@naver.com, memberPw=null, memberNickname=호호수, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=98chltnwls@gmail.com, memberPw=null, memberNickname=몽실이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-18 09:20:52 [INFO] Running Time : 97ms
+2023-05-18 09:20:52 [INFO] End : MemberServiceImpl - selectAll
+----------------------END-------------------------
+
+2023-05-18 09:20:52 [INFO] 후처리 수행
+2023-05-18 09:20:52 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:20:53 [INFO] 전처리 수행
+2023-05-18 09:20:53 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - selectAll( {} )
+Parameter : {}
+ip : 127.0.0.1
+2023-05-18 09:20:53 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=hohosuu@naver.com, memberPw=null, memberNickname=호호수, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=98chltnwls@gmail.com, memberPw=null, memberNickname=몽실이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-18 09:20:53 [INFO] Running Time : 82ms
+2023-05-18 09:20:53 [INFO] End : MemberServiceImpl - selectAll
+----------------------END-------------------------
+
+2023-05-18 09:20:53 [INFO] 후처리 수행
+2023-05-18 09:20:53 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:20:56 [INFO] 전처리 수행
+2023-05-18 09:20:56 [INFO] 로그인 기능 수행됨
+2023-05-18 09:20:56 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - login( {Member(memberNo=0, memberEmail=test01@gmail.com, memberPw=test01!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)} )
+Parameter : {Member(memberNo=0, memberEmail=test01@gmail.com, memberPw=test01!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)}
+ip : 127.0.0.1
+2023-05-18 09:20:56 [DEBUG] 암호화 전 : test01! / 암호화 후 : $2a$10$7q2u9lM6GAOBDNewpBrJVOYCrW293jZIdR4T2/vj2LNkfPdhJfnGy
+2023-05-18 09:20:56 [INFO] Return Value : null
+2023-05-18 09:20:56 [INFO] Running Time : 177ms
+2023-05-18 09:20:56 [INFO] End : MemberServiceImpl - login
+----------------------END-------------------------
+
+2023-05-18 09:20:56 [INFO] 후처리 수행
+2023-05-18 09:20:56 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:20:56 [INFO] 전처리 수행
+2023-05-18 09:20:56 [INFO] 후처리 수행
+2023-05-18 09:20:56 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:20:57 [INFO] 전처리 수행
+2023-05-18 09:20:57 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - selectAll( {} )
+Parameter : {}
+ip : 127.0.0.1
+2023-05-18 09:20:58 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=hohosuu@naver.com, memberPw=null, memberNickname=호호수, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=98chltnwls@gmail.com, memberPw=null, memberNickname=몽실이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-18 09:20:58 [INFO] Running Time : 79ms
+2023-05-18 09:20:58 [INFO] End : MemberServiceImpl - selectAll
+----------------------END-------------------------
+
+2023-05-18 09:20:58 [INFO] 후처리 수행
+2023-05-18 09:20:58 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:21:08 [INFO] 전처리 수행
+2023-05-18 09:21:08 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - selectAll( {} )
+Parameter : {}
+ip : 127.0.0.1
+2023-05-18 09:21:08 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=hohosuu@naver.com, memberPw=null, memberNickname=호호수, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=98chltnwls@gmail.com, memberPw=null, memberNickname=몽실이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-18 09:21:08 [INFO] Running Time : 107ms
+2023-05-18 09:21:08 [INFO] End : MemberServiceImpl - selectAll
+----------------------END-------------------------
+
+2023-05-18 09:21:08 [INFO] 후처리 수행
+2023-05-18 09:21:08 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:21:08 [INFO] 전처리 수행
+2023-05-18 09:21:08 [INFO] 로그인 기능 수행됨
+2023-05-18 09:21:08 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - login( {Member(memberNo=0, memberEmail=test01@naver.com, memberPw=pass01!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)} )
+Parameter : {Member(memberNo=0, memberEmail=test01@naver.com, memberPw=pass01!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)}
+ip : 127.0.0.1
+2023-05-18 09:21:08 [DEBUG] 암호화 전 : pass01! / 암호화 후 : $2a$10$B4p6n0W2Q94291Ive5krBOvw4HbZmY0bZbY9MrXXgxEzFycTpg7.2
+2023-05-18 09:21:08 [INFO] Return Value : Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=01012341234, memberAddress=null, profileImage=/resources/images/memberProfile/20230511115024_83290.jpeg, enrollDate=2023-04-29 21:22:26, secessionFlag=null)
+2023-05-18 09:21:08 [INFO] Running Time : 270ms
+2023-05-18 09:21:08 [INFO] End : MemberServiceImpl - login
+----------------------END-------------------------
+
+2023-05-18 09:21:08 [INFO] 후처리 수행
+2023-05-18 09:21:08 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:21:08 [INFO] 전처리 수행
+2023-05-18 09:21:08 [INFO] 후처리 수행
+2023-05-18 09:21:08 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:21:08 [INFO] 전처리 수행
+2023-05-18 09:21:08 [INFO] 후처리 수행
+2023-05-18 09:21:08 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:21:10 [INFO] 전처리 수행
+2023-05-18 09:21:10 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - selectChatRoomList( {} )
+Parameter : {}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 09:21:10 [INFO] Return Value : [ChatRoom(chatRoomNo=21, title=하기싫당, status=null, memberNo=0, memberNickname=몽실이, cnt=1), ChatRoom(chatRoomNo=1, title=테스트입니당, status=null, memberNo=0, memberNickname=호호수, cnt=2)]
+2023-05-18 09:21:10 [INFO] Running Time : 95ms
+2023-05-18 09:21:10 [INFO] End : ChatServiceImpl - selectChatRoomList
+----------------------END-------------------------
+
+2023-05-18 09:21:10 [INFO] 후처리 수행
+2023-05-18 09:21:10 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:21:15 [INFO] 전처리 수행
+2023-05-18 09:21:15 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - openChatRoom( {ChatRoom(chatRoomNo=0, title=방번호 왜이래, status=null, memberNo=1, memberNickname=null, cnt=0)} )
+Parameter : {ChatRoom(chatRoomNo=0, title=방번호 왜이래, status=null, memberNo=1, memberNickname=null, cnt=0)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 09:21:15 [INFO] Return Value : 22
+2023-05-18 09:21:15 [INFO] Running Time : 72ms
+2023-05-18 09:21:15 [INFO] End : ChatServiceImpl - openChatRoom
+----------------------END-------------------------
+
+2023-05-18 09:21:15 [INFO] 후처리 수행
+2023-05-18 09:21:15 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:21:15 [INFO] 전처리 수행
+2023-05-18 09:21:15 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=1, chatRoomNo=22)} )
+Parameter : {ChatRoomJoin(memberNo=1, chatRoomNo=22)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 09:21:15 [INFO] Return Value : []
+2023-05-18 09:21:15 [INFO] Running Time : 118ms
+2023-05-18 09:21:15 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 09:21:15 [INFO] 후처리 수행
+2023-05-18 09:21:15 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:21:15 [INFO] 전처리 수행
+2023-05-18 09:21:15 [INFO] 후처리 수행
+2023-05-18 09:21:15 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:21:15 [INFO] 전처리 수행
+2023-05-18 09:21:15 [INFO] 후처리 수행
+2023-05-18 09:21:15 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:21:18 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - insertMessage( {ChatMessage(cmNo=0, message=??, createDate=2023-05-18, chatRoomNo=22, memberNo=1, memberEmail=test01@naver.com, memberNickname=테스트1)} )
+Parameter : {ChatMessage(cmNo=0, message=??, createDate=2023-05-18, chatRoomNo=22, memberNo=1, memberEmail=test01@naver.com, memberNickname=테스트1)}
+[스케쥴러 동작]
+2023-05-18 09:21:18 [INFO] Return Value : 1
+2023-05-18 09:21:18 [INFO] Running Time : 99ms
+2023-05-18 09:21:18 [INFO] End : ChatServiceImpl - insertMessage
+----------------------END-------------------------
+
+2023-05-18 09:21:19 [INFO] 전처리 수행
+2023-05-18 09:21:19 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - selectChatRoomList( {} )
+Parameter : {}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 09:21:19 [INFO] Return Value : [ChatRoom(chatRoomNo=22, title=방번호 왜이래, status=null, memberNo=0, memberNickname=테스트1, cnt=1), ChatRoom(chatRoomNo=21, title=하기싫당, status=null, memberNo=0, memberNickname=몽실이, cnt=1), ChatRoom(chatRoomNo=1, title=테스트입니당, status=null, memberNo=0, memberNickname=호호수, cnt=2)]
+2023-05-18 09:21:19 [INFO] Running Time : 96ms
+2023-05-18 09:21:19 [INFO] End : ChatServiceImpl - selectChatRoomList
+----------------------END-------------------------
+
+2023-05-18 09:21:19 [INFO] 후처리 수행
+2023-05-18 09:21:19 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:27:19 [INFO] 전처리 수행
+2023-05-18 09:27:19 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=1, chatRoomNo=22)} )
+Parameter : {ChatRoomJoin(memberNo=1, chatRoomNo=22)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 09:27:19 [INFO] Return Value : [ChatMessage(cmNo=0, message=??, createDate=2023-05-18, chatRoomNo=0, memberNo=1, memberEmail=null, memberNickname=테스트1)]
+2023-05-18 09:27:19 [INFO] Running Time : 162ms
+2023-05-18 09:27:19 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 09:27:19 [INFO] 후처리 수행
+2023-05-18 09:27:19 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:27:19 [INFO] 전처리 수행
+2023-05-18 09:27:19 [INFO] 후처리 수행
+2023-05-18 09:27:19 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:27:19 [INFO] 전처리 수행
+2023-05-18 09:27:19 [INFO] 후처리 수행
+2023-05-18 09:27:19 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:27:22 [INFO] 전처리 수행
+2023-05-18 09:27:22 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - selectChatRoomList( {} )
+Parameter : {}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 09:27:22 [INFO] Return Value : [ChatRoom(chatRoomNo=22, title=방번호 왜이래, status=null, memberNo=0, memberNickname=테스트1, cnt=1), ChatRoom(chatRoomNo=21, title=하기싫당, status=null, memberNo=0, memberNickname=몽실이, cnt=1), ChatRoom(chatRoomNo=1, title=테스트입니당, status=null, memberNo=0, memberNickname=호호수, cnt=2)]
+2023-05-18 09:27:22 [INFO] Running Time : 59ms
+2023-05-18 09:27:22 [INFO] End : ChatServiceImpl - selectChatRoomList
+----------------------END-------------------------
+
+2023-05-18 09:27:22 [INFO] 후처리 수행
+2023-05-18 09:27:22 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:30:29 [INFO] 초기화 필터 파괴
+2023-05-18 09:39:54 [INFO] 초기화 필터 생성
+2023-05-18 09:39:59 [INFO] 전처리 수행
+2023-05-18 09:39:59 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectBoardType( {} )
+Parameter : {}
+ip : 127.0.0.1
+2023-05-18 09:40:03 [INFO] Return Value : [BoardType(boardCode=1, boardName=공지사항), BoardType(boardCode=2, boardName=자유 게시판), BoardType(boardCode=3, boardName=질문 게시판)]
+2023-05-18 09:40:03 [INFO] Running Time : 4179ms
+2023-05-18 09:40:03 [INFO] End : BoardServiceImpl - selectBoardType
+----------------------END-------------------------
+
+2023-05-18 09:40:03 [INFO] 후처리 수행
+2023-05-18 09:40:03 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:40:04 [INFO] 전처리 수행
+2023-05-18 09:40:04 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - selectAll( {} )
+Parameter : {}
+ip : 127.0.0.1
+2023-05-18 09:40:04 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=hohosuu@naver.com, memberPw=null, memberNickname=호호수, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=98chltnwls@gmail.com, memberPw=null, memberNickname=몽실이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-18 09:40:04 [INFO] Running Time : 73ms
+2023-05-18 09:40:04 [INFO] End : MemberServiceImpl - selectAll
+----------------------END-------------------------
+
+2023-05-18 09:40:04 [INFO] 후처리 수행
+2023-05-18 09:40:04 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:40:10 [INFO] 전처리 수행
+2023-05-18 09:40:10 [INFO] 로그인 기능 수행됨
+2023-05-18 09:40:10 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - login( {Member(memberNo=0, memberEmail=test01@naver.com, memberPw=pass01!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)} )
+Parameter : {Member(memberNo=0, memberEmail=test01@naver.com, memberPw=pass01!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)}
+ip : 127.0.0.1
+2023-05-18 09:40:10 [DEBUG] 암호화 전 : pass01! / 암호화 후 : $2a$10$FliAhQqew/TdDsPZArAlTOsqby1LOOwGfRlZPTDvnLB76xAkjMm2G
+2023-05-18 09:40:10 [INFO] Return Value : Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=01012341234, memberAddress=null, profileImage=/resources/images/memberProfile/20230511115024_83290.jpeg, enrollDate=2023-04-29 21:22:26, secessionFlag=null)
+2023-05-18 09:40:10 [INFO] Running Time : 247ms
+2023-05-18 09:40:10 [INFO] End : MemberServiceImpl - login
+----------------------END-------------------------
+
+2023-05-18 09:40:10 [INFO] 후처리 수행
+2023-05-18 09:40:10 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:40:10 [INFO] 전처리 수행
+2023-05-18 09:40:10 [INFO] 후처리 수행
+2023-05-18 09:40:10 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:40:11 [INFO] 전처리 수행
+2023-05-18 09:40:11 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - selectChatRoomList( {} )
+Parameter : {}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 09:40:11 [INFO] Return Value : [ChatRoom(chatRoomNo=22, title=방번호 왜이래, status=null, memberNo=0, memberNickname=테스트1, cnt=1), ChatRoom(chatRoomNo=21, title=하기싫당, status=null, memberNo=0, memberNickname=몽실이, cnt=1), ChatRoom(chatRoomNo=1, title=테스트입니당, status=null, memberNo=0, memberNickname=호호수, cnt=2)]
+2023-05-18 09:40:11 [INFO] Running Time : 82ms
+2023-05-18 09:40:11 [INFO] End : ChatServiceImpl - selectChatRoomList
+----------------------END-------------------------
+
+2023-05-18 09:40:11 [INFO] 후처리 수행
+2023-05-18 09:40:11 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:40:13 [INFO] 전처리 수행
+2023-05-18 09:40:13 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=1, chatRoomNo=21)} )
+Parameter : {ChatRoomJoin(memberNo=1, chatRoomNo=21)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 09:40:14 [INFO] Return Value : [ChatMessage(cmNo=0, message=ㅋㅋ, createDate=2023-05-18, chatRoomNo=0, memberNo=5, memberEmail=null, memberNickname=몽실이)]
+2023-05-18 09:40:14 [INFO] Running Time : 196ms
+2023-05-18 09:40:14 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 09:40:14 [INFO] 후처리 수행
+2023-05-18 09:40:14 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:40:14 [INFO] 전처리 수행
+2023-05-18 09:40:14 [INFO] 후처리 수행
+2023-05-18 09:40:14 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:40:14 [INFO] 전처리 수행
+2023-05-18 09:40:14 [INFO] 후처리 수행
+2023-05-18 09:40:14 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:40:17 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - insertMessage( {ChatMessage(cmNo=0, message=zzz, createDate=2023-05-18, chatRoomNo=21, memberNo=1, memberEmail=test01@naver.com, memberNickname=테스트1)} )
+Parameter : {ChatMessage(cmNo=0, message=zzz, createDate=2023-05-18, chatRoomNo=21, memberNo=1, memberEmail=test01@naver.com, memberNickname=테스트1)}
+[스케쥴러 동작]
+2023-05-18 09:40:17 [INFO] Return Value : 1
+2023-05-18 09:40:17 [INFO] Running Time : 67ms
+2023-05-18 09:40:17 [INFO] End : ChatServiceImpl - insertMessage
+----------------------END-------------------------
+
+2023-05-18 09:42:38 [INFO] 전처리 수행
+2023-05-18 09:42:38 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=1, chatRoomNo=21)} )
+Parameter : {ChatRoomJoin(memberNo=1, chatRoomNo=21)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 09:42:38 [INFO] Return Value : [ChatMessage(cmNo=0, message=ㅋㅋ, createDate=2023-05-18, chatRoomNo=0, memberNo=5, memberEmail=null, memberNickname=몽실이), ChatMessage(cmNo=0, message=zzz, createDate=2023-05-18, chatRoomNo=0, memberNo=1, memberEmail=null, memberNickname=테스트1)]
+2023-05-18 09:42:38 [INFO] Running Time : 125ms
+2023-05-18 09:42:38 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 09:42:38 [INFO] 후처리 수행
+2023-05-18 09:42:40 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:42:40 [INFO] 전처리 수행
+2023-05-18 09:42:40 [INFO] 전처리 수행
+2023-05-18 09:42:40 [INFO] 전처리 수행
+2023-05-18 09:42:40 [INFO] 후처리 수행
+2023-05-18 09:42:40 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:42:40 [INFO] 후처리 수행
+2023-05-18 09:42:40 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:42:40 [INFO] 후처리 수행
+2023-05-18 09:42:40 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:42:40 [INFO] 전처리 수행
+2023-05-18 09:42:40 [INFO] 전처리 수행
+2023-05-18 09:42:40 [INFO] 후처리 수행
+2023-05-18 09:42:40 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:42:40 [INFO] 후처리 수행
+2023-05-18 09:42:40 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:42:40 [INFO] 전처리 수행
+2023-05-18 09:42:40 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=1, chatRoomNo=21)} )
+Parameter : {ChatRoomJoin(memberNo=1, chatRoomNo=21)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 09:42:40 [INFO] Return Value : [ChatMessage(cmNo=0, message=ㅋㅋ, createDate=2023-05-18, chatRoomNo=0, memberNo=5, memberEmail=null, memberNickname=몽실이), ChatMessage(cmNo=0, message=zzz, createDate=2023-05-18, chatRoomNo=0, memberNo=1, memberEmail=null, memberNickname=테스트1)]
+2023-05-18 09:42:40 [INFO] Running Time : 91ms
+2023-05-18 09:42:40 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 09:42:40 [INFO] 후처리 수행
+2023-05-18 09:42:40 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:42:40 [INFO] 전처리 수행
+2023-05-18 09:42:40 [INFO] 전처리 수행
+2023-05-18 09:42:40 [INFO] 전처리 수행
+2023-05-18 09:42:40 [INFO] 후처리 수행
+2023-05-18 09:42:40 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:42:40 [INFO] 후처리 수행
+2023-05-18 09:42:40 [INFO] 후처리 수행
+2023-05-18 09:42:40 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:42:40 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:42:40 [INFO] 전처리 수행
+2023-05-18 09:42:40 [INFO] 전처리 수행
+2023-05-18 09:42:40 [INFO] 후처리 수행
+2023-05-18 09:42:40 [INFO] 후처리 수행
+2023-05-18 09:42:40 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:42:40 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:42:40 [INFO] 전처리 수행
+2023-05-18 09:42:40 [INFO] 후처리 수행
+2023-05-18 09:42:40 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:42:40 [INFO] 전처리 수행
+2023-05-18 09:42:40 [INFO] 후처리 수행
+2023-05-18 09:42:40 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:42:42 [INFO] 전처리 수행
+2023-05-18 09:42:42 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - selectChatRoomList( {} )
+Parameter : {}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 09:42:42 [INFO] Return Value : [ChatRoom(chatRoomNo=22, title=방번호 왜이래, status=null, memberNo=0, memberNickname=테스트1, cnt=1), ChatRoom(chatRoomNo=21, title=하기싫당, status=null, memberNo=0, memberNickname=몽실이, cnt=2), ChatRoom(chatRoomNo=1, title=테스트입니당, status=null, memberNo=0, memberNickname=호호수, cnt=2)]
+2023-05-18 09:42:42 [INFO] Running Time : 94ms
+2023-05-18 09:42:42 [INFO] End : ChatServiceImpl - selectChatRoomList
+----------------------END-------------------------
+
+2023-05-18 09:42:42 [INFO] 후처리 수행
+2023-05-18 09:42:42 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:42:44 [INFO] 전처리 수행
+2023-05-18 09:42:44 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=1, chatRoomNo=22)} )
+Parameter : {ChatRoomJoin(memberNo=1, chatRoomNo=22)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 09:42:44 [INFO] Return Value : [ChatMessage(cmNo=0, message=??, createDate=2023-05-18, chatRoomNo=0, memberNo=1, memberEmail=null, memberNickname=테스트1)]
+2023-05-18 09:42:44 [INFO] Running Time : 143ms
+2023-05-18 09:42:44 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 09:42:44 [INFO] 후처리 수행
+2023-05-18 09:42:44 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:42:44 [INFO] 전처리 수행
+2023-05-18 09:42:44 [INFO] 후처리 수행
+2023-05-18 09:42:44 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:42:44 [INFO] 전처리 수행
+2023-05-18 09:42:44 [INFO] 후처리 수행
+2023-05-18 09:42:44 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:44:36 [INFO] 전처리 수행
+2023-05-18 09:44:36 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - selectChatRoomList( {} )
+Parameter : {}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 09:44:36 [INFO] Return Value : [ChatRoom(chatRoomNo=22, title=방번호 왜이래, status=null, memberNo=0, memberNickname=테스트1, cnt=1), ChatRoom(chatRoomNo=21, title=하기싫당, status=null, memberNo=0, memberNickname=몽실이, cnt=2), ChatRoom(chatRoomNo=1, title=테스트입니당, status=null, memberNo=0, memberNickname=호호수, cnt=2)]
+2023-05-18 09:44:36 [INFO] Running Time : 127ms
+2023-05-18 09:44:36 [INFO] End : ChatServiceImpl - selectChatRoomList
+----------------------END-------------------------
+
+2023-05-18 09:44:36 [INFO] 후처리 수행
+2023-05-18 09:44:36 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:44:39 [INFO] 전처리 수행
+2023-05-18 09:44:39 [INFO] 후처리 수행
+2023-05-18 09:44:39 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:44:40 [INFO] 전처리 수행
+2023-05-18 09:44:40 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - selectChatRoomList( {} )
+Parameter : {}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 09:44:40 [INFO] Return Value : [ChatRoom(chatRoomNo=22, title=방번호 왜이래, status=null, memberNo=0, memberNickname=테스트1, cnt=1), ChatRoom(chatRoomNo=21, title=하기싫당, status=null, memberNo=0, memberNickname=몽실이, cnt=2), ChatRoom(chatRoomNo=1, title=테스트입니당, status=null, memberNo=0, memberNickname=호호수, cnt=2)]
+2023-05-18 09:44:40 [INFO] Running Time : 118ms
+2023-05-18 09:44:40 [INFO] End : ChatServiceImpl - selectChatRoomList
+----------------------END-------------------------
+
+2023-05-18 09:44:40 [INFO] 후처리 수행
+2023-05-18 09:44:40 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:44:42 [INFO] 전처리 수행
+2023-05-18 09:44:42 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=1, chatRoomNo=22)} )
+Parameter : {ChatRoomJoin(memberNo=1, chatRoomNo=22)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 09:44:42 [INFO] Return Value : [ChatMessage(cmNo=0, message=??, createDate=2023-05-18, chatRoomNo=0, memberNo=1, memberEmail=null, memberNickname=테스트1)]
+2023-05-18 09:44:42 [INFO] Running Time : 133ms
+2023-05-18 09:44:42 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 09:44:42 [INFO] 후처리 수행
+2023-05-18 09:44:42 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:44:42 [INFO] 전처리 수행
+2023-05-18 09:44:42 [INFO] 후처리 수행
+2023-05-18 09:44:42 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:44:42 [INFO] 전처리 수행
+2023-05-18 09:44:42 [INFO] 후처리 수행
+2023-05-18 09:44:42 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:44:43 [INFO] 전처리 수행
+2023-05-18 09:44:43 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - selectChatRoomList( {} )
+Parameter : {}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 09:44:43 [INFO] Return Value : [ChatRoom(chatRoomNo=22, title=방번호 왜이래, status=null, memberNo=0, memberNickname=테스트1, cnt=1), ChatRoom(chatRoomNo=21, title=하기싫당, status=null, memberNo=0, memberNickname=몽실이, cnt=2), ChatRoom(chatRoomNo=1, title=테스트입니당, status=null, memberNo=0, memberNickname=호호수, cnt=2)]
+2023-05-18 09:44:43 [INFO] Running Time : 91ms
+2023-05-18 09:44:43 [INFO] End : ChatServiceImpl - selectChatRoomList
+----------------------END-------------------------
+
+2023-05-18 09:44:43 [INFO] 후처리 수행
+2023-05-18 09:44:43 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:44:47 [INFO] 전처리 수행
+2023-05-18 09:44:47 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=1, chatRoomNo=22)} )
+Parameter : {ChatRoomJoin(memberNo=1, chatRoomNo=22)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 09:44:47 [INFO] Return Value : [ChatMessage(cmNo=0, message=??, createDate=2023-05-18, chatRoomNo=0, memberNo=1, memberEmail=null, memberNickname=테스트1)]
+2023-05-18 09:44:47 [INFO] Running Time : 91ms
+2023-05-18 09:44:47 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 09:44:47 [INFO] 후처리 수행
+2023-05-18 09:44:47 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:44:47 [INFO] 전처리 수행
+2023-05-18 09:44:47 [INFO] 후처리 수행
+2023-05-18 09:44:47 [INFO] View단 처리 완료 후 수행
+2023-05-18 09:44:47 [INFO] 전처리 수행
+2023-05-18 09:44:47 [INFO] 후처리 수행
+2023-05-18 09:44:47 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:00:00 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectDBList( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-18 10:00:00 [INFO] Return Value : [/resources/images/board/20230512145444_25252.jpeg, /resources/images/board/20230512145444_71819.jpeg, /resources/images/board/20230512145537_69047.png, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/20230511104829_61373.jpg, /resources/images/board/20230511104829_22162.jpeg, /resources/images/board/20230511141214_36207.jpeg, /resources/images/board/20230511141214_40708.jpeg]
+2023-05-18 10:00:00 [INFO] Running Time : 203ms
+2023-05-18 10:00:00 [INFO] End : BoardServiceImpl - selectDBList
+----------------------END-------------------------
+
+2023-05-18 10:00:00 [INFO] --------------------START---------------------
+Start : MyPageServiceImpl - selectProfileImg( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-18 10:00:00 [INFO] Return Value : [/resources/images/memberProfile/20230511115205_41668.jpeg, /resources/images/memberProfile/20230511115152_65861.jpeg, /resources/images/memberProfile/20230511115024_83290.jpeg, /resources/images/memberProfile/20230430211723_85843.png, /resources/images/memberProfile/20230511141129_46244.jpeg]
+2023-05-18 10:00:00 [INFO] Running Time : 75ms
+2023-05-18 10:00:00 [INFO] End : MyPageServiceImpl - selectProfileImg
+----------------------END-------------------------
+
+2023-05-18 10:00:00 [INFO] ----------------board 서버 이미지 삭제 완료----------------
+2023-05-18 10:00:00 [INFO] -----------------profile 서버 이미지 삭제 완료----------------
+2023-05-18 10:02:19 [INFO] 전처리 수행
+2023-05-18 10:02:19 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=1, chatRoomNo=22)} )
+Parameter : {ChatRoomJoin(memberNo=1, chatRoomNo=22)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:02:19 [INFO] Return Value : [ChatMessage(cmNo=0, message=??, createDate=2023-05-18, chatRoomNo=0, memberNo=1, memberEmail=null, memberNickname=테스트1)]
+2023-05-18 10:02:19 [INFO] Running Time : 167ms
+2023-05-18 10:02:19 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 10:02:19 [INFO] 후처리 수행
+2023-05-18 10:02:19 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:19 [INFO] 전처리 수행
+2023-05-18 10:02:19 [INFO] 전처리 수행
+2023-05-18 10:02:19 [INFO] 전처리 수행
+2023-05-18 10:02:19 [INFO] 후처리 수행
+2023-05-18 10:02:19 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:19 [INFO] 후처리 수행
+2023-05-18 10:02:19 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:19 [INFO] 후처리 수행
+2023-05-18 10:02:19 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:19 [INFO] 전처리 수행
+2023-05-18 10:02:19 [INFO] 전처리 수행
+2023-05-18 10:02:19 [INFO] 후처리 수행
+2023-05-18 10:02:19 [INFO] 후처리 수행
+2023-05-18 10:02:19 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:19 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:20 [INFO] 전처리 수행
+2023-05-18 10:02:20 [INFO] 후처리 수행
+2023-05-18 10:02:20 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:20 [INFO] 전처리 수행
+2023-05-18 10:02:20 [INFO] 후처리 수행
+2023-05-18 10:02:20 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:20 [INFO] 전처리 수행
+2023-05-18 10:02:20 [INFO] 후처리 수행
+2023-05-18 10:02:20 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:23 [INFO] 전처리 수행
+2023-05-18 10:02:23 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=1, chatRoomNo=22)} )
+Parameter : {ChatRoomJoin(memberNo=1, chatRoomNo=22)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:02:23 [INFO] Return Value : [ChatMessage(cmNo=0, message=??, createDate=2023-05-18, chatRoomNo=0, memberNo=1, memberEmail=null, memberNickname=테스트1)]
+2023-05-18 10:02:23 [INFO] Running Time : 109ms
+2023-05-18 10:02:23 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 10:02:23 [INFO] 후처리 수행
+2023-05-18 10:02:23 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:23 [INFO] 전처리 수행
+2023-05-18 10:02:23 [INFO] 전처리 수행
+2023-05-18 10:02:23 [INFO] 후처리 수행
+2023-05-18 10:02:23 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:23 [INFO] 전처리 수행
+2023-05-18 10:02:23 [INFO] 후처리 수행
+2023-05-18 10:02:23 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:23 [INFO] 후처리 수행
+2023-05-18 10:02:23 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:23 [INFO] 전처리 수행
+2023-05-18 10:02:23 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=1, chatRoomNo=22)} )
+Parameter : {ChatRoomJoin(memberNo=1, chatRoomNo=22)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:02:23 [INFO] Return Value : [ChatMessage(cmNo=0, message=??, createDate=2023-05-18, chatRoomNo=0, memberNo=1, memberEmail=null, memberNickname=테스트1)]
+2023-05-18 10:02:23 [INFO] Running Time : 95ms
+2023-05-18 10:02:23 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 10:02:23 [INFO] 후처리 수행
+2023-05-18 10:02:23 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:23 [INFO] 전처리 수행
+2023-05-18 10:02:23 [INFO] 후처리 수행
+2023-05-18 10:02:23 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:23 [INFO] 전처리 수행
+2023-05-18 10:02:23 [INFO] 후처리 수행
+2023-05-18 10:02:23 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:23 [INFO] 전처리 수행
+2023-05-18 10:02:23 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=1, chatRoomNo=22)} )
+Parameter : {ChatRoomJoin(memberNo=1, chatRoomNo=22)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:02:23 [INFO] Return Value : [ChatMessage(cmNo=0, message=??, createDate=2023-05-18, chatRoomNo=0, memberNo=1, memberEmail=null, memberNickname=테스트1)]
+2023-05-18 10:02:23 [INFO] Running Time : 75ms
+2023-05-18 10:02:23 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 10:02:23 [INFO] 후처리 수행
+2023-05-18 10:02:23 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:23 [INFO] 전처리 수행
+2023-05-18 10:02:23 [INFO] 후처리 수행
+2023-05-18 10:02:23 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:23 [INFO] 전처리 수행
+2023-05-18 10:02:23 [INFO] 후처리 수행
+2023-05-18 10:02:23 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:23 [INFO] 전처리 수행
+2023-05-18 10:02:23 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=1, chatRoomNo=22)} )
+Parameter : {ChatRoomJoin(memberNo=1, chatRoomNo=22)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:02:23 [INFO] Return Value : [ChatMessage(cmNo=0, message=??, createDate=2023-05-18, chatRoomNo=0, memberNo=1, memberEmail=null, memberNickname=테스트1)]
+2023-05-18 10:02:23 [INFO] Running Time : 101ms
+2023-05-18 10:02:23 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 10:02:23 [INFO] 후처리 수행
+2023-05-18 10:02:23 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:24 [INFO] 전처리 수행
+2023-05-18 10:02:24 [INFO] 후처리 수행
+2023-05-18 10:02:24 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:24 [INFO] 전처리 수행
+2023-05-18 10:02:24 [INFO] 후처리 수행
+2023-05-18 10:02:24 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:24 [INFO] 전처리 수행
+2023-05-18 10:02:24 [INFO] 후처리 수행
+2023-05-18 10:02:24 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:24 [INFO] 전처리 수행
+2023-05-18 10:02:24 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectBoardList( {1, 3} )
+Parameter : {1, 3}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:02:24 [INFO] 전처리 수행
+2023-05-18 10:02:24 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectBoardList( {1, 3} )
+Parameter : {1, 3}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:02:25 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[Board(boardNo=500, boardTitle=500번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=10, thumbnail=/resources/images/board/sample1.jpg), Board(boardNo=499, boardTitle=499번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=1, thumbnail=null), Board(boardNo=498, boardTitle=498번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=0, thumbnail=null), Board(boardNo=497, boardTitle=497번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=1, thumbnail=null), Board(boardNo=496, boardTitle=496번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=0, thumbnail=null), Board(boardNo=495, boardTitle=495번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=1, thumbnail=null), Board(boardNo=494, boardTitle=494번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=1, thumbnail=null), Board(boardNo=493, boardTitle=493번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=0, thumbnail=null), Board(boardNo=492, boardTitle=492번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=0, thumbnail=null), Board(boardNo=491, boardTitle=491번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=0, thumbnail=null)]}
+2023-05-18 10:02:25 [INFO] Running Time : 417ms
+2023-05-18 10:02:25 [INFO] End : BoardServiceImpl - selectBoardList
+----------------------END-------------------------
+
+2023-05-18 10:02:25 [INFO] 후처리 수행
+2023-05-18 10:02:25 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[Board(boardNo=500, boardTitle=500번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=10, thumbnail=/resources/images/board/sample1.jpg), Board(boardNo=499, boardTitle=499번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=1, thumbnail=null), Board(boardNo=498, boardTitle=498번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=0, thumbnail=null), Board(boardNo=497, boardTitle=497번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=1, thumbnail=null), Board(boardNo=496, boardTitle=496번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=0, thumbnail=null), Board(boardNo=495, boardTitle=495번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=1, thumbnail=null), Board(boardNo=494, boardTitle=494번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=1, thumbnail=null), Board(boardNo=493, boardTitle=493번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=0, thumbnail=null), Board(boardNo=492, boardTitle=492번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=0, thumbnail=null), Board(boardNo=491, boardTitle=491번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=0, thumbnail=null)]}
+2023-05-18 10:02:25 [INFO] Running Time : 352ms
+2023-05-18 10:02:25 [INFO] End : BoardServiceImpl - selectBoardList
+----------------------END-------------------------
+
+2023-05-18 10:02:25 [INFO] 후처리 수행
+2023-05-18 10:02:25 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:25 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:25 [INFO] 전처리 수행
+2023-05-18 10:02:25 [INFO] 전처리 수행
+2023-05-18 10:02:25 [INFO] 전처리 수행
+2023-05-18 10:02:25 [INFO] 후처리 수행
+2023-05-18 10:02:25 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:25 [INFO] 후처리 수행
+2023-05-18 10:02:25 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:25 [INFO] 후처리 수행
+2023-05-18 10:02:25 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:25 [INFO] 전처리 수행
+2023-05-18 10:02:25 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - selectChatRoomList( {} )
+Parameter : {}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:02:25 [INFO] Return Value : [ChatRoom(chatRoomNo=22, title=방번호 왜이래, status=null, memberNo=0, memberNickname=테스트1, cnt=1), ChatRoom(chatRoomNo=21, title=하기싫당, status=null, memberNo=0, memberNickname=몽실이, cnt=2), ChatRoom(chatRoomNo=1, title=테스트입니당, status=null, memberNo=0, memberNickname=호호수, cnt=2)]
+2023-05-18 10:02:25 [INFO] Running Time : 97ms
+2023-05-18 10:02:25 [INFO] End : ChatServiceImpl - selectChatRoomList
+----------------------END-------------------------
+
+2023-05-18 10:02:25 [INFO] 후처리 수행
+2023-05-18 10:02:25 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:25 [INFO] 전처리 수행
+2023-05-18 10:02:25 [INFO] 후처리 수행
+2023-05-18 10:02:25 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:27 [INFO] 전처리 수행
+2023-05-18 10:02:27 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=1, chatRoomNo=22)} )
+Parameter : {ChatRoomJoin(memberNo=1, chatRoomNo=22)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:02:27 [INFO] Return Value : [ChatMessage(cmNo=0, message=??, createDate=2023-05-18, chatRoomNo=0, memberNo=1, memberEmail=null, memberNickname=테스트1)]
+2023-05-18 10:02:27 [INFO] Running Time : 100ms
+2023-05-18 10:02:27 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 10:02:27 [INFO] 후처리 수행
+2023-05-18 10:02:27 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:27 [INFO] 전처리 수행
+2023-05-18 10:02:27 [INFO] 후처리 수행
+2023-05-18 10:02:27 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:27 [INFO] 전처리 수행
+2023-05-18 10:02:27 [INFO] 후처리 수행
+2023-05-18 10:02:27 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:27 [INFO] 전처리 수행
+2023-05-18 10:02:27 [INFO] 후처리 수행
+2023-05-18 10:02:27 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:02:28 [INFO] 전처리 수행
+2023-05-18 10:02:28 [INFO] 후처리 수행
+2023-05-18 10:02:28 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:25:45 [INFO] 초기화 필터 파괴
+2023-05-18 10:25:57 [INFO] 초기화 필터 생성
+2023-05-18 10:26:02 [INFO] 전처리 수행
+2023-05-18 10:26:02 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectBoardType( {} )
+Parameter : {}
+ip : 127.0.0.1
+2023-05-18 10:26:06 [INFO] Return Value : [BoardType(boardCode=1, boardName=공지사항), BoardType(boardCode=2, boardName=자유 게시판), BoardType(boardCode=3, boardName=질문 게시판)]
+2023-05-18 10:26:06 [INFO] Running Time : 4041ms
+2023-05-18 10:26:06 [INFO] End : BoardServiceImpl - selectBoardType
+----------------------END-------------------------
+
+2023-05-18 10:26:06 [INFO] 후처리 수행
+2023-05-18 10:26:07 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:07 [INFO] 전처리 수행
+2023-05-18 10:26:07 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - selectAll( {} )
+Parameter : {}
+ip : 127.0.0.1
+2023-05-18 10:26:07 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=테스트2, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=3, memberEmail=test03@naver.com, memberPw=null, memberNickname=테스트3, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=4, memberEmail=hohosuu@naver.com, memberPw=null, memberNickname=호호수, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=5, memberEmail=98chltnwls@gmail.com, memberPw=null, memberNickname=몽실이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-18 10:26:07 [INFO] Running Time : 87ms
+2023-05-18 10:26:07 [INFO] End : MemberServiceImpl - selectAll
+----------------------END-------------------------
+
+2023-05-18 10:26:07 [INFO] 후처리 수행
+2023-05-18 10:26:07 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:10 [INFO] 전처리 수행
+2023-05-18 10:26:10 [INFO] 로그인 기능 수행됨
+2023-05-18 10:26:10 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - login( {Member(memberNo=0, memberEmail=test01@naver.com, memberPw=pass01!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)} )
+Parameter : {Member(memberNo=0, memberEmail=test01@naver.com, memberPw=pass01!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)}
+ip : 127.0.0.1
+2023-05-18 10:26:10 [DEBUG] 암호화 전 : pass01! / 암호화 후 : $2a$10$B0HuM1jHKQNvNNqd1ExQvOoJAsfhk6uPcOAEqwLcXyH84t.Lkcfuq
+2023-05-18 10:26:10 [INFO] Return Value : Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=01012341234, memberAddress=null, profileImage=/resources/images/memberProfile/20230511115024_83290.jpeg, enrollDate=2023-04-29 21:22:26, secessionFlag=null)
+2023-05-18 10:26:10 [INFO] Running Time : 266ms
+2023-05-18 10:26:10 [INFO] End : MemberServiceImpl - login
+----------------------END-------------------------
+
+2023-05-18 10:26:10 [INFO] 후처리 수행
+2023-05-18 10:26:10 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:10 [INFO] 전처리 수행
+2023-05-18 10:26:10 [INFO] 후처리 수행
+2023-05-18 10:26:10 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:12 [INFO] 전처리 수행
+2023-05-18 10:26:12 [INFO] 로그인 기능 수행됨
+2023-05-18 10:26:12 [INFO] --------------------START---------------------
+Start : MemberServiceImpl - login( {Member(memberNo=0, memberEmail=test01@naver.com, memberPw=pass01!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)} )
+Parameter : {Member(memberNo=0, memberEmail=test01@naver.com, memberPw=pass01!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:26:12 [DEBUG] 암호화 전 : pass01! / 암호화 후 : $2a$10$BLWXQyOIPNp5KQdjAPebPukiVW6Nl8sF/whQ4Dfsy/qnlWRj8oBdq
+2023-05-18 10:26:12 [INFO] Return Value : Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=01012341234, memberAddress=null, profileImage=/resources/images/memberProfile/20230511115024_83290.jpeg, enrollDate=2023-04-29 21:22:26, secessionFlag=null)
+2023-05-18 10:26:12 [INFO] Running Time : 224ms
+2023-05-18 10:26:12 [INFO] End : MemberServiceImpl - login
+----------------------END-------------------------
+
+2023-05-18 10:26:12 [INFO] 후처리 수행
+2023-05-18 10:26:12 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:12 [INFO] 전처리 수행
+2023-05-18 10:26:12 [INFO] 후처리 수행
+2023-05-18 10:26:12 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:13 [INFO] 전처리 수행
+2023-05-18 10:26:13 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - selectChatRoomList( {} )
+Parameter : {}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:26:13 [INFO] Return Value : [ChatRoom(chatRoomNo=22, title=방번호 왜이래, status=null, memberNo=0, memberNickname=테스트1, cnt=1), ChatRoom(chatRoomNo=21, title=하기싫당, status=null, memberNo=0, memberNickname=몽실이, cnt=2), ChatRoom(chatRoomNo=1, title=테스트입니당, status=null, memberNo=0, memberNickname=호호수, cnt=2)]
+2023-05-18 10:26:13 [INFO] Running Time : 66ms
+2023-05-18 10:26:13 [INFO] End : ChatServiceImpl - selectChatRoomList
+----------------------END-------------------------
+
+2023-05-18 10:26:13 [INFO] 후처리 수행
+2023-05-18 10:26:13 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:13 [INFO] 전처리 수행
+2023-05-18 10:26:13 [INFO] 후처리 수행
+2023-05-18 10:26:13 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:14 [INFO] 전처리 수행
+2023-05-18 10:26:14 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=1, chatRoomNo=22)} )
+Parameter : {ChatRoomJoin(memberNo=1, chatRoomNo=22)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:26:15 [INFO] Return Value : [ChatMessage(cmNo=0, message=??, createDate=2023-05-18, chatRoomNo=0, memberNo=1, memberEmail=null, memberNickname=테스트1)]
+2023-05-18 10:26:15 [INFO] Running Time : 139ms
+2023-05-18 10:26:15 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 10:26:15 [INFO] 후처리 수행
+2023-05-18 10:26:15 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:15 [INFO] 전처리 수행
+2023-05-18 10:26:15 [INFO] 후처리 수행
+2023-05-18 10:26:15 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:15 [INFO] 전처리 수행
+2023-05-18 10:26:15 [INFO] 후처리 수행
+2023-05-18 10:26:15 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:38 [INFO] 전처리 수행
+2023-05-18 10:26:38 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - joinChatRoom( {ChatRoomJoin(memberNo=1, chatRoomNo=22)} )
+Parameter : {ChatRoomJoin(memberNo=1, chatRoomNo=22)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:26:38 [INFO] Return Value : [ChatMessage(cmNo=0, message=??, createDate=2023-05-18, chatRoomNo=0, memberNo=1, memberEmail=null, memberNickname=테스트1)]
+2023-05-18 10:26:38 [INFO] Running Time : 108ms
+2023-05-18 10:26:38 [INFO] End : ChatServiceImpl - joinChatRoom
+----------------------END-------------------------
+
+2023-05-18 10:26:38 [INFO] 후처리 수행
+2023-05-18 10:26:38 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:38 [INFO] 전처리 수행
+2023-05-18 10:26:38 [INFO] 전처리 수행
+2023-05-18 10:26:38 [INFO] 전처리 수행
+2023-05-18 10:26:38 [INFO] 후처리 수행
+2023-05-18 10:26:38 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:38 [INFO] 후처리 수행
+2023-05-18 10:26:38 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:38 [INFO] 후처리 수행
+2023-05-18 10:26:38 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:38 [INFO] 전처리 수행
+2023-05-18 10:26:38 [INFO] 전처리 수행
+2023-05-18 10:26:38 [INFO] 후처리 수행
+2023-05-18 10:26:38 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:38 [INFO] 후처리 수행
+2023-05-18 10:26:38 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:39 [INFO] 전처리 수행
+2023-05-18 10:26:39 [INFO] 후처리 수행
+2023-05-18 10:26:39 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:39 [INFO] 전처리 수행
+2023-05-18 10:26:39 [INFO] 후처리 수행
+2023-05-18 10:26:39 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:26:42 [INFO] --------------------START---------------------
+Start : ChatServiceImpl - insertMessage( {ChatMessage(cmNo=0, message=hh, createDate=2023-05-18, chatRoomNo=22, memberNo=1, memberEmail=test01@naver.com, memberNickname=테스트1)} )
+Parameter : {ChatMessage(cmNo=0, message=hh, createDate=2023-05-18, chatRoomNo=22, memberNo=1, memberEmail=test01@naver.com, memberNickname=테스트1)}
+[스케쥴러 동작]
+2023-05-18 10:26:42 [INFO] Return Value : 1
+2023-05-18 10:26:42 [INFO] Running Time : 98ms
+2023-05-18 10:26:42 [INFO] End : ChatServiceImpl - insertMessage
+----------------------END-------------------------
+
+2023-05-18 10:40:58 [INFO] 전처리 수행
+2023-05-18 10:40:58 [INFO] 후처리 수행
+2023-05-18 10:40:58 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:41:06 [INFO] 전처리 수행
+2023-05-18 10:41:06 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectBoardList( {1, 3} )
+Parameter : {1, 3}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:41:06 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[Board(boardNo=500, boardTitle=500번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=10, thumbnail=/resources/images/board/sample1.jpg), Board(boardNo=499, boardTitle=499번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=1, thumbnail=null), Board(boardNo=498, boardTitle=498번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=0, thumbnail=null), Board(boardNo=497, boardTitle=497번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=1, thumbnail=null), Board(boardNo=496, boardTitle=496번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=0, thumbnail=null), Board(boardNo=495, boardTitle=495번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=1, thumbnail=null), Board(boardNo=494, boardTitle=494번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=1, thumbnail=null), Board(boardNo=493, boardTitle=493번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=0, thumbnail=null), Board(boardNo=492, boardTitle=492번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=0, thumbnail=null), Board(boardNo=491, boardTitle=491번째 게시글, memberNickname=테스트1, createDate=2023-05-01, readCount=0, thumbnail=null)]}
+2023-05-18 10:41:06 [INFO] Running Time : 249ms
+2023-05-18 10:41:06 [INFO] End : BoardServiceImpl - selectBoardList
+----------------------END-------------------------
+
+2023-05-18 10:41:06 [INFO] 후처리 수행
+2023-05-18 10:41:06 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:41:10 [INFO] 전처리 수행
+2023-05-18 10:41:10 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectBoardDetail( {498} )
+Parameter : {498}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:41:10 [INFO] Return Value : edu.kh.comm.board.model.vo.BoardDetail@6c1bd1e4
+2023-05-18 10:41:10 [INFO] Running Time : 202ms
+2023-05-18 10:41:10 [INFO] End : BoardServiceImpl - selectBoardDetail
+----------------------END-------------------------
+
+2023-05-18 10:41:10 [INFO] --------------------START---------------------
+Start : ReplyServiceImpl - selectReplyList( {498} )
+Parameter : {498}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:41:10 [INFO] Return Value : [Reply(replyNo=32, replyContent=dddd, createDate=2023-05-10, boardNo=498, memberNo=1, memberNickname=테스트1, profileImage=/resources/images/memberProfile/20230511115024_83290.jpeg, parentReplyNo=0), Reply(replyNo=33, replyContent=dddd, createDate=2023-05-10, boardNo=498, memberNo=1, memberNickname=테스트1, profileImage=/resources/images/memberProfile/20230511115024_83290.jpeg, parentReplyNo=0), Reply(replyNo=35, replyContent=ddddd, createDate=2023-05-10, boardNo=498, memberNo=1, memberNickname=테스트1, profileImage=/resources/images/memberProfile/20230511115024_83290.jpeg, parentReplyNo=0), Reply(replyNo=36, replyContent=ddddd, createDate=2023-05-10, boardNo=498, memberNo=1, memberNickname=테스트1, profileImage=/resources/images/memberProfile/20230511115024_83290.jpeg, parentReplyNo=0), Reply(replyNo=37, replyContent=gdgdgdg, createDate=2023-05-10, boardNo=498, memberNo=1, memberNickname=테스트1, profileImage=/resources/images/memberProfile/20230511115024_83290.jpeg, parentReplyNo=0), Reply(replyNo=38, replyContent=sss, createDate=2023-05-10, boardNo=498, memberNo=1, memberNickname=테스트1, profileImage=/resources/images/memberProfile/20230511115024_83290.jpeg, parentReplyNo=0), Reply(replyNo=39, replyContent=dgdg, createDate=2023-05-10, boardNo=498, memberNo=1, memberNickname=테스트1, profileImage=/resources/images/memberProfile/20230511115024_83290.jpeg, parentReplyNo=0), Reply(replyNo=40, replyContent=ggdgdgdgdg, createDate=2023-05-10, boardNo=498, memberNo=1, memberNickname=테스트1, profileImage=/resources/images/memberProfile/20230511115024_83290.jpeg, parentReplyNo=0), Reply(replyNo=41, replyContent=sss, createDate=2023-05-10, boardNo=498, memberNo=1, memberNickname=테스트1, profileImage=/resources/images/memberProfile/20230511115024_83290.jpeg, parentReplyNo=0)]
+2023-05-18 10:41:10 [INFO] Running Time : 157ms
+2023-05-18 10:41:10 [INFO] End : ReplyServiceImpl - selectReplyList
+----------------------END-------------------------
+
+2023-05-18 10:41:10 [INFO] 후처리 수행
+2023-05-18 10:41:10 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:41:10 [INFO] 전처리 수행
+2023-05-18 10:41:10 [INFO] 전처리 수행
+2023-05-18 10:41:10 [INFO] 후처리 수행
+2023-05-18 10:41:10 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:41:10 [INFO] 후처리 수행
+2023-05-18 10:41:10 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:41:43 [INFO] 전처리 수행
+2023-05-18 10:41:43 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectBoardList( {1, 2} )
+Parameter : {1, 2}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:41:43 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=3, limit=10, pageSize=10, maxPage=1, startPage=1, endPage=1, prevPage=1, nextPage=1], boardList=[Board(boardNo=541, boardTitle=호호호, memberNickname=호호수, createDate=2023-05-12, readCount=0, thumbnail=/resources/images/board/20230512145444_25252.jpeg), Board(boardNo=526, boardTitle=자유게시판, memberNickname=몽실이, createDate=2023-05-11, readCount=0, thumbnail=/resources/images/board/20230511141214_36207.jpeg), Board(boardNo=525, boardTitle=안뇽아뇽, memberNickname=테스트2, createDate=2023-05-11, readCount=1, thumbnail=/resources/images/board/20230511104829_61373.jpg)]}
+2023-05-18 10:41:43 [INFO] Running Time : 209ms
+2023-05-18 10:41:43 [INFO] End : BoardServiceImpl - selectBoardList
+----------------------END-------------------------
+
+2023-05-18 10:41:43 [INFO] 후처리 수행
+2023-05-18 10:41:43 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:41:43 [INFO] 전처리 수행
+2023-05-18 10:41:43 [INFO] 후처리 수행
+2023-05-18 10:41:43 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:41:43 [INFO] 전처리 수행
+2023-05-18 10:41:43 [INFO] 전처리 수행
+2023-05-18 10:41:43 [INFO] 후처리 수행
+2023-05-18 10:41:43 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:41:43 [INFO] 후처리 수행
+2023-05-18 10:41:43 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:42:00 [INFO] 전처리 수행
+2023-05-18 10:42:00 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectBoardDetail( {525} )
+Parameter : {525}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:42:00 [INFO] Return Value : edu.kh.comm.board.model.vo.BoardDetail@65bdb782
+2023-05-18 10:42:00 [INFO] Running Time : 107ms
+2023-05-18 10:42:00 [INFO] End : BoardServiceImpl - selectBoardDetail
+----------------------END-------------------------
+
+2023-05-18 10:42:00 [INFO] --------------------START---------------------
+Start : ReplyServiceImpl - selectReplyList( {525} )
+Parameter : {525}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:42:00 [INFO] Return Value : []
+2023-05-18 10:42:00 [INFO] Running Time : 39ms
+2023-05-18 10:42:00 [INFO] End : ReplyServiceImpl - selectReplyList
+----------------------END-------------------------
+
+2023-05-18 10:42:00 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - updateReadCount( {525} )
+Parameter : {525}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:42:00 [INFO] Return Value : 1
+2023-05-18 10:42:00 [INFO] Running Time : 60ms
+2023-05-18 10:42:00 [INFO] End : BoardServiceImpl - updateReadCount
+----------------------END-------------------------
+
+2023-05-18 10:42:00 [INFO] 후처리 수행
+2023-05-18 10:42:00 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:42:00 [INFO] 전처리 수행
+2023-05-18 10:42:00 [INFO] 후처리 수행
+2023-05-18 10:42:00 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:42:00 [INFO] 전처리 수행
+2023-05-18 10:42:00 [INFO] 후처리 수행
+2023-05-18 10:42:00 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:42:10 [INFO] 전처리 수행
+2023-05-18 10:42:10 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectBoardList( {1, 2} )
+Parameter : {1, 2}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:42:10 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=3, limit=10, pageSize=10, maxPage=1, startPage=1, endPage=1, prevPage=1, nextPage=1], boardList=[Board(boardNo=541, boardTitle=호호호, memberNickname=호호수, createDate=2023-05-12, readCount=0, thumbnail=/resources/images/board/20230512145444_25252.jpeg), Board(boardNo=526, boardTitle=자유게시판, memberNickname=몽실이, createDate=2023-05-11, readCount=0, thumbnail=/resources/images/board/20230511141214_36207.jpeg), Board(boardNo=525, boardTitle=안뇽아뇽, memberNickname=테스트2, createDate=2023-05-11, readCount=2, thumbnail=/resources/images/board/20230511104829_61373.jpg)]}
+2023-05-18 10:42:10 [INFO] Running Time : 145ms
+2023-05-18 10:42:10 [INFO] End : BoardServiceImpl - selectBoardList
+----------------------END-------------------------
+
+2023-05-18 10:42:10 [INFO] 후처리 수행
+2023-05-18 10:42:10 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:42:12 [INFO] 전처리 수행
+2023-05-18 10:42:12 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectBoardDetail( {541} )
+Parameter : {541}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:42:12 [INFO] Return Value : edu.kh.comm.board.model.vo.BoardDetail@5474e247
+2023-05-18 10:42:12 [INFO] Running Time : 102ms
+2023-05-18 10:42:12 [INFO] End : BoardServiceImpl - selectBoardDetail
+----------------------END-------------------------
+
+2023-05-18 10:42:12 [INFO] --------------------START---------------------
+Start : ReplyServiceImpl - selectReplyList( {541} )
+Parameter : {541}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:42:12 [INFO] Return Value : []
+2023-05-18 10:42:12 [INFO] Running Time : 40ms
+2023-05-18 10:42:12 [INFO] End : ReplyServiceImpl - selectReplyList
+----------------------END-------------------------
+
+2023-05-18 10:42:12 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - updateReadCount( {541} )
+Parameter : {541}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:42:12 [INFO] Return Value : 1
+2023-05-18 10:42:12 [INFO] Running Time : 35ms
+2023-05-18 10:42:12 [INFO] End : BoardServiceImpl - updateReadCount
+----------------------END-------------------------
+
+2023-05-18 10:42:12 [INFO] 후처리 수행
+2023-05-18 10:42:12 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:42:12 [INFO] 전처리 수행
+2023-05-18 10:42:12 [INFO] 전처리 수행
+2023-05-18 10:42:12 [INFO] 후처리 수행
+2023-05-18 10:42:12 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:42:12 [INFO] 전처리 수행
+2023-05-18 10:42:12 [INFO] 후처리 수행
+2023-05-18 10:42:12 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:42:12 [INFO] 후처리 수행
+2023-05-18 10:42:12 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:42:19 [INFO] 전처리 수행
+2023-05-18 10:42:19 [INFO] --------------------START---------------------
+Start : ReplyServiceImpl - insertReply( {Reply(replyNo=0, replyContent=ㅜㅜ, createDate=null, boardNo=541, memberNo=1, memberNickname=null, profileImage=null, parentReplyNo=0)} )
+Parameter : {Reply(replyNo=0, replyContent=ㅜㅜ, createDate=null, boardNo=541, memberNo=1, memberNickname=null, profileImage=null, parentReplyNo=0)}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:42:20 [INFO] Return Value : 1
+2023-05-18 10:42:20 [INFO] Running Time : 179ms
+2023-05-18 10:42:20 [INFO] End : ReplyServiceImpl - insertReply
+----------------------END-------------------------
+
+2023-05-18 10:42:20 [INFO] 후처리 수행
+2023-05-18 10:42:20 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:42:21 [INFO] 전처리 수행
+2023-05-18 10:42:21 [INFO] --------------------START---------------------
+Start : ReplyServiceImpl - selectReplyList( {541} )
+Parameter : {541}
+ip : 127.0.0.1(email : test01@naver.com)
+2023-05-18 10:42:21 [INFO] Return Value : [Reply(replyNo=61, replyContent=ㅜㅜ, createDate=1초 전, boardNo=541, memberNo=1, memberNickname=테스트1, profileImage=/resources/images/memberProfile/20230511115024_83290.jpeg, parentReplyNo=0)]
+2023-05-18 10:42:21 [INFO] Running Time : 92ms
+2023-05-18 10:42:21 [INFO] End : ReplyServiceImpl - selectReplyList
+----------------------END-------------------------
+
+2023-05-18 10:42:21 [INFO] 후처리 수행
+2023-05-18 10:42:21 [INFO] View단 처리 완료 후 수행
+2023-05-18 10:59:59 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectDBList( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-18 11:00:00 [INFO] Return Value : [/resources/images/board/20230512145444_25252.jpeg, /resources/images/board/20230512145444_71819.jpeg, /resources/images/board/20230512145537_69047.png, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/sample1.jpg, /resources/images/board/sample2.jpg, /resources/images/board/sample3.jpg, /resources/images/board/sample4.jpg, /resources/images/board/sample5.jpg, /resources/images/board/20230511104829_61373.jpg, /resources/images/board/20230511104829_22162.jpeg, /resources/images/board/20230511141214_36207.jpeg, /resources/images/board/20230511141214_40708.jpeg]
+2023-05-18 11:00:00 [INFO] Running Time : 147ms
+2023-05-18 11:00:00 [INFO] End : BoardServiceImpl - selectDBList
+----------------------END-------------------------
+
+2023-05-18 11:00:00 [INFO] --------------------START---------------------
+Start : MyPageServiceImpl - selectProfileImg( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-18 11:00:00 [INFO] Return Value : [/resources/images/memberProfile/20230511115205_41668.jpeg, /resources/images/memberProfile/20230511115152_65861.jpeg, /resources/images/memberProfile/20230511115024_83290.jpeg, /resources/images/memberProfile/20230430211723_85843.png, /resources/images/memberProfile/20230511141129_46244.jpeg]
+2023-05-18 11:00:00 [INFO] Running Time : 46ms
+2023-05-18 11:00:00 [INFO] End : MyPageServiceImpl - selectProfileImg
+----------------------END-------------------------
+
+2023-05-18 11:00:00 [INFO] ----------------board 서버 이미지 삭제 완료----------------
+2023-05-18 11:00:00 [INFO] -----------------profile 서버 이미지 삭제 완료----------------
+2023-05-18 12:00:00 [INFO] --------------------START---------------------
+Start : BoardServiceImpl - selectDBList( {} )
+Parameter : {}
+[스케쥴러 동작]
+2023-05-18 12:00:00 [ERROR] <<exception>> : org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:96) - nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection (CONNECTION_ID=JgSIPpHwSiiqTGeT9RiUbg==)
+### The error may exist in /mappers/board-mapper.xml
+### The error may involve boardMapper.selectDBList
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO 오류: The Network Adapter could not establish the connection (CONNECTION_ID=JgSIPpHwSiiqTGeT9RiUbg==)
+
+2023-05-18 12:00:00 [INFO] End : BoardServiceImpl - selectDBList
+----------------------END-------------------------
+
+2023-05-18 12:01:38 [INFO] 초기화 필터 파괴

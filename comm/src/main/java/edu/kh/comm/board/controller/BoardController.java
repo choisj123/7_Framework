@@ -85,8 +85,6 @@ public class BoardController {
 		
 		return "board/boardList";
 	
-		
-		
 	}
 	
 	
@@ -293,5 +291,6 @@ public class BoardController {
 		}
 		
 	}
+
 	
 }
